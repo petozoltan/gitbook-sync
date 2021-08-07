@@ -15,6 +15,8 @@ So a class contains:
 * member variables - I call them now 'data'
 * member functions - I call them procedures
 
+![](.gitbook/assets/class.svg) 
+
 ![](.gitbook/assets/class.svg)
 
 But was it really a good idea?
@@ -59,6 +61,8 @@ According to the original concept of classes, these are no classes at all, since
 Unfortunately, today's languages like Java or C++ still call them classes. Not only the keywords are the same, but they both seem to have data and procedure members. So, by the syntax, there is no difference between them. 
 
 The reason is simply, that they are _class-based languages_. Everything is a class. That's why we, programmers still treat them as classes.
+
+![](.gitbook/assets/difference.jpg) 
 
 ![](.gitbook/assets/difference.jpg)
 
