@@ -1,16 +1,17 @@
 # Table of contents
 
 * [Timeline](README.md)
-* [Separate Data Collection And Processing](separate-data-collection-and-processing.md)
+* [Software Killers](software-killers.md)
 
 ## Clean Coding
 
 ---
 
 * [Separate Data And Procedures](separate-data-and-procedures.md)
+* [Do Not Use Inheritance](do-not-use-inheritance.md)
+* [Separate Data Collection And Processing](separate-data-collection-and-processing.md)
 * [Separate Use Cases](separate-use-cases/README.md)
   * [Example: Separate Use Cases](separate-use-cases/example-separate-use-cases.md)
-* [Do Not Use Inheritance](do-not-use-inheritance.md)
 * [When To Avoid Inheritance?](when-to-avoid-inheritance.md)
 * [What Is The Problem With Abstract Frameworks?](what-is-the-problem-with-inheritance.md)
 * [The problem with Clean Code's name](the-problem-with-clean-codes-name.md)

@@ -1,15 +1,9 @@
 # Timeline
 
-### The Biggest Software Killers
-
-![](.gitbook/assets/common-code-+-inheritance-d1.png)
-
-### And Their Clients Who Hired Them
-
-![](.gitbook/assets/complexity-+-dependency-d1.jpg.png)
-
 ### 2021
 
+* [Separate Data Collection And Processing](separate-data-collection-and-processing.md)
+* [Software Killers](software-killers.md)
 * [Separate Data And Procedures](separate-data-and-procedures.md)
 * [Example: Separate Use Cases](separate-use-cases/example-separate-use-cases.md)
 * [Quotes](pictures/quotes.md)

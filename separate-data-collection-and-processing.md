@@ -12,7 +12,7 @@ It shows the kids an operation, like multiplying numbers by 2. It is actually a 
 
 ## The Problems With the Architecture
 
-Now let's take look at how we write our programs today:
+Now let's take look at how we write our programs today. Every arrow on the image is a data flow between the components:
 
 ![](.gitbook/assets/todays-program-no-data.svg)
 
@@ -22,15 +22,15 @@ Can you find the little machine in this image? No, you cannot, because it is not
 
 Why is it a problem? What's wrong with our code above? There are more issues:
 
-#### Unclear input and output
+#### Unclear Input And Output
 
 The components do not have clean input and output data. Instead, they can read and write the database anytime. Or, they can ask other components to provide more data in any step of the processing.
 
-#### Unreliable data fragments
+#### Unreliable Data Fragments
 
 This also means that the data, which is processed, is never complete. It is never finished, so it is always _unreliable_.
 
-#### Components don't return properly
+#### Components Don't Return Properly
 
 Sometimes, components really don't have a clear return point, so they cannot return their output data. Instead, they pass their results forward to other components.   
   
@@ -54,7 +54,7 @@ To fix the architecture, we should clearly separate the two steps:
 
 {% tabs %}
 {% tab title="Simple" %}
-![](.gitbook/assets/collect-process-save-simple.svg)
+![](.gitbook/assets/collect-process-save-simple.svg) 
 {% endtab %}
 
 {% tab title="More classes" %}
