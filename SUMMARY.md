@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Timeline](README.md)
+* [Separate Data Collection And Processing](separate-data-collection-and-processing.md)
 
 ## Clean Coding
 

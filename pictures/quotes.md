@@ -10,11 +10,11 @@ description: 2021.05.18
 
 ![](../.gitbook/assets/quote-optimism-is-an-occupational-hazard-of-programming-feedback-is-the-treatment-kent-beck-60-26-41.jpg)
 
-![](../.gitbook/assets/quote-computer-science-education-cannot-make-anybody-an-expert-programmer-any-more-than-studying-eric-s-raymond-57-0-073.jpg)
+![](../.gitbook/assets/quote-good-programmers-know-what-to-write-great-ones-know-what-to-rewrite-and-reuse-eric-s-raymond-63-60-67.jpg)
 
 ![](../.gitbook/assets/quote-smart-data-structures-and-dumb-code-works-a-lot-better-than-the-other-way-around-eric-s-raymond-63-60-65.jpg)
 
-![](../.gitbook/assets/quote-good-programmers-know-what-to-write-great-ones-know-what-to-rewrite-and-reuse-eric-s-raymond-63-60-67.jpg)
+![](../.gitbook/assets/quote-computer-science-education-cannot-make-anybody-an-expert-programmer-any-more-than-studying-eric-s-raymond-57-0-073.jpg)
 
 ![](../.gitbook/assets/quote-if-you-re-afraid-to-change-something-it-is-clearly-poorly-designed-martin-fowler-113-70-59.jpg)
 
