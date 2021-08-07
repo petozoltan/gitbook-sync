@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="448px" preserveAspectRatio="none" style="width:197px;height:448px;" version="1.1" viewBox="0 0 197 448" width="197px" zoomAndPan="magnify"><defs/><g><!--MD5=[db8947410cfcb5febdf8f8cf27669db4]
+class Class1--><rect fill="#FFFFFF" height="89.4248" id="Class1" style="stroke: #808080; stroke-width: 1.5;" width="180" x="6" y="8"/><text fill="#808080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="84" x="54" y="23.9629">«Procedural»</text><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="75" y="38.9272">Class1</text><line style="stroke: #808080; stroke-width: 1.5;" x1="7" x2="185" y1="47.2725" y2="47.2725"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="19" y="62.2354"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="19" y="76.2861"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="19" y="76.2861">protected</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="84" x="89" y="76.2861">procedure1()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="19" y="90.3369"/><!--MD5=[097cec2c4502543b4bc821e1e2f7ea8d]
+class Class2--><rect fill="#FFFFFF" height="89.4248" id="Class2" style="stroke: #808080; stroke-width: 1.5;" width="180" x="6" y="157"/><text fill="#808080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="84" x="54" y="172.9629">«Procedural»</text><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="75" y="187.9272">Class2</text><line style="stroke: #808080; stroke-width: 1.5;" x1="7" x2="185" y1="196.2725" y2="196.2725"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="19" y="211.2354"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="19" y="225.2861"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="19" y="225.2861">protected</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="84" x="89" y="225.2861">procedure2()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="19" y="239.3369"/><!--MD5=[e3cc6d06644b91dda2b3b874ae70d9db]
+class Class5--><rect fill="#FFFFFF" height="131.5771" id="Class5" style="stroke: #808080; stroke-width: 1.5;" width="145" x="23.5" y="306"/><text fill="#808080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="84" x="54" y="321.9629">«Procedural»</text><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="75" y="336.9272">Class5</text><line style="stroke: #808080; stroke-width: 1.5;" x1="24.5" x2="167.5" y1="345.2725" y2="345.2725"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="36.5" y="360.2354"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="98" x="36.5" y="374.2861">procedure3() {</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="91" x="64.5" y="388.3369">procedure1();</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="91" x="64.5" y="402.3877">procedure2();</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="7" x="36.5" y="416.4385">}</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="36.5" y="430.4893"/><!--MD5=[f1a75de57d453dbc6e2094e1a0ac9d41]
+reverse link Class1 to Class2--><path d="M96,117.53 C96,130.85 96,144.59 96,156.96 " fill="none" id="Class1&lt;-Class2" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="none" points="89,117.21,96,97.21,103,117.21,89,117.21" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[bd60d639433840f42fe5df27cb1d35f2]
+reverse link Class2 to Class5--><path d="M96,266.47 C96,279.34 96,292.88 96,305.8 " fill="none" id="Class2&lt;-Class5" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="none" points="89,266.33,96,246.33,103,266.33,89,266.33" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[e5cd1ec018e99009ecf041eadee2fe8b]
+@startuml
+
+skinparam shadowing false
+
+
+hide empty members
+
+hide circle
+
+
+
+skinparam package {
+style rectangle
+borderColor gray
+fontSize 12
+}
+
+skinparam arrow {
+
+color gray
+}
+
+skinparam class {
+
+borderColor gray
+backgroundColor white
+
+fontSize 13
+fontName Consolas
+
+attributeFontSize 12
+attributeFontName Consolas
+
+stereotypeFontSize 12
+stereotypeFontColor gray
+stereotypeFontStyle normal
+stereotypeFontName Consolas
+}
+
+
+class Class1 <<Procedural>> {
+
+\n <font color=maroon>protected</font> procedure1() \n
+
+}
+
+class Class2 <<Procedural>> extends Class1 {
+
+\n <font color=maroon>protected</font> procedure2() \n
+
+}
+
+class Class5 <<Procedural>> extends Class2 {
+
+\n procedure3() {\n     procedure1();\n     procedure2(); \n }\n
+}
+
+@enduml
+
+PlantUML version 1.2019.11(Sun Sep 22 12:02:15 CEST 2019)
+(EPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11+28
+Operating System: Windows 10
+Default Encoding: Cp1250
+Language: hu
+Country: HU
+--></g></svg>

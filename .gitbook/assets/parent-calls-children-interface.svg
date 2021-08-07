@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="356px" preserveAspectRatio="none" style="width:408px;height:356px;" version="1.1" viewBox="0 0 408 356" width="408px" zoomAndPan="magnify"><defs/><g><!--MD5=[db8947410cfcb5febdf8f8cf27669db4]
+class Class1--><rect fill="#FFFFFF" height="131.5771" id="Class1" style="stroke: #808080; stroke-width: 1.5;" width="222" x="6" y="8"/><text fill="#808080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="84" x="75" y="23.9629">«Procedural»</text><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="96" y="38.9272">Class1</text><line style="stroke: #808080; stroke-width: 1.5;" x1="7" x2="227" y1="47.2725" y2="47.2725"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="19" y="62.2354"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="168" x="19" y="76.2861">procedure1(interface2) {</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="168" x="47" y="90.3369">interface2.procedure2();</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="168" x="47" y="104.3877">interface2.procedure3();</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="7" x="19" y="118.4385">}</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="19" y="132.4893"/><!--MD5=[9ebba52fb9a70c4ce49589052f5cf92e]
+class Interface2--><rect fill="#FFFFFF" height="117.5264" id="Interface2" style="stroke: #808080; stroke-width: 1.5;" width="110" x="263" y="15"/><text fill="#808080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="77" x="279.5" y="30.9629">«Interface»</text><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="70" x="283" y="45.9272">Interface2</text><line style="stroke: #808080; stroke-width: 1.5;" x1="264" x2="372" y1="54.2725" y2="54.2725"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="276" y="69.2354"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="276" y="83.2861"/><text fill="#000000" font-family="Consolas" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="84" x="276" y="83.2861">procedure2()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="276" y="97.3369"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="276" y="111.3877"/><text fill="#000000" font-family="Consolas" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="84" x="276" y="111.3877">procedure3()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="276" y="125.4385"/><!--MD5=[097cec2c4502543b4bc821e1e2f7ea8d]
+class Class2--><rect fill="#FFFFFF" height="145.6279" id="Class2" style="stroke: #808080; stroke-width: 1.5;" width="159" x="238.5" y="200"/><text fill="#808080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="84" x="276" y="215.9629">«Procedural»</text><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="297" y="230.9272">Class2</text><line style="stroke: #808080; stroke-width: 1.5;" x1="239.5" x2="396.5" y1="239.2725" y2="239.2725"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="251.5" y="254.2354"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="251.5" y="268.2861"/><text fill="#008080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="251.5" y="268.2861">@Override</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="251.5" y="282.3369"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="42" x="251.5" y="282.3369">public</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="84" x="300.5" y="282.3369">procedure2()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="251.5" y="296.3877"/><text fill="#008080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="251.5" y="310.4385">@Override</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="251.5" y="324.4893"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="42" x="251.5" y="324.4893">public</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="84" x="300.5" y="324.4893">procedure3()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="251.5" y="338.54"/><!--MD5=[42a2dcc71bdb7641e286a1cfc5915faf]
+reverse link Interface2 to Class2--><path d="M318,153.07 C318,168.45 318,184.52 318,199.69 " fill="none" id="Interface2&lt;-Class2" style="stroke: #808080; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="311,153.04,318,133.04,325,153.04,311,153.04" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[921d2bc81fa1b67f5002e4c7015260dd]
+link Class1 to Interface2--><path d="M228.1,74 C237.97,74 247.84,74 257.71,74 " fill="none" id="Class1-&gt;Interface2" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="262.87,74,253.87,70,257.87,74,253.87,78,262.87,74" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[aae14cd2a40ae20e55ad7b22b7d1816b]
+@startuml
+
+skinparam shadowing false
+
+
+hide empty members
+
+hide circle
+
+
+
+skinparam package {
+style rectangle
+borderColor gray
+fontSize 12
+}
+
+skinparam arrow {
+
+color gray
+}
+
+skinparam class {
+
+borderColor gray
+backgroundColor white
+
+fontSize 13
+fontName Consolas
+
+attributeFontSize 12
+attributeFontName Consolas
+
+stereotypeFontSize 12
+stereotypeFontColor gray
+stereotypeFontStyle normal
+stereotypeFontName Consolas
+}
+
+
+class Class1 <<Procedural>> {
+
+\n procedure1(interface2) {\n     interface2.procedure2();\n     interface2.procedure3(); \n }\n
+
+}
+
+class Interface2 <<Interface>> {
+
+\n <i>procedure2()
+\n <i>procedure3() \n
+}
+
+class Class2 <<Procedural>> implements Interface2 {
+
+\n <font color=teal>@Override</font>\n <font color=maroon>public</font> procedure2()
+
+<font color=teal> @Override</font>\n <font color=maroon>public</font> procedure3() \n
+
+}
+
+Class1 -> Interface2
+
+@enduml
+
+PlantUML version 1.2019.11(Sun Sep 22 12:02:15 CEST 2019)
+(EPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11+28
+Operating System: Windows 10
+Default Encoding: Cp1250
+Language: hu
+Country: HU
+--></g></svg>

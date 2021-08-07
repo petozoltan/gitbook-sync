@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="607px" preserveAspectRatio="none" style="width:829px;height:607px;" version="1.1" viewBox="0 0 829 607" width="829px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFAFA" height="420" style="stroke: #D3D3D3; stroke-width: 1.0;" width="386" x="22" y="176"/><rect fill="#FFFAFA" height="420" style="stroke: #D3D3D3; stroke-width: 1.0;" width="386" x="432" y="176"/><!--MD5=[7c87119f53f4e111a47f56727d83c957]
+class AParent--><rect fill="#FFFFFF" height="195.7803" id="AParent" style="stroke: #808080; stroke-width: 1.5;" width="152" x="238" y="192"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="49" x="289.5" y="208.8765">AParent</text><line style="stroke: #808080; stroke-width: 1.5;" x1="239" x2="389" y1="217.2217" y2="217.2217"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="251" y="232.1846"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="251" y="246.2354">common() {</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="279" y="260.2861">method1();</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="279" y="274.3369">method2();</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="7" x="251" y="288.3877">}</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="251" y="302.4385"/><line style="stroke: #808080; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="239" x2="389" y1="309.5264" y2="309.5264"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="251" y="324.4893"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="56" x="251" y="338.54">abstract</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="314" y="338.54">method1()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="251" y="352.5908"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="56" x="251" y="366.6416">abstract</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="314" y="366.6416">method2()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="251" y="380.6924"/><!--MD5=[77fb50ba119aa594bb882b972bc53fa1]
+class AUseCase1--><rect fill="#FFFFFF" height="131.5771" id="AUseCase1" style="stroke: #808080; stroke-width: 1.5;" width="159" x="38.5" y="448"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="63" x="86.5" y="464.8765">AUseCase1</text><line style="stroke: #808080; stroke-width: 1.5;" x1="39.5" x2="196.5" y1="473.2217" y2="473.2217"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="51.5" y="488.1846"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="51.5" y="502.2354"/><text fill="#008080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="51.5" y="502.2354">@Override</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="51.5" y="516.2861"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="51.5" y="516.2861">protected</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="121.5" y="516.2861">method1()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="51.5" y="530.3369"/><text fill="#008080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="51.5" y="544.3877">@Override</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="51.5" y="558.4385"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="51.5" y="558.4385">protected</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="121.5" y="558.4385">method2()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="51.5" y="572.4893"/><!--MD5=[44958fa67c7eca6bd894e1e78b42052c]
+class AUseCase2--><rect fill="#FFFFFF" height="131.5771" id="AUseCase2" style="stroke: #808080; stroke-width: 1.5;" width="159" x="232.5" y="448"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="63" x="280.5" y="464.8765">AUseCase2</text><line style="stroke: #808080; stroke-width: 1.5;" x1="233.5" x2="390.5" y1="473.2217" y2="473.2217"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="245.5" y="488.1846"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="245.5" y="502.2354"/><text fill="#008080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="245.5" y="502.2354">@Override</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="245.5" y="516.2861"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="245.5" y="516.2861">protected</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="315.5" y="516.2861">method1()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="245.5" y="530.3369"/><text fill="#008080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="245.5" y="544.3877">@Override</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="245.5" y="558.4385"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="245.5" y="558.4385">protected</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="315.5" y="558.4385">method2()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="245.5" y="572.4893"/><!--MD5=[c611d494bde2aa5c2ff221bf83fcf5f8]
+class BParent--><rect fill="#FFFFFF" height="195.7803" id="BParent" style="stroke: #808080; stroke-width: 1.5;" width="152" x="450" y="192"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="49" x="501.5" y="208.8765">BParent</text><line style="stroke: #808080; stroke-width: 1.5;" x1="451" x2="601" y1="217.2217" y2="217.2217"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="463" y="232.1846"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="463" y="246.2354">common() {</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="491" y="260.2861">method1();</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="491" y="274.3369">method2();</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="7" x="463" y="288.3877">}</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="463" y="302.4385"/><line style="stroke: #808080; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="451" x2="601" y1="309.5264" y2="309.5264"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="463" y="324.4893"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="56" x="463" y="338.54">abstract</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="526" y="338.54">method1()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="463" y="352.5908"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="56" x="463" y="366.6416">abstract</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="526" y="366.6416">method2()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="463" y="380.6924"/><!--MD5=[87fe88ca7532f1534c9f063d86df9aeb]
+class BUseCase1--><rect fill="#FFFFFF" height="131.5771" id="BUseCase1" style="stroke: #808080; stroke-width: 1.5;" width="159" x="448.5" y="448"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="63" x="496.5" y="464.8765">BUseCase1</text><line style="stroke: #808080; stroke-width: 1.5;" x1="449.5" x2="606.5" y1="473.2217" y2="473.2217"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="461.5" y="488.1846"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="461.5" y="502.2354"/><text fill="#008080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="461.5" y="502.2354">@Override</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="461.5" y="516.2861"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="461.5" y="516.2861">protected</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="531.5" y="516.2861">method1()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="461.5" y="530.3369"/><text fill="#008080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="461.5" y="544.3877">@Override</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="461.5" y="558.4385"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="461.5" y="558.4385">protected</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="531.5" y="558.4385">method2()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="461.5" y="572.4893"/><!--MD5=[1714e7fa70ac70262f7b1a8591178770]
+class BUseCase2--><rect fill="#FFFFFF" height="131.5771" id="BUseCase2" style="stroke: #808080; stroke-width: 1.5;" width="159" x="642.5" y="448"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="63" x="690.5" y="464.8765">BUseCase2</text><line style="stroke: #808080; stroke-width: 1.5;" x1="643.5" x2="800.5" y1="473.2217" y2="473.2217"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="655.5" y="488.1846"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="655.5" y="502.2354"/><text fill="#008080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="655.5" y="502.2354">@Override</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="655.5" y="516.2861"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="655.5" y="516.2861">protected</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="725.5" y="516.2861">method1()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="655.5" y="530.3369"/><text fill="#008080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="655.5" y="544.3877">@Override</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="655.5" y="558.4385"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="655.5" y="558.4385">protected</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="725.5" y="558.4385">method2()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="655.5" y="572.4893"/><path d="M328,8 L328,132.4609 L514,132.4609 L514,18 L504,8 L328,8 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M504,8 L504,18 L514,18 L504,8 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#008080" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="161" x="338" y="26.4951">// For each abstract method</text><text fill="#008080" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="157" x="338" y="42.8467">// and each class hierarchy</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="338" y="59.1982"/><text fill="#800000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="37" x="338" y="75.5498">switch</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="67" x="379" y="75.5498">(useCase) {</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="28" x="338" y="91.9014">case</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="370" y="91.9014"/><text fill="#0000CD" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="25" x="370" y="91.9014">UC1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="20" x="395" y="91.9014">: ...</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="28" x="338" y="108.2529">case</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="370" y="108.2529"/><text fill="#0000CD" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="25" x="370" y="108.2529">UC2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="20" x="395" y="108.2529">: ...</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="4" x="338" y="124.6045">}</text><!--MD5=[4df6b5ed90c4dd86ab3485face3504d7]
+reverse link AParent to AUseCase1--><path d="M224.65,392.2 C207.94,411.13 190.9,430.43 175.48,447.9 " fill="none" id="AParent&lt;-AUseCase1" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="none" points="219.46,387.51,237.94,377.15,229.95,396.77,219.46,387.51" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[8a8a798beb6dc16de08b8bef0d6df1cf]
+reverse link AParent to AUseCase2--><path d="M312.94,408.5 C312.82,421.98 312.7,435.33 312.59,447.75 " fill="none" id="AParent&lt;-AUseCase2" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="none" points="305.95,407.99,313.13,388.05,319.95,408.11,305.95,407.99" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[d683d7d615ec3efbdd5e38e995399462]
+link AParent to BParent--><path d="M390.19,290 C408.37,290 426.56,290 444.74,290 " fill="none" id="AParent-&gt;BParent" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="449.87,290,440.87,286,444.87,290,440.87,294,449.87,290" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[a7f66d22a7ad380e6d5a1ef8b594a94c]
+reverse link BParent to BUseCase1--><path d="M527.06,408.5 C527.18,421.98 527.3,435.33 527.41,447.75 " fill="none" id="BParent&lt;-BUseCase1" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="none" points="520.05,408.11,526.87,388.05,534.05,407.99,520.05,408.11" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[5ea2d8b89978bbe2d89bd8a9845094b2]
+reverse link BParent to BUseCase2--><path d="M615.35,392.2 C632.06,411.13 649.1,430.43 664.52,447.9 " fill="none" id="BParent&lt;-BUseCase2" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="none" points="610.05,396.77,602.06,377.15,620.54,387.51,610.05,396.77" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[01c1074e0207da107cc0afc8f83393e8]
+link Note1 to AParent--><path d="M391.05,132.02 C381.96,150.53 371.74,171.36 361.79,191.64 " fill="none" id="Note1-AParent" style="stroke: #808080; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><!--MD5=[012af0480b1a473162b5a5561c8a2ca0]
+link Note1 to BParent--><path d="M450.39,132.02 C459.31,150.53 469.34,171.36 479.1,191.64 " fill="none" id="Note1-BParent" style="stroke: #808080; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><!--MD5=[4fd2f500c4dddb4db5682fd8247ce099]
+@startuml
+
+skinparam shadowing false
+
+
+hide empty members
+hide fields
+
+hide circle
+
+
+skinparam package {
+style rectangle
+backgroundColor snow
+borderColor lightgray
+borderThickness 1
+fontSize 12
+}
+
+skinparam arrow {
+
+color gray
+}
+
+skinparam class {
+
+borderColor gray
+backgroundColor white
+
+fontSize 13
+fontName Consolas
+
+attributeFontSize 12
+attributeFontName Consolas
+
+stereotypeFontSize 12
+stereotypeFontColor gray
+stereotypeFontStyle normal
+stereotypeFontName Consolas
+}
+
+
+package {
+
+class AParent {
+\n common() {\n     method1();\n     method2(); \n }\n
+..
+
+<font color=maroon> abstract</font> method1()
+
+<font color=maroon> abstract</font> method2() \n
+}
+
+class AUseCase1 extends AParent {
+
+\n <font color=teal>@Override</font>\n <font color=maroon>protected</font> method1()
+
+<font color=teal> @Override</font>\n <font color=maroon>protected</font> method2() \n
+
+}
+
+class AUseCase2 extends AParent {
+
+\n <font color=teal>@Override</font>\n <font color=maroon>protected</font> method1()
+
+<font color=teal> @Override</font>\n <font color=maroon>protected</font> method2() \n
+
+}
+}
+
+package {
+
+class BParent {
+\n common() {\n     method1();\n     method2(); \n }\n
+..
+
+<font color=maroon> abstract</font> method1()
+
+<font color=maroon> abstract</font> method2() \n
+}
+AParent -> BParent
+
+class BUseCase1 extends BParent {
+
+\n <font color=teal>@Override</font>\n <font color=maroon>protected</font> method1()
+
+<font color=teal> @Override</font>\n <font color=maroon>protected</font> method2() \n
+
+}
+
+class BUseCase2 extends BParent {
+
+\n <font color=teal>@Override</font>\n <font color=maroon>protected</font> method1()
+
+<font color=teal> @Override</font>\n <font color=maroon>protected</font> method2() \n
+
+}
+}
+
+note as Note1
+<font color=teal> // For each abstract method</font>
+<font color=teal> // and each class hierarchy</font>
+
+<font color=maroon> switch</font> (useCase) {
+<font color=black> case</font> <font color=mediumblue>UC1</font>: ...
+<font color=black> case</font> <font color=mediumblue>UC2</font>: ...
+<font color=black> }
+end note
+Note1 .. AParent
+Note1 .. BParent
+
+@enduml
+
+PlantUML version 1.2019.11(Sun Sep 22 12:02:15 CEST 2019)
+(EPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11+28
+Operating System: Windows 10
+Default Encoding: Cp1250
+Language: hu
+Country: HU
+--></g></svg>

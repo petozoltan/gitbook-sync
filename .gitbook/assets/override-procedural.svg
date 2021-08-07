@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="364px" preserveAspectRatio="none" style="width:197px;height:364px;" version="1.1" viewBox="0 0 197 364" width="197px" zoomAndPan="magnify"><defs/><g><!--MD5=[db8947410cfcb5febdf8f8cf27669db4]
+class Class1--><rect fill="#FFFFFF" height="167.6787" id="Class1" style="stroke: #808080; stroke-width: 1.5;" width="152" x="20" y="8"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="75" y="24.8765">Class1</text><line style="stroke: #808080; stroke-width: 1.5;" x1="21" x2="171" y1="33.2217" y2="33.2217"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="33" y="48.1846"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="line-through" textLength="98" x="33" y="62.2354">procedure1() {</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="line-through" textLength="98" x="61" y="76.2861">doSomething();</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="line-through" textLength="7" x="33" y="90.3369">}</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="33" y="104.3877"/><line style="stroke: #808080; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="21" x2="171" y1="111.4756" y2="111.4756"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="33" y="126.4385"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="98" x="33" y="140.4893">procedure2() {</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="7" x="33" y="154.54">}</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="33" y="168.5908"/><!--MD5=[097cec2c4502543b4bc821e1e2f7ea8d]
+class Class2--><rect fill="#FFFFFF" height="117.5264" id="Class2" style="stroke: #808080; stroke-width: 1.5;" width="180" x="6" y="236"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="75" y="252.8765">Class2</text><line style="stroke: #808080; stroke-width: 1.5;" x1="7" x2="185" y1="261.2217" y2="261.2217"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="19" y="276.1846"/><text fill="#008080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="19" y="290.2354">@Override</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="98" x="19" y="304.2861">procedure1() {</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="126" x="47" y="318.3369">doSomethingElse();</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="7" x="19" y="332.3877">}</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="19" y="346.4385"/><!--MD5=[f1a75de57d453dbc6e2094e1a0ac9d41]
+reverse link Class1 to Class2--><path d="M96,196.65 C96,210.16 96,223.6 96,235.98 " fill="none" id="Class1&lt;-Class2" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="none" points="89,196.21,96,176.21,103,196.21,89,196.21" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[71828f3694b7f8a7aab38f2b24bda812]
+@startuml
+
+skinparam shadowing false
+
+
+hide empty members
+
+hide circle
+
+
+
+skinparam package {
+style rectangle
+borderColor gray
+fontSize 12
+}
+
+skinparam arrow {
+
+color gray
+}
+
+skinparam class {
+
+borderColor gray
+backgroundColor white
+
+fontSize 13
+fontName Consolas
+
+attributeFontSize 12
+attributeFontName Consolas
+
+stereotypeFontSize 11
+}
+
+
+class Class1 {
+
+<strike><font color=black> procedure1() {\n<strike>     doSomething(); \n<strike> }\n
+..
+
+<font color=black> procedure2() {\n }
+
+}
+
+class Class2 extends Class1 {
+
+\n<font color=teal> @Override\n procedure1() {\n     doSomethingElse(); \n }\n
+
+}
+
+@enduml
+
+PlantUML version 1.2019.11(Sun Sep 22 12:02:15 CEST 2019)
+(EPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11+28
+Operating System: Windows 10
+Default Encoding: Cp1250
+Language: hu
+Country: HU
+--></g></svg>
