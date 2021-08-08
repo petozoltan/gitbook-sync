@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="532px" preserveAspectRatio="none" style="width:493px;height:532px;" version="1.1" viewBox="0 0 493 532" width="493px" zoomAndPan="magnify"><defs/><g><!--MD5=[c49bdb31c5fc6b64c9c8104f86238732]
+cluster Old--><rect fill="#FFFFFF" height="341" style="stroke: #D3D3D3; stroke-width: 1.0;" width="255" x="30" y="32"/><text fill="#808080" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="19" x="148" y="46.457">Old</text><!--MD5=[8d9cd88d360df850fc79225cf21ddc6a]
+cluster New--><rect fill="#FFFFFF" height="300" style="stroke: #D3D3D3; stroke-width: 1.0;" width="157" x="325" y="221"/><text fill="#808080" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="25" x="391" y="235.457">New</text><!--MD5=[feeb3262d335f05b388eae9c23d21414]
+class Data1--><rect fill="#FFFFFF" height="75.374" id="Data1" style="stroke: #000000; stroke-width: 1.0;" width="82" x="107" y="74"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="35" x="130.5" y="90.8765">Data1</text><line style="stroke: #000000; stroke-width: 1.0;" x1="108" x2="188" y1="99.2217" y2="99.2217"/><text fill="#0000FF" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="113" y="114.1846">attribute1</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="113" y="128.2354">attribute2</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="113" y="142.2861">attribute3</text><!--MD5=[597e214bdb15349656296bf90a6cedfd]
+class Data2--><rect fill="#FFFFFF" height="75.374" id="Data2" style="stroke: #000000; stroke-width: 1.0;" width="82" x="54" y="274"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="35" x="77.5" y="290.8765">Data2</text><line style="stroke: #000000; stroke-width: 1.0;" x1="55" x2="135" y1="299.2217" y2="299.2217"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="60" y="314.1846">attribute4</text><text fill="#0000FF" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="60" y="328.2354">attribute5</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="60" y="342.2861">attribute6</text><!--MD5=[a39f7c4bb6e2f3bf2d5f8505dd0686d5]
+class Data3--><rect fill="#FFFFFF" height="75.374" id="Data3" style="stroke: #000000; stroke-width: 1.0;" width="82" x="171" y="274"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="35" x="194.5" y="290.8765">Data3</text><line style="stroke: #000000; stroke-width: 1.0;" x1="172" x2="252" y1="299.2217" y2="299.2217"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="177" y="314.1846">attribute7</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="177" y="328.2354">attribute8</text><text fill="#0000FF" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="177" y="342.2861">attribute9</text><!--MD5=[ba7780f740d7c0c387e4ded0c6bf40d4]
+class Data4--><rect fill="#FFFFFF" height="97.4248" id="Data4" style="stroke: #000000; stroke-width: 1.0;" width="89" x="368.5" y="263"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="35" x="395.5" y="279.8765">Data4</text><line style="stroke: #000000; stroke-width: 1.5;" x1="369.5" x2="456.5" y1="288.2217" y2="288.2217"/><text fill="#0000FF" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="374.5" y="303.1846">attribute1</text><text fill="#0000FF" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="374.5" y="317.2354">attribute5</text><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="369.5" x2="456.5" y1="324.3232" y2="324.3232"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="77" x="374.5" y="339.2861">attribute10</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="77" x="374.5" y="353.3369">attribute11</text><!--MD5=[c1d25d83b63a90787714d0bda7129495]
+class Data5--><rect fill="#FFFFFF" height="69.3232" id="Data5" style="stroke: #000000; stroke-width: 1.0;" width="89" x="368.5" y="428"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="35" x="395.5" y="444.8765">Data5</text><line style="stroke: #000000; stroke-width: 1.5;" x1="369.5" x2="456.5" y1="453.2217" y2="453.2217"/><text fill="#0000FF" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="374.5" y="468.1846">attribute9</text><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="369.5" x2="456.5" y1="475.2725" y2="475.2725"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="77" x="374.5" y="490.2354">attribute12</text><!--MD5=[e0945a475dbee7358d930c55ac441566]
+link Data1 to Data2--><path d="M138.16,149.28 C128.64,184.84 114.29,238.42 104.79,273.92 " fill="none" id="Data1-Data2" style="stroke: #D3D3D3; stroke-width: 1.0;"/><!--MD5=[4da29981a334082fbd98bbae579b34d3]
+link Data1 to Data3--><path d="M159.89,149.28 C171.38,184.84 188.7,238.42 200.18,273.92 " fill="none" id="Data1-Data3" style="stroke: #D3D3D3; stroke-width: 1.0;"/><!--MD5=[b724cac66039ef415e67a8d67c5c421f]
+link Data4 to Data5--><path d="M413,360.05 C413,382.03 413,407.62 413,427.59 " fill="none" id="Data4-Data5" style="stroke: #D3D3D3; stroke-width: 1.0;"/><!--MD5=[e0d776d3c049baea377b25442ebd8442]
+link Old to New--><path d="M285.0643,141.0127 C285.1414,141.2853 285.2189,141.5594 285.2968,141.8349 C285.6085,142.9371 285.9269,144.0625 286.2514,145.21 C291.4441,163.5694 298.2281,187.555 305.0113,211.5375 C311.7944,235.52 318.5766,259.4994 323.7655,277.8463 C324.0898,278.9929 324.4079,280.1176 324.7193,281.2189 C324.7972,281.4942 324.8747,281.7681 324.9517,282.0405 " fill="none" id="Old-&gt;New" style="stroke: #D3D3D3; stroke-width: 1.0;"/><polygon fill="#D3D3D3" points="324.9517,282.0405,326.3514,272.2916,323.591,277.2292,318.6534,274.4688,324.9517,282.0405" style="stroke: #D3D3D3; stroke-width: 1.0;"/><text fill="#808080" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="30" x="301" y="193.4951">Copy</text><!--MD5=[7ae101919cb8be360d8c2575dfece97a]
+@startuml
+
+skinparam shadowing false
+
+
+hide empty members
+
+hide circle
+
+
+skinparam package {
+style rectangle
+borderColor lightgray
+fontSize 12
+fontStyle normal
+fontColor gray
+borderThickness 1
+}
+
+skinparam arrow {
+color lightgray
+fontColor gray
+thickness 1
+}
+
+skinparam class {
+
+borderColor black
+borderThickness 1
+backgroundColor white
+
+fontSize 13
+fontName Consolas
+
+attributeFontSize 12
+attributeFontName Consolas
+
+stereotypeFontSize 11
+}
+
+
+
+package Old {
+
+class Data1 {
+<font color=blue>attribute1
+attribute2
+attribute3
+}
+
+class Data2 {
+attribute4
+<font color=blue>attribute5
+attribute6
+}
+
+class Data3 {
+attribute7
+attribute8
+<font color=blue>attribute9
+}
+
+Data1 - - Data2
+Data1 - - Data3
+}
+
+package New {
+
+class Data4 {
+<font color=blue>attribute1
+<font color=blue>attribute5
+..
+attribute10
+attribute11
+}
+
+class Data5 {
+<font color=blue>attribute9
+..
+attribute12
+}
+
+Data4 - - Data5
+}
+
+Old - -> New : Copy
+
+@enduml
+
+PlantUML version 1.2019.11(Sun Sep 22 12:02:15 CEST 2019)
+(EPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11+28
+Operating System: Windows 10
+Default Encoding: Cp1250
+Language: hu
+Country: HU
+--></g></svg>

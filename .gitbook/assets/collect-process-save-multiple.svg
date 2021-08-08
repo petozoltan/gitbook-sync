@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="259px" preserveAspectRatio="none" style="width:528px;height:259px;" version="1.1" viewBox="0 0 528 259" width="528px" zoomAndPan="magnify"><defs/><g><!--MD5=[fa1e3283224feb76407c84b7e90ed808]
+entity Database--><path d="M243.5,211 C243.5,201 284,201 284,201 C284,201 324.5,201 324.5,211 L324.5,237.6094 C324.5,247.6094 284,247.6094 284,247.6094 C284,247.6094 243.5,247.6094 243.5,237.6094 L243.5,211 " fill="#FFFFFF" style="stroke: #000000; stroke-width: 1.5;"/><path d="M243.5,211 C243.5,221 284,221 284,221 C284,221 324.5,221 324.5,211 " fill="none" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="61" x="253.5" y="239.5332">Database</text><!--MD5=[28c97356750b1163c67b08a9ca82f696]
+entity ##4114--><!--MD5=[41cafcece87fd793f37aac71221d8904]
+entity ##4116--><!--MD5=[50d96c22713d424af63edc7074a10a5c]
+class Collector--><rect fill="#FFFFFF" height="25.2217" id="Collector" style="stroke: #000000; stroke-width: 1.0;" width="69" x="38.5" y="113"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="63" x="41.5" y="129.8765">Collector</text><!--MD5=[9f4a3a4bd076ac9d6abf5b3b758b1697]
+class Processor1--><rect fill="#FFFFFF" height="25.2217" id="Processor1" style="stroke: #000000; stroke-width: 1.0;" width="76" x="143" y="113"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="70" x="146" y="129.8765">Processor1</text><!--MD5=[a1a430e0d06de899a4821b06908065c9]
+class Processor2--><rect fill="#FFFFFF" height="25.2217" id="Processor2" style="stroke: #000000; stroke-width: 1.0;" width="76" x="254" y="113"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="70" x="257" y="129.8765">Processor2</text><!--MD5=[2a6a6f74ca8c4379c7ad76868bb4865f]
+class Processor3--><rect fill="#FFFFFF" height="25.2217" id="Processor3" style="stroke: #000000; stroke-width: 1.0;" width="76" x="365" y="113"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="70" x="368" y="129.8765">Processor3</text><!--MD5=[cc49983436721720d7cc613b96f91f3f]
+class Saver--><rect fill="#FFFFFF" height="25.2217" id="Saver" style="stroke: #000000; stroke-width: 1.0;" width="41" x="476.5" y="113"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="35" x="479.5" y="129.8765">Saver</text><!--MD5=[82c53a10f238a1092cf5f0b044477708]
+class Feature--><rect fill="#FFFFFF" height="25.2217" id="Feature" style="stroke: #000000; stroke-width: 1.0;" width="55" x="264.5" y="8"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="49" x="267.5" y="24.8765">Feature</text><!--MD5=[b9f73b3a84eb4f6dec4a3a20d5a11554]
+link Collector to Processor1--><!--MD5=[ac4aa2b88227a55e929915b992aa0d13]
+link Processor1 to Processor2--><!--MD5=[fd8857e8bc07a6e4f72b818b448d87d6]
+link Processor2 to Processor3--><!--MD5=[a4e857d4c4e20e87406f173c8de4784d]
+link Processor3 to Saver--><!--MD5=[b495d7dc6ad2267567be41ba8fc8ddf5]
+reverse link Feature to Collector--><path d="M259.37,32.33 C225.02,44.28 169.8,65.01 125,89 C112.09,95.91 98.44,105.32 88.38,112.71 " fill="none" id="Feature&lt;-Collector" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="264.29,30.64,254.4772,29.7979,259.564,32.2726,257.0894,37.3594,264.29,30.64" style="stroke: #808080; stroke-width: 1.0;"/><text fill="#808080" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="11" x="184" y="77.4951">1.</text><!--MD5=[e7dd21a53b12e04bc43dca81822903d5]
+link Feature to Processor1--><path d="M275.57,36.75 C254.53,56.27 218.3,89.89 197.32,109.36 " fill="none" id="Feature-Processor1" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="193.58,112.82,202.895,109.6215,197.2419,109.4156,197.4479,103.7624,193.58,112.82" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="279.27,33.32,269.9488,36.5004,275.6015,36.7173,275.3845,42.37,279.27,33.32" style="stroke: #808080; stroke-width: 1.0;"/><text fill="#808080" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="11" x="256" y="77.4951">2.</text><!--MD5=[645ee904ded49a8eb40c86a30eeace97]
+link Feature to Processor2--><path d="M292,38.32 C292,57.49 292,88.63 292,107.76 " fill="none" id="Feature-Processor2" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="292,112.82,296,103.82,292,107.82,288,103.82,292,112.82" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="292,33.32,288,42.32,292,38.32,296,42.32,292,33.32" style="stroke: #808080; stroke-width: 1.0;"/><text fill="#808080" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="11" x="301" y="77.4951">3.</text><!--MD5=[7d552276f8cfbe8cdaa99775899ab685]
+link Feature to Processor3--><path d="M308.43,36.75 C329.47,56.27 365.7,89.89 386.68,109.36 " fill="none" id="Feature-Processor3" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="390.42,112.82,386.5521,103.7624,386.7581,109.4156,381.105,109.6215,390.42,112.82" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="304.73,33.32,308.6155,42.37,308.3985,36.7173,314.0512,36.5004,304.73,33.32" style="stroke: #808080; stroke-width: 1.0;"/><text fill="#808080" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="11" x="363" y="77.4951">4.</text><!--MD5=[689a497acbd83310bacafbb4ffeb5e4a]
+link Feature to Saver--><path d="M319.79,29.28 C354.2,39.67 413.78,60.16 459,89 C467.73,94.57 476.27,102.28 483.04,109.09 " fill="none" id="Feature-&gt;Saver" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="486.6,112.76,483.2132,103.5118,483.1219,109.1679,477.4658,109.0767,486.6,112.76" style="stroke: #808080; stroke-width: 1.0;"/><text fill="#808080" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="11" x="447" y="77.4951">5.</text><!--MD5=[52f7157180bfafd81621e40915b12e68]
+link Saver to Database--><path d="M487.01,138.06 C479.87,145.73 469.66,155.54 459,162 C418.27,186.67 366.21,203.36 329.5,213.06 " fill="none" id="Saver-&gt;Database" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="324.65,214.32,334.3719,215.8964,329.4852,213.0468,332.3348,208.1601,324.65,214.32" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[4b35c14de6b7cd0a92d653c995ead549]
+reverse link Collector to Database--><path d="M92.1,141.1 C101.66,147.99 113.59,156 125,162 C163.64,182.32 210.54,199.64 243.35,210.67 " fill="none" id="Collector&lt;-Database" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="87.89,138.03,92.8124,146.5606,91.9324,140.9726,97.5204,140.0926,87.89,138.03" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[98339a70e3b1e6bd4ff5f9e540ebf1a9]
+@startuml
+
+skinparam shadowing false
+
+
+hide empty members
+
+hide circle
+
+
+skinparam package {
+style rectangle
+borderColor gray
+fontSize 12
+borderThickness 1
+}
+
+skinparam arrow {
+color gray
+fontColor gray
+thickness 1
+}
+
+skinparam class {
+
+borderColor black
+borderThickness 1
+backgroundColor white
+
+fontSize 13
+fontName Consolas
+
+attributeFontSize 12
+attributeFontName Consolas
+
+stereotypeFontSize 11
+}
+
+
+
+package Database <<Database>> {
+}
+
+together {
+}
+
+together {
+}
+
+together {
+Collector  -[hidden] Processor1
+Processor1 -[hidden] Processor2
+Processor2 -[hidden] Processor3
+Processor3 -[hidden] Saver
+}
+
+Feature   <- -  Collector  : " 1."
+Feature   <- -> Processor1 : "  2."
+Feature   <- -> Processor2 : "  3."
+Feature   <- -> Processor3 : "  4."
+Feature   - ->  Saver      : " 5."
+Saver     - ->  Database
+Collector <- -  Database
+
+@enduml
+
+PlantUML version 1.2019.11(Sun Sep 22 12:02:15 CEST 2019)
+(EPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11+28
+Operating System: Windows 10
+Default Encoding: Cp1250
+Language: hu
+Country: HU
+--></g></svg>
