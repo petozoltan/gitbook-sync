@@ -26,6 +26,8 @@ Sentences like 'my code is not clear'—i.e. it is not clear what it does—woul
 
 Another reason why the program will be hard to read is that it appears in the programmers' minds as _code_. It's a synonym for _cipher_, a text that is _encrypted_.
 
+### Code
+
 Let's have a look at some real code:
 
 {% tabs %}
@@ -74,7 +76,13 @@ HAVENORM        ABVAL   SIGN
 {% endtab %}
 {% endtabs %}
 
-But the programming languages we use today are so-called [high-level languages](https://en.wikipedia.org/wiki/High-level_programming_language), that aim the readability by humans. According to the [Clean Code book](overviews/clean-code-outline/), the program should be readable like English prose. We ensure this by assigning and using _names_ of types, variables, and procedures.
+### Language
+
+But the programming languages we use today are so-called [high-level languages](https://en.wikipedia.org/wiki/High-level_programming_language), that aim for readability by humans. According to the [Clean Code book](overviews/clean-code-outline/), the program should be readable like English prose. We ensure this by assigning and using _names_ of types, variables, and procedures.
+
+> It's much easier for most people to write an English statement than it is to use symbols. So I decided data processors ought to be able to write their programs in English, and the computers would translate them into machine code. I could say 'Subtract income tax from pay' instead of trying to write that in octal code or using all kinds of symbols. 
+>
+> [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper), inventor of compiler, COBOL, software standards, shared libraries, computer networks.
 
 Here is an open-source example of the readable high-level language Java:
 
@@ -94,6 +102,8 @@ public static boolean isTranslucencySupported(Translucency translucencyKind) {
     return false;
 }
 ```
+
+### Translation
 
 I suggest not to think of the program as a code, but rather as a _translation_ of the specification into the programming language. To be more precise, it is a translation into a _pseudo-language_, where the keywords of this language are the _names_ we have given.
 
