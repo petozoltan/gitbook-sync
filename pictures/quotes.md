@@ -4,6 +4,8 @@ description: 2021.05.18
 
 # Quotes
 
+![](../.gitbook/assets/quote-the-most-damaging-phrase-in-the-language-is-it-s-always-been-done-that-way-grace-hopper-55-38-84.jpg)
+
 ![](../.gitbook/assets/quote-i-m-not-a-great-programmer-i-m-just-a-good-programmer-with-great-habits-kent-beck-65-55-37.jpg)
 
 ![](../.gitbook/assets/quote-sometimes-the-problem-has-to-mature-before-the-solution-can-mature-kent-beck-88-27-84.jpg)
