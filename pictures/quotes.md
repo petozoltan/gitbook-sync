@@ -4,6 +4,8 @@ description: 2021.05.18
 
 # Quotes
 
+![](../.gitbook/assets/hamilton-fear.jpg)
+
 ![](../.gitbook/assets/quote-the-most-damaging-phrase-in-the-language-is-it-s-always-been-done-that-way-grace-hopper-55-38-84.jpg)
 
 ![](../.gitbook/assets/quote-i-m-not-a-great-programmer-i-m-just-a-good-programmer-with-great-habits-kent-beck-65-55-37.jpg)
