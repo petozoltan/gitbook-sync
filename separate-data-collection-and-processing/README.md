@@ -18,7 +18,7 @@ Now let's take look at how we write our programs today. Every arrow on the image
 
 Can you find the little machine in this image? No, you cannot, because it is not there. On the UML image, it should look like this—with only one arrow:
 
-![](../.gitbook/assets/function.png) 
+![](../.gitbook/assets/function.png)
 
 Why is it a problem? What's wrong with our code above? There are more issues:
 
@@ -54,15 +54,15 @@ To fix the architecture, we should clearly separate the two steps:
 
 {% tabs %}
 {% tab title="Simple" %}
-![](../.gitbook/assets/collect-process-save-simple.svg) 
+![](../.gitbook/assets/collect-process-save-simple.png)
 {% endtab %}
 
 {% tab title="Sub-steps" %}
-![](../.gitbook/assets/collect-process-save-extended.svg)
+![](../.gitbook/assets/collect-process-save-extended.png)
 {% endtab %}
 
 {% tab title="Multiple" %}
-![](../.gitbook/assets/collect-process-save-multiple.svg)
+![](../.gitbook/assets/collect-process-save-multiple.png)
 {% endtab %}
 {% endtabs %}
 
