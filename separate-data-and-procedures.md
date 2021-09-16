@@ -15,7 +15,7 @@ So a class contains:
 * member variables - I call them now 'data'
 * member functions - I call them procedures
 
-![](.gitbook/assets/class.svg)
+![](.gitbook/assets/class.png)
 
 But was it really a good idea?
 
