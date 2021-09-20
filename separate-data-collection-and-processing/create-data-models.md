@@ -90,7 +90,75 @@ Copying...
 
 The best would be to make all data immutable, but it is quite cumbersome. Luckily, the immutable _records_ have been added to Java 14/17. They are designed exactly for this purpose.
 
-### Put Together What Belongs Together / Avoid Maps
+### Put Together What Belongs Together
+
+When collecting the data that should be processed do not simply create collections. If those collections contain data related to each-other than create a DTO that holds them together.
+
+Let's say every A has a B and multiple C-s.
+
+{% tabs %}
+{% tab title="Don\'t" %}
+```java
+Collection<A> as;
+Collection<B> bs;
+Collection<C> cs;
+```
+{% endtab %}
+
+{% tab title="Do" %}
+```java
+class ADto {
+    A a;
+    B b;              // b  belonging to a
+    Collection<C> cs; // cs belonging to a
+}
+
+Collection<ADto> as;
+```
+{% endtab %}
+{% endtabs %}
+
+#### Avoid Maps
+
+The same goes for Maps.
+
+Maps are inherently _unfinished_ data structures. Despite having all objects mapped to their keys, the processing code must complete the mapping by getting and object by the key. And if we need the mapped object in multiple code parts then it must do the same mapping again and again, which is code repetition.
+
+{% tabs %}
+{% tab title="Don\'t" %}
+```java
+Collection<A> as;
+Map<A, B> bs;
+
+void process1(A a, Map<A, B> bs) {
+    B b = bs.get(a);
+} 
+
+void process2(A a, Map<A, B> bs) {
+    B b = bs.get(a);
+} 
+```
+{% endtab %}
+
+{% tab title="Do" %}
+```java
+class ADto {
+    A a;
+    B b; // b belonging to a
+}
+
+Collection<ADto> as;
+
+void process1(A a) {
+    B b = a.getB();
+} 
+
+void process2(A a) {
+    B b = a.getB();
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ### Advantage In Testing
 
