@@ -13,7 +13,7 @@ We used to design the overall data model of the application, i.e. the entities i
 
 For this, we should create _data transfer objects_. These are data classes that only carry data and do not contain procedures implementing business logic.
 
-Here we benefit from the method that we [separate procedural and data classes](../separate-data-and-procedures.md). See more in that chapter.
+Here we benefit from the method that we [separate procedural and data classes](separate-data-and-procedures.md). See more in that chapter.
 
 ### Data Model
 
@@ -33,11 +33,11 @@ I would simply call it _embedding_ a data structure into another one.
 
 {% tabs %}
 {% tab title="Don\'t" %}
-![](../.gitbook/assets/dto-copy.png)
+![](.gitbook/assets/dto-copy.png)
 {% endtab %}
 
 {% tab title="Do" %}
-![](../.gitbook/assets/dto-embed.png)
+![](.gitbook/assets/dto-embed.png)
 {% endtab %}
 {% endtabs %}
 
@@ -58,11 +58,11 @@ Alternatively, if we declare the first data structure already for the new, exten
 
 {% tabs %}
 {% tab title="Don\'t" %}
-![](../.gitbook/assets/dto-inherit.png)
+![](.gitbook/assets/dto-inherit.png)
 {% endtab %}
 {% endtabs %}
 
-We should not use inheritance in data objects anyway, as described in this chapter: [Do Not Use Inheritance, _Rules For Data Classes_](../do-not-use-inheritance.md#rules-for-data-classes).
+We should not use inheritance in data objects anyway, as described in this chapter: [Do Not Use Inheritance, _Rules For Data Classes_](do-not-use-inheritance.md#rules-for-data-classes).
 
 #### Embed Entities
 
@@ -72,7 +72,7 @@ It is recommended that they are detached from the database, in the terms of Hibe
 
 ### Treat Data As Immutable
 
-This has key importance to solve the problem that is described in [Separate Data Collection And Processing](./). We want to clearly separate the writing and the reading of all data to make our code clean.
+This has key importance to solve the problem that is described in [Separate Data Collection And Processing](separate-data-collection-and-processing.md). We want to clearly separate the writing and the reading of all data to make our code clean.
 
 Actually, the data should be immutable, so that it cannot be modified during the processing. When the processing generates more data, then it should be stored into other data objects, designed for the output.
 
@@ -80,7 +80,7 @@ Create all data once, via constructors—and factory methods—and don't change 
 
 {% tabs %}
 {% tab title="Don\'t" %}
-![](../.gitbook/assets/dto-modify.png)
+![](.gitbook/assets/dto-modify.png)
 {% endtab %}
 {% endtabs %}
 
@@ -164,5 +164,5 @@ void process2(A a) {
 
 ### Too Many DTOs?
 
-![](../.gitbook/assets/quote-smart-data-structures-and-dumb-code-works-a-lot-better-than-the-other-way-around-eric-s-raymond-63-60-65.jpg)
+![](.gitbook/assets/quote-smart-data-structures-and-dumb-code-works-a-lot-better-than-the-other-way-around-eric-s-raymond-63-60-65.jpg)
 

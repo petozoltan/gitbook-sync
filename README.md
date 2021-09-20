@@ -2,8 +2,8 @@
 
 ### 2021
 
-* [Create Data Models](separate-data-collection-and-processing/create-data-models.md)
-* [Separate Data Collection And Processing](separate-data-collection-and-processing/)
+* [Create Data Models](create-data-models.md)
+* [Separate Data Collection And Processing](separate-data-collection-and-processing.md)
 * [Software Killers](software-killers.md)
 * [Separate Data And Procedures](separate-data-and-procedures.md)
 * [Example: Separate Use Cases](separate-use-cases/example-separate-use-cases.md)

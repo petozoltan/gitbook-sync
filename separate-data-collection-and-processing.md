@@ -1,5 +1,5 @@
 ---
-description: 2021.08.07
+description: 2021.08.08
 ---
 
 # Separate Data Collection And Processing
@@ -10,7 +10,7 @@ Do you remember this little numerical "machine" from the ground school?
 
 It shows the kids an operation, like multiplying numbers by 2. It is actually a _function_ with input and output values, and it seems to be a basic element of programming too.
 
-## The Problems With the Architecture
+## Problems With the Architecture
 
 Now let's take look at how we write our programs today. Every arrow on the image is a data flow between the components:
 
@@ -18,7 +18,7 @@ Now let's take look at how we write our programs today. Every arrow on the image
 
 Can you find the little machine in this image? No, you cannot, because it is not there. On the UML image, it should look like this—with only one arrow:
 
-![](.gitbook/assets/function.png) 
+![](.gitbook/assets/function.png)
 
 Why is it a problem? What's wrong with our code above? There are more issues:
 
@@ -54,31 +54,34 @@ To fix the architecture, we should clearly separate the two steps:
 
 {% tabs %}
 {% tab title="Simple" %}
-![](.gitbook/assets/collect-process-save-simple.svg) 
+![](.gitbook/assets/collect-process-save-simple.png)
 {% endtab %}
 
-{% tab title="More classes" %}
-![](.gitbook/assets/collect-process-save-extended.svg)
+{% tab title="Sub-steps" %}
+![](.gitbook/assets/collect-process-save-extended.png)
+{% endtab %}
+
+{% tab title="Multiple" %}
+![](.gitbook/assets/collect-process-save-multiple.png)
 {% endtab %}
 {% endtabs %}
 
-## Create Data Objects
+Of course, each part may consist of more steps, i.e. more classes. In this case, the classes should be designed as a function, with clear input and output. See the _Sub-steps_ image.
 
-Actually, the data should be immutable, so that it cannot be modified during the processing. When the processing generates more data, then it should be stored into other data objects, designed for the output.
+In other situations, there may be more big steps of processing, where the output of one step is the input of the next step. In other words, we can have more processors. They should be implemented as functions too. See the _Multiple_ image.
 
-#### Use Composition Instead of Inheritance
+#### Separate Write And Read Phases
 
-If some data are already collected, then they can be added to larger data structures without any change.
+The separation of the collection and the processing aims also the separation when the data is written and when it is _only_ read:
 
-You can even embed database entities, which are already detached from the database. \(In the terms of Hibernate.\)
+* Collection: Write-only
+* Processing: Read-only
 
-#### Treat Data As Immutable
+Of course, the processing step will create its own output data, and that is in the write-only phase in the processor.
 
-Create all data once, via constructors—and factory methods—and don't change them after that.
+## Create Data Structures
 
-The best would be to make all data immutable, but it is quite cumbersome. Luckily, the immutable _records_ have been added to Java 14. They are designed exactly for this purpose.
+The next thing we need to do besides the separation is to design the input and output data structures for each step. For this, we should create _data transfer objects_ \(DTOs\).
 
-#### Avoid Maps
-
-![](.gitbook/assets/quote-smart-data-structures-and-dumb-code-works-a-lot-better-than-the-other-way-around-eric-s-raymond-63-60-65.jpg)
+See more in the next chapter, [how to create data structures](create-data-models.md).
 
