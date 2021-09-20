@@ -37,7 +37,7 @@ I would simply call it _embedding_ a data structure into another one.
 {% endtab %}
 
 {% tab title="Do" %}
-![](../.gitbook/assets/dto-embed.svg)
+![](../.gitbook/assets/dto-embed.png)
 {% endtab %}
 {% endtabs %}
 
@@ -58,7 +58,7 @@ Alternatively, if we declare the first data structure already for the new, exten
 
 {% tabs %}
 {% tab title="Don\'t" %}
-![](../.gitbook/assets/dto-inherit.svg) 
+![](../.gitbook/assets/dto-inherit.png)
 {% endtab %}
 {% endtabs %}
 
@@ -80,15 +80,15 @@ Create all data once, via constructors—and factory methods—and don't change 
 
 {% tabs %}
 {% tab title="Don\'t" %}
-![](../.gitbook/assets/dto-modify.svg) 
+![](../.gitbook/assets/dto-modify.png)
 {% endtab %}
 {% endtabs %}
 
-### From Java 14, Use Records
+### From Java 17 Use Records
 
 Copying...
 
-The best would be to make all data immutable, but it is quite cumbersome. Luckily, the immutable _records_ have been added to Java 14. They are designed exactly for this purpose.
+The best would be to make all data immutable, but it is quite cumbersome. Luckily, the immutable _records_ have been added to Java 14/17. They are designed exactly for this purpose.
 
 ### Put Together What Belongs Together / Avoid Maps
 
