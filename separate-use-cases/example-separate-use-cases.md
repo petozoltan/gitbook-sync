@@ -612,7 +612,7 @@ public class Calculator {
     public static void calculate(ValuePairs valuePairs) {
         BothCalculator.calculate(valuePairs.both);
         FirstCalculator.calculate(valuePairs.firsts);
-        UseCaseSecond.calculate(valuePairs.seconds);
+        SecondCalculator.calculate(valuePairs.seconds);
     }
 }
 
