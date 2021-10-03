@@ -4,6 +4,8 @@ description: 2021.08.08
 
 # Create Data Models
 
+### Design Input And Output Data
+
 We used to design the overall data model of the application, i.e. the entities in the database, which we refer to as a _domain model_. But since we have to implement independent features and components, we should do more:
 
 * Carefully design the data flow within every feature.
@@ -84,15 +86,25 @@ Create all data once, via constructors—and factory methods—and don't change 
 {% endtab %}
 {% endtabs %}
 
-### From Java 17 Use Records
+### Use Records
 
-Copying...
+In Java 16 the `record` keyword has been introduced. \(From Java 14 as a preview feature.\) Records implement everything, which is written above, and we don't even have to declare a class for them in the old way!  
 
-The best would be to make all data immutable, but it is quite cumbersome. Luckily, the immutable _records_ have been added to Java 14/17. They are designed exactly for this purpose.
+* Records can be created simply from instances of data objects or other records. No need for class declaration.
+* Accessors \('getters'\) will be automatically generated, and they do nothing else but returning a property value. They cannot be overridden either.
+* Records have no mutators \('setters'\) at all. If records are composed of other records then the result will be close to _read-only_.
+* The class does not support extension and inheritance, it is `final` too.
+
+Read more here, or find tutorials on the internet:
+
+* [Java 14 – Record data class](https://mkyong.com/java/java-14-record-data-class/)
+* [Java 14 – JEP 359: Records \(Preview\)](https://openjdk.java.net/jeps/359)
+* [Java 15 – JEP 384: Records \(Second Preview\)](https://openjdk.java.net/jeps/384)
+* [Java 16 – JEP 395: Records](https://openjdk.java.net/jeps/395)
 
 ### Put Together What Belongs Together
 
-When collecting the data that should be processed do not simply create collections. If those collections contain data related to each-other than create a DTO that holds them together.
+When collecting the data that should be processed do not simply create collections. If those collections contain data related to each other then create a DTO that holds them together.
 
 Let's say every A has a B and multiple C-s.
 
@@ -118,11 +130,13 @@ Collection<ADto> as;
 {% endtab %}
 {% endtabs %}
 
+In other words, you should _finish_ the preparation of the input data before the processing of the data.
+
 #### Avoid Maps
 
 The same goes for Maps.
 
-Maps are inherently _unfinished_ data structures. Despite having all objects mapped to their keys, the processing code must complete the mapping by getting and object by the key. And if we need the mapped object in multiple code parts then it must do the same mapping again and again, which is code repetition.
+Maps are inherently _unfinished_ data structures. Despite having all objects mapped to their keys, the processing code must complete the mapping by getting an object by the key. And if we need the mapped object in multiple code parts then it must do the same mapping again and again, which is code repetition.
 
 {% tabs %}
 {% tab title="Don\'t" %}
@@ -135,19 +149,32 @@ void process1(A a, Map<A, B> bs) {
 } 
 
 void process2(A a, Map<A, B> bs) {
-    B b = bs.get(a);
+    B b = bs.get(a); // code repetition
 } 
 ```
 {% endtab %}
 
 {% tab title="Do" %}
 ```java
+// Data model
+
 class ADto {
     A a;
     B b; // b belonging to a
 }
 
 Collection<ADto> as;
+
+// Data creation
+
+ADto createADto(A a, Map<A, B> bs) {
+    return new ADto {
+        a;
+        B b = bs.get(a); // do it only once
+    }
+}
+
+// Data processing
 
 void process1(A a) {
     B b = a.getB();
@@ -160,9 +187,55 @@ void process2(A a) {
 {% endtab %}
 {% endtabs %}
 
+### Use Factories
+
+If certain data can be created in different ways, then use factory classes and methods to create them, instead of using multiple constructors. This is important for more reasons:
+
+Unlike constructors, factory methods have _names_. There is no clean code without names. Names describe the business logic, the program implements.
+
+The other reason is obvious from the article [Separate Data And Procedures](separate-data-and-procedures.md). For the data creation, we may need specific procedures and other components, including the database. These procedures and dependencies cannot be added to the DTO classes. Data classes should only carry the data and should not contain procedures.
+
+A simple way to create a factory class for every DTO. If the data creation consists of more components then the classes should be in a separate package, according to the Single Responsibility Principle. 
+
+{% tabs %}
+{% tab title="Simple" %}
+```java
+package data;
+
+class User { ... }
+class UserFactory { ... }
+
+class Contract { ... }
+class ContractFactory { ... }
+```
+{% endtab %}
+
+{% tab title="Packages" %}
+```java
+package data;
+
+public class User { ... }
+public class UserFactory { ... }
+
+package data.contract;
+
+public class Contract { ... }
+public class ContractFactory { ... }
+class ContractIdGenerator { ... }    // note the visibility
+class ContractDateCalculator { ... } // note the visibility
+```
+{% endtab %}
+{% endtabs %}
+
+When using records as DTOs \(see above\), we don't need to explicitly declare data classes. But in this case, we can still keep the factory classes.
+
 ### Advantage In Testing
 
 ### Too Many DTOs?
+
+I expect the counterargument that we will have too many DTOs, so we will have a "DTO hell".
+
+
 
 ![](.gitbook/assets/quote-smart-data-structures-and-dumb-code-works-a-lot-better-than-the-other-way-around-eric-s-raymond-63-60-65.jpg)
 
