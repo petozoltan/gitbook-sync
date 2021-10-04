@@ -78,13 +78,23 @@ This has key importance to solve the problem that is described in [Separate Data
 
 Actually, the data should be immutable, so that it cannot be modified during the processing. When the processing generates more data, then it should be stored into other data objects, designed for the output.
 
-Create all data once, via constructors—and factory methods—and don't change them after that.
+Create all data once, via constructors—and factory methods—and don't change them after that. 
 
 {% tabs %}
 {% tab title="Don\'t" %}
 ![](.gitbook/assets/dto-modify.png)
 {% endtab %}
 {% endtabs %}
+
+This also comes in handy when we use our components in functional programming.
+
+```java
+inputs.stream()
+    .map(Processor1::process)
+    .map(Processor2::process)
+    .map(Processor3::process)
+    .collect(toList());
+```
 
 ### Use Records
 
@@ -222,7 +232,7 @@ package data.contract;
 public class Contract { ... }
 public class ContractFactory { ... }
 class ContractIdGenerator { ... }    // note the visibility
-class ContractDateCalculator { ... } // note the visibility
+class ContractValidator { ... }      // note the visibility
 ```
 {% endtab %}
 {% endtabs %}
@@ -231,9 +241,41 @@ When using records as DTOs \(see above\), we don't need to explicitly declare da
 
 ### Advantage In Testing
 
-### Too Many DTOs?
+Creating clear input and output data for the components completely changes the unit testing, making it easier and more clear. 
+
+Instead of mocking the used components, we should simply create the data classes that serve as input. The same goes for the expected output if that's a well-defined data structure too. We should create the expected output and compare them with the actual one. 
+
+We can also implement the `equals()` methods of every class, so that we can simply test the classes for equality. Or, we can provide comparators if the testing needs a different comparison than the runtime equality. With records we will get the equality based on the data content, so the runtime comparison won't differ from the testing.
+
+```java
+public void testSomething() {
+    Offer offer = new Offer(
+                           new User(...),
+                           new Template(...));
+                        
+    Contract countractActual = contractService.createContract(offer);
+    
+    contractExpected = new Contract(
+                           new Contractor(...),
+                           new ContactPerson(...));
+    
+    Assert.assertEquals(contractExpected, countractActual);
+}
+```
+
+### Avoid DTO Hell
 
 I expect the counterargument that we will have too many DTOs, so we will have a "DTO hell".
+
+Yes, we may have many new classes. Factories can also increase the number of classes while using records can decrease it.
+
+But there is one important point because we would like to write clean code. We don't have to consider all DTOs together as a "big bunch" of classes. We should organize the code by business logic, we should separate features. 
+
+{% hint style="warning" %}
+Do not create a 'dto' or 'data model' package to collect all data classes from different features.
+{% endhint %}
+
+So for a certain modification of the code, we need to focus only on one feature's or one use case's classes, which are independent of the others.
 
 
 
