@@ -78,7 +78,7 @@ The most simple and natural implementation of a sequence of steps is a _sequence
 
 How to achieve that the common code does not contain branching for the use cases? Of course, at a certain point, the program has to make a distinction between the use cases. But after this point we should never merge them again:
 
-![](<../.gitbook/assets/Separate (1).svg>)
+![](<../.gitbook/assets/Separate Use Cases.png>)
 
 How do we eliminate the code duplication of the common steps? We can simply extract the parts which are equal to more use cases:
 

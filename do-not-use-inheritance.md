@@ -53,7 +53,7 @@ The reason is that data types will have multiple instances, while we need only o
 We do not pack data and procedures together anymore.
 {% endhint %}
 
-![](.gitbook/assets/Separate.svg)
+![](<.gitbook/assets/Separate Data and Procedure Classes.png>)
 
 So we are back at the pre-OOP times with data structures. Back to the future.:slight_smile:We do not do classical object-oriented programming as it was invented, so many of its rules are not valid.
 
