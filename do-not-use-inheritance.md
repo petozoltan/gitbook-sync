@@ -1,5 +1,5 @@
 ---
-description: '2020.11.06,  2021.02.14'
+description: 2020.11.06,  2021.02.14
 ---
 
 # Do Not Use Inheritance
@@ -22,11 +22,11 @@ Before inheritance, there were structural data types, like `struct` in C.
 
 But developers noticed that for the same data sets they usually needed the same procedures. So they packed the data together with their procedures and called it a `class`.
 
-Then they realized that the data may vary when they model real information. So that some data are the same while some can be different in different use cases. So they invented inheritance, which means that a new class can `extend` an existing one and add new data to the structure. _\(And as the keyword says it should be only an extension and not changes...\)_
+Then they realized that the data may vary when they model real information. So that some data are the same while some can be different in different use cases. So they invented inheritance, which means that a new class can `extend` an existing one and add new data to the structure. _(And as the keyword says it should be only an extension and not changes...)_
 
 But that also means that the procedures packed together with the data should also be variable. And it is not enough to extend the class with new procedures because the existing ones may not correctly handle the new data. So they invented the `override` of existing procedures with new ones.
 
-![](.gitbook/assets/override.svg)
+![](.gitbook/assets/Override.svg)
 
 With `override` things started to be bad so the `abstract` methods have been added finally. These methods are not implemented, so the extending classes will not override any already existing implementation. Since a class with unimplemented methods cannot be instantiated, the entire class also has to be marked as `abstract`. In other words, abstract classes are _designed_ for inheritance.
 
@@ -53,9 +53,9 @@ The reason is that data types will have multiple instances, while we need only o
 We do not pack data and procedures together anymore.
 {% endhint %}
 
-![](.gitbook/assets/separate%20%281%29.svg)
+![](.gitbook/assets/Separate.svg)
 
-So we are back at the pre-OOP times with data structures. Back to the future.🙂We do not do classical object-oriented programming as it was invented, so many of its rules are not valid.
+So we are back at the pre-OOP times with data structures. Back to the future.:slight_smile:We do not do classical object-oriented programming as it was invented, so many of its rules are not valid.
 
 {% hint style="info" %}
 We don't have to use polymorphism because its original cause does not exist anymore.
@@ -86,11 +86,11 @@ If we want to create different procedures for different variations of a data str
 
 {% tabs %}
 {% tab title="Before" %}
-![](.gitbook/assets/override.svg)
+![](.gitbook/assets/Override.svg)
 {% endtab %}
 
 {% tab title="After" %}
-![](.gitbook/assets/new-class.svg)
+![](<.gitbook/assets/New class.svg>)
 {% endtab %}
 {% endtabs %}
 
@@ -122,17 +122,17 @@ We do not have to use inheritance for data classes either.
 
 {% tabs %}
 {% tab title="Before" %}
-![](.gitbook/assets/new-class.svg)
+![](<.gitbook/assets/New class.svg>)
 {% endtab %}
 
 {% tab title="After" %}
-![](.gitbook/assets/data-composition.svg)
+![](<.gitbook/assets/Data composition.svg>)
 {% endtab %}
 {% endtabs %}
 
 #### Records in Java 14
 
-In Java 14 the good old _structure_ is brought back with the `record` keyword. This class is defined entirely by the data it carries:
+In Java 14 the good old _structure _is brought back with the `record` keyword. This class is defined entirely by the data it carries:
 
 * It features automatically generated accessors, equals, hashcode, etc. 
 * It has only getters because all members are automatically `final`.
@@ -141,7 +141,7 @@ In Java 14 the good old _structure_ is brought back with the `record` keyword. T
 Read more here:
 
 * [Java 14 – Record data class](https://mkyong.com/java/java-14-record-data-class/)
-* [JEP 359: Records \(Preview\)](https://openjdk.java.net/jeps/359)
+* [JEP 359: Records (Preview)](https://openjdk.java.net/jeps/359)
 
 ## Coding without inheritance
 
@@ -164,17 +164,17 @@ In this situation the solution is already given by the [Effective Java](overview
 Favor composition over inheritance
 {% endhint %}
 
-We should turn the parent classes into _components_ and inject them into the former child classes.
+We should turn the parent classes into _components _and inject them into the former child classes.
 
 Probably we should not use the parent classes as they are, but rather refactor them into more components by functionality and cohesion. This also makes the code more clear.
 
 {% tabs %}
 {% tab title="Before" %}
-![](.gitbook/assets/children-call-parent.svg)
+![](<.gitbook/assets/Children call parent.svg>)
 {% endtab %}
 
 {% tab title="After" %}
-![](.gitbook/assets/children-call-parent-composition.svg)
+![](<.gitbook/assets/Children call parent - composition.svg>)
 {% endtab %}
 {% endtabs %}
 
@@ -184,7 +184,7 @@ Probably we should not use the parent classes as they are, but rather refactor t
 
 Parents usually call their children via abstract methods. It is the [Template method](https://en.wikipedia.org/wiki/Template_method_pattern) design pattern.
 
-An abstract class practically defines a new interface with its abstract methods. This interface must be implemented by the child classes. _\(This is one reason why it is easy to get lost in a class hierarchy. The children implement totally different interfaces, and when we traverse down in the hierarchy we quickly get far from the original interface...\)_
+An abstract class practically defines a new interface with its abstract methods. This interface must be implemented by the child classes. _(This is one reason why it is easy to get lost in a class hierarchy. The children implement totally different interfaces, and when we traverse down in the hierarchy we quickly get far from the original interface...)_
 
 The solution for this also comes from the [Effective Java](overviews/effective-java-toc.md) book:
 
@@ -196,15 +196,15 @@ So move the abstract methods into one or more interfaces. Any class that impleme
 
 {% tabs %}
 {% tab title="Before" %}
-![](.gitbook/assets/parent-calls-children.svg)
+![](<.gitbook/assets/Parent calls children.svg>)
 {% endtab %}
 
 {% tab title="After" %}
-![](.gitbook/assets/parent-calls-children-interface.svg)
+![](<.gitbook/assets/Parent calls children - interface.svg>)
 {% endtab %}
 {% endtabs %}
 
-This also means that classes are free to implement the interfaces in their own way, without strictly adhering to the parent classes' abstract and inherited methods. Not to mention the inherited injected classes. So it frees us from a big disadvantage of inheritance. A class simply needs that an interface is implemented without telling _how_ it is implemented.
+This also means that classes are free to implement the interfaces in their own way, without strictly adhering to the parent classes' abstract and inherited methods. Not to mention the inherited injected classes. So it frees us from a big disadvantage of inheritance. A class simply needs that an interface is implemented without telling _how _it is implemented.
 
 #### Overridden methods
 
@@ -214,17 +214,17 @@ Not surprisingly the [Effective Java](overviews/effective-java-toc.md) book has 
 Design and document for inheritance or else prohibit it
 {% endhint %}
 
-Practically it means that all implemented methods should be `final` or `private`. In other words, overriding an already implemented method is firmly not recommended. _\(I would say, it is forbidden.\)_
+Practically it means that all implemented methods should be `final` or `private`. In other words, overriding an already implemented method is firmly not recommended. _(I would say, it is forbidden.)_
 
 Anyway, if there are overridden methods, it is no problem. That is the goal of the coding without inheritance: if we needed to override a method then we simply move the new implementation into a class and call it when it is necessary.
 
 {% tabs %}
 {% tab title="Before" %}
-![](.gitbook/assets/override-procedural.svg)
+![](<.gitbook/assets/Override procedural.svg>)
 {% endtab %}
 
 {% tab title="After" %}
-![](.gitbook/assets/override-procedural-separate.svg)
+![](<.gitbook/assets/Override procedural - separate.svg>)
 {% endtab %}
 {% endtabs %}
 
@@ -253,7 +253,7 @@ This is a pre-condition to write no-inheritance code.
 Unfortunately, there is no syntactical difference between procedural and data classes:
 
 * they are both classes
-* they both have members \('instance variables'\)
+* they both have members ('instance variables')
 * they both have procedures
 
 But they are very different, so different rules should be applied to them.
@@ -281,7 +281,7 @@ As discussed above, abstract methods should be replaced with interfaces. So we s
 Interfaces do not have the disadvantages that parent classes have:
 
 * Interfaces methods have no implementation so implementer classes cannot override existing implementation.
-* Interfaces do not make it possible to create multiple inheritance. \(At least in Java.\)
+* Interfaces do not make it possible to create multiple inheritance. (At least in Java.)
 * Interfaces require only what to implement but not how they are implemented. 
 
 One procedural class can implement only one interface. Why?
@@ -301,7 +301,7 @@ More precisely they should not contain procedures that
 
 Data classes may have procedures that are
 
-* constructors, accessors, and mutators \('getters and setters'\)
+* constructors, accessors, and mutators ('getters and setters')
 * simple and inherently meaningful for the given data structure
 
 For example, if the data class contains a map then it is logical to have an accessor by the map key:
@@ -323,7 +323,7 @@ Implementing an interface means that the class is free to implement its methods 
 
 Are data classes free to implement methods in different ways? What implementation can have a method like `getFirstName()` other than the data structure really contains the first name?
 
-You may say, data classes could implement interfaces and this is some kind of adaptation [design pattern](https://en.wikipedia.org/wiki/Software_design_pattern). But it would mean that we adapt the data to a certain process and its classes. _But wait..._ Don't we write the procedures for the data? Shouldn't we adapt the procedures to the data structures? More precisely, we create the procedures for certain applications and data so they are already 'adapted'.
+You may say, data classes could implement interfaces and this is some kind of adaptation [design pattern](https://en.wikipedia.org/wiki/Software_design_pattern). But it would mean that we adapt the data to a certain process and its classes. _But wait... _Don't we write the procedures for the data? Shouldn't we adapt the procedures to the data structures? More precisely, we create the procedures for certain applications and data so they are already 'adapted'.
 
 You may say, this is the [Interface Segregation Principle](https://en.wikipedia.org/wiki/Interface_segregation_principle). _"A client should not depend on more methods than it uses."_ But I think it comes from the classical OOP where data and procedures are put together in the same class. In our new OOP we strictly separate them and get new chances to simplify the coding. A data structure is nothing else but a data structure as it is.
 
@@ -365,4 +365,3 @@ The following keywords can be used only in procedural classes since they can imp
 * `override`
 
 Actually, the `override` keyword should be something else in this case, just like `extends` and `implements` are different. For example, these keywords should be `override` and `implement` respectively. In this case, we could add `override` to the list of the forbidden keywords. 
-

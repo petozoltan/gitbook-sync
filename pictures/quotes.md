@@ -34,5 +34,4 @@ description: 2021.05.18
 
 ![](../.gitbook/assets/first.jpg)
 
-![](../.gitbook/assets/quotation-albert-einstein-make-everything-as-simple-as-possible-but-not-simpler-8-73-34.jpg)
-
+![](../.gitbook/assets/Quotation-Albert-Einstein-Make-everything-as-simple-as-possible-but-not-simpler-8-73-34.jpg)

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="435px" preserveAspectRatio="none" style="width:190px;height:435px;" version="1.1" viewBox="0 0 190 435" width="190px" zoomAndPan="magnify"><defs/><g><!--MD5=[c49bdb31c5fc6b64c9c8104f86238732]
+cluster Old--><rect fill="#FFFFFF" height="163" style="stroke: #D3D3D3; stroke-width: 1.0;" width="149" x="30" y="32"/><text fill="#808080" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="19" x="95" y="46.457">Old</text><!--MD5=[8d9cd88d360df850fc79225cf21ddc6a]
+cluster New--><rect fill="#FFFFFF" height="163" style="stroke: #D3D3D3; stroke-width: 1.0;" width="149" x="30" y="261"/><text fill="#808080" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="25" x="92" y="275.457">New</text><!--MD5=[9aaa16928b58d1f0ffa2dd1f8e2da6b0]
+class DataOld--><rect fill="#FFFFFF" height="97.4248" id="DataOld" style="stroke: #000000; stroke-width: 1.0;" width="82" x="73" y="74"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="49" x="89.5" y="90.8765">DataNew</text><line style="stroke: #000000; stroke-width: 1.5;" x1="74" x2="154" y1="99.2217" y2="99.2217"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="79" y="114.1846">attribute1</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="79" y="128.2354">attribute2</text><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="74" x2="154" y1="135.3232" y2="135.3232"/><text fill="#D3D3D3" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="79" y="150.2861">attribute3</text><text fill="#D3D3D3" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="79" y="164.3369">attribute4</text><!--MD5=[fef0cec06699a91399b3e73a230505c9]
+class DataNew--><rect fill="#FFFFFF" height="97.4248" id="DataNew" style="stroke: #000000; stroke-width: 1.0;" width="82" x="73" y="303"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="49" x="89.5" y="319.8765">DataNew</text><line style="stroke: #000000; stroke-width: 1.5;" x1="74" x2="154" y1="328.2217" y2="328.2217"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="79" y="343.1846">attribute1</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="79" y="357.2354">attribute2</text><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="74" x2="154" y1="364.3232" y2="364.3232"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="79" y="379.2861">attribute3</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="79" y="393.3369">attribute4</text><!--MD5=[e0d776d3c049baea377b25442ebd8442]
+link Old to New--><path d="M38,195.391 C38,195.7939 38,196.1976 38,196.602 C38,209.5448 38,223.2934 38,237.0413 C38,243.9152 38,250.7888 38,257.5615 C38,258.4081 38,259.2531 38,260.0963 C38,260.3071 38,260.5178 38,260.7284 " fill="none" id="Old-&gt;New" style="stroke: #D3D3D3; stroke-width: 1.0;"/><polygon fill="#D3D3D3" points="38,260.7284,42,251.7284,38,255.7284,34,251.7284,38,260.7284" style="stroke: #D3D3D3; stroke-width: 1.0;"/><text fill="#808080" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="38" x="39" y="233.4951">Modify</text><!--MD5=[8e6c73773a767296ed73b6256a90d0eb]
+@startuml
+
+skinparam shadowing false
+
+
+hide empty members
+
+hide circle
+
+
+skinparam package {
+style rectangle
+borderColor lightgray
+fontSize 12
+fontStyle normal
+fontColor gray
+borderThickness 1
+}
+
+skinparam arrow {
+color lightgray
+fontColor gray
+thickness 1
+}
+
+skinparam class {
+
+borderColor black
+borderThickness 1
+backgroundColor white
+
+fontSize 13
+fontName Consolas
+
+attributeFontSize 12
+attributeFontName Consolas
+
+stereotypeFontSize 11
+}
+
+
+
+package Old {
+
+class DataOld as "DataNew" {
+<font color=black>attribute1
+<font color=black>attribute2
+..
+<font color=lightgray>attribute3
+<font color=lightgray>attribute4
+}
+}
+
+package New {
+
+class DataNew {
+<font color=black>attribute1
+<font color=black>attribute2
+..
+attribute3
+attribute4
+}
+}
+
+Old - -> New : Modify
+
+@enduml
+
+PlantUML version 1.2019.11(Sun Sep 22 12:02:15 CEST 2019)
+(EPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11+28
+Operating System: Windows 10
+Default Encoding: Cp1250
+Language: hu
+Country: HU
+--></g></svg>

@@ -18,7 +18,7 @@ It means, we have 3 main use cases:
 2. the second one is missing
 3. the first one is missing
 
-Here we have our object types from the domain model. \(For simplicity, getters and setters are omitted.\)
+Here we have our object types from the domain model. (For simplicity, getters and setters are omitted.)
 
 {% tabs %}
 {% tab title="Domain Model" %}
@@ -36,7 +36,7 @@ class Data {
 
 ## Usual Implementation
 
-Let's see, how we would usually implement it. \(For simplicity, return values are omitted.\)
+Let's see, how we would usually implement it. (For simplicity, return values are omitted.)
 
 {% tabs %}
 {% tab title="Feature" %}
@@ -495,7 +495,7 @@ Of course, the package should not be literally called "feature". Instead, it sho
 
 ## Alternatives With Static Methods And Classes
 
-If the calculator and the factory classes do not use other components that access external services \(like a database\), then they could be implemented fully with static methods. It has no negative effect on their unit testing since there is no need to mock any components. Instead, they can be tested with clear input and output data.
+If the calculator and the factory classes do not use other components that access external services (like a database), then they could be implemented fully with static methods. It has no negative effect on their unit testing since there is no need to mock any components. Instead, they can be tested with clear input and output data.
 
 If the data model is very simple then it can be implemented in one public class, that contains the DTOs as static inner classes. They can be statically imported into other classes. The same goes for their factory methods.
 
@@ -696,5 +696,4 @@ Also, note that by writing more code lines we also have moved them into more sma
 
 And remember, this is a simplified example. A real-life code is much more complicated. And if the parts of a complicated code are mixed and not named either, then we will have problems with maintaining that code.
 
-![](../.gitbook/assets/quotation-albert-einstein-make-everything-as-simple-as-possible-but-not-simpler-8-73-34.jpg)
-
+![](../.gitbook/assets/Quotation-Albert-Einstein-Make-everything-as-simple-as-possible-but-not-simpler-8-73-34.jpg)

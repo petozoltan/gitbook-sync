@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="227px" preserveAspectRatio="none" style="width:142px;height:227px;" version="1.1" viewBox="0 0 142 227" width="142px" zoomAndPan="magnify"><defs/><g><!--MD5=[41e1c6cf192918703501b24b2053926c]
+class Class--><rect fill="#FFFFFF" height="209.8311" id="Class" style="stroke: #808080; stroke-width: 1.5;" width="124" x="7" y="7"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="35" x="51.5" y="23.8765">Class</text><line style="stroke: #808080; stroke-width: 1.5;" x1="8" x2="130" y1="32.2217" y2="32.2217"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="20" y="47.1846"/><text fill="#0000CD" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="42" x="20" y="61.2354">data1;</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="20" y="75.2861"/><text fill="#0000CD" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="42" x="20" y="89.3369">data2;</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="20" y="103.3877"/><line style="stroke: #808080; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="8" x2="130" y1="110.4756" y2="110.4756"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="20" y="125.4385"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="98" x="20" y="139.4893">procedure1() {</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="7" x="20" y="153.54">}</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="20" y="167.5908"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="98" x="20" y="181.6416">procedure2() {</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="7" x="20" y="195.6924">}</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="20" y="209.7432"/><!--MD5=[20bf93af923f97b3ee35fe37492e0a0d]
+@startuml
+
+skinparam shadowing false
+
+
+hide empty members
+
+hide circle
+
+
+skinparam package {
+style rectangle
+borderColor gray
+fontSize 12
+}
+
+skinparam arrow {
+
+color gray
+}
+
+skinparam class {
+
+borderColor gray
+backgroundColor white
+
+fontSize 13
+fontName Consolas
+
+attributeFontSize 12
+attributeFontName Consolas
+
+stereotypeFontSize 11
+}
+
+
+class Class {
+
+<font color=mediumblue> data1;
+
+<font color=mediumblue> data2;
+
+..
+
+<font color=black> procedure1() { </font>\n }
+
+<font color=black> procedure2() {</font>\n }
+
+}
+
+@enduml
+
+PlantUML version 1.2019.11(Sun Sep 22 12:02:15 CEST 2019)
+(EPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11+28
+Operating System: Windows 10
+Default Encoding: Cp1250
+Language: hu
+Country: HU
+--></g></svg>

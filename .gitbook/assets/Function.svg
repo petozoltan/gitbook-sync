@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="154px" preserveAspectRatio="none" style="width:76px;height:154px;" version="1.1" viewBox="0 0 76 154" width="76px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="50.1875" style="stroke: #FFFFFF; stroke-width: 1.0;" width="59" x="6" y="8"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="39" x="16" y="22.457">Hidden</text><!--MD5=[db8947410cfcb5febdf8f8cf27669db4]
+class Class1--><rect fill="#FFFFFF" height="25.2217" id="Class1" style="stroke: #000000; stroke-width: 1.0;" width="48" x="11.5" y="118"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="14.5" y="134.8765">Class1</text><!--MD5=[525bc00339892209158ee5fb4669fe6f]
+link Hidden to Class1--><path d="M35.5,63.17 C35.5,79.43 35.5,99.09 35.5,112.77 " fill="none" id="Hidden-Class1" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="35.5,117.88,39.5,108.88,35.5,112.88,31.5,108.88,35.5,117.88" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="35.5,58.1,31.5,67.1,35.5,63.1,39.5,67.1,35.5,58.1" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[de48142214b5b05bed0af32045d35723]
+@startuml
+
+skinparam shadowing false
+
+
+hide empty members
+
+hide circle
+
+
+skinparam package {
+style rectangle
+borderColor white
+fontSize 12
+fontColor white
+borderThickness 1
+}
+
+skinparam arrow {
+color gray
+fontColor gray
+thickness 1
+}
+
+skinparam class {
+
+borderColor black
+borderThickness 1
+backgroundColor white
+
+fontSize 13
+fontName Consolas
+
+attributeFontSize 12
+attributeFontName Consolas
+
+stereotypeFontSize 11
+}
+
+
+package Hidden {
+}
+
+class Class1
+
+Hidden <- -> Class1
+
+@enduml
+
+PlantUML version 1.2019.11(Sun Sep 22 12:02:15 CEST 2019)
+(EPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11+28
+Operating System: Windows 10
+Default Encoding: Cp1250
+Language: hu
+Country: HU
+--></g></svg>

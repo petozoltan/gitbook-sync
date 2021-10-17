@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="491px" preserveAspectRatio="none" style="width:598px;height:491px;" version="1.1" viewBox="0 0 598 491" width="598px" zoomAndPan="magnify"><defs/><g><!--MD5=[fa1e3283224feb76407c84b7e90ed808]
+entity Database--><path d="M240.5,443 C240.5,433 281,433 281,433 C281,433 321.5,433 321.5,443 L321.5,469.6094 C321.5,479.6094 281,479.6094 281,479.6094 C281,479.6094 240.5,479.6094 240.5,469.6094 L240.5,443 " fill="#FFFFFF" style="stroke: #000000; stroke-width: 1.5;"/><path d="M240.5,443 C240.5,453 281,453 281,453 C281,453 321.5,453 321.5,443 " fill="none" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="61" x="250.5" y="471.5332">Database</text><!--MD5=[097cec2c4502543b4bc821e1e2f7ea8d]
+class Class2--><rect fill="#FFFFFF" height="25.2217" id="Class2" style="stroke: #000000; stroke-width: 1.0;" width="48" x="42" y="93"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="45" y="109.8765">Class2</text><!--MD5=[f0780a43e5c0af3c52b439b7f3f3994e]
+class Class10--><rect fill="#FFFFFF" height="25.2217" id="Class10" style="stroke: #000000; stroke-width: 1.0;" width="55" x="38.5" y="178"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="49" x="41.5" y="194.8765">Class10</text><!--MD5=[abf337c455a9c7bb6033e86969bcb5eb]
+class Class3--><rect fill="#FFFFFF" height="25.2217" id="Class3" style="stroke: #000000; stroke-width: 1.0;" width="48" x="180" y="93"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="183" y="109.8765">Class3</text><!--MD5=[ed88a39d11e1a868d4958d16413c4746]
+class Class4--><rect fill="#FFFFFF" height="25.2217" id="Class4" style="stroke: #000000; stroke-width: 1.0;" width="48" x="180" y="178"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="183" y="194.8765">Class4</text><!--MD5=[e3cc6d06644b91dda2b3b874ae70d9db]
+class Class5--><rect fill="#FFFFFF" height="25.2217" id="Class5" style="stroke: #000000; stroke-width: 1.0;" width="48" x="180" y="263"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="183" y="279.8765">Class5</text><!--MD5=[53157becf988d72e4dca1079f2d06dbd]
+class Class6--><rect fill="#FFFFFF" height="25.2217" id="Class6" style="stroke: #000000; stroke-width: 1.0;" width="48" x="180" y="348"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="183" y="364.8765">Class6</text><!--MD5=[5bba2fd33a9bc6198fad4a0c40bd9d46]
+class Class7--><rect fill="#FFFFFF" height="25.2217" id="Class7" style="stroke: #000000; stroke-width: 1.0;" width="48" x="440" y="93"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="443" y="109.8765">Class7</text><!--MD5=[4fd2bbed7c07b0b94e8604523ecdb95c]
+class Class8--><rect fill="#FFFFFF" height="25.2217" id="Class8" style="stroke: #000000; stroke-width: 1.0;" width="48" x="399" y="178"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="402" y="194.8765">Class8</text><!--MD5=[b708a928e06d83b97ed7f65a7adeea0b]
+class Class9--><rect fill="#FFFFFF" height="25.2217" id="Class9" style="stroke: #000000; stroke-width: 1.0;" width="48" x="482" y="178"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="485" y="194.8765">Class9</text><!--MD5=[db8947410cfcb5febdf8f8cf27669db4]
+class Class1--><rect fill="#FFFFFF" height="25.2217" id="Class1" style="stroke: #000000; stroke-width: 1.0;" width="48" x="180" y="8"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="183" y="24.8765">Class1</text><!--MD5=[0cc92a4bd4d04f3f105d5ee3e348a246]
+link Class2 to Class10--><path d="M66,123.2 C66,137.62 66,158.36 66,172.78 " fill="none" id="Class2-Class10" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="66,177.79,70,168.79,66,172.79,62,168.79,66,177.79" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="66,118.04,62,127.04,66,123.04,70,127.04,66,118.04" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[41da4c01ae117fb75ab8b65cf1b26f6f]
+link Class3 to Class4--><path d="M204,123.2 C204,137.62 204,158.36 204,172.78 " fill="none" id="Class3-Class4" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="204,177.79,208,168.79,204,172.79,200,168.79,204,177.79" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="204,118.04,200,127.04,204,123.04,208,127.04,204,118.04" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[9ba4c1d4748ca3f1b1abd7a1daeee6df]
+link Class4 to Class5--><path d="M204,208.2 C204,222.62 204,243.36 204,257.78 " fill="none" id="Class4-Class5" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="204,262.79,208,253.79,204,257.79,200,253.79,204,262.79" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="204,203.04,200,212.04,204,208.04,208,212.04,204,203.04" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[b75046c82f8f133b9da3335474ec172a]
+link Class5 to Class6--><path d="M204,293.2 C204,307.62 204,328.36 204,342.78 " fill="none" id="Class5-Class6" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="204,347.79,208,338.79,204,342.79,200,338.79,204,347.79" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="204,288.04,200,297.04,204,293.04,208,297.04,204,288.04" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[5373b8852e9376374dbfa645660cc204]
+link Class7 to Class8--><path d="M455.96,122.78 C448.77,137.33 438.29,158.54 431.09,173.12 " fill="none" id="Class7-Class8" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="428.78,177.79,436.3505,171.4903,430.9932,173.3065,429.1769,167.9491,428.78,177.79" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="458.3,118.04,450.7215,124.3301,456.0811,122.5207,457.8906,127.8803,458.3,118.04" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[70e5c4de7f8d6e164d111432367ca408]
+link Class7 to Class9--><path d="M472.24,122.78 C479.6,137.33 490.33,158.54 497.71,173.12 " fill="none" id="Class7-Class9" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="500.07,177.79,499.5725,167.9537,497.8111,173.3294,492.4354,171.568,500.07,177.79" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="469.84,118.04,470.3375,127.8763,472.0989,122.5006,477.4746,124.262,469.84,118.04" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[5c217e4aeb1e3cff88f818337409e90f]
+link Class1 to Class2--><path d="M180.33,35.73 C155.11,50.9 115.39,74.79 90.03,90.05 " fill="none" id="Class1-Class2" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="85.47,92.79,95.2425,91.5656,89.7512,90.207,91.1097,84.7157,85.47,92.79" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="184.81,33.04,175.0375,34.2644,180.5288,35.623,179.1703,41.1143,184.81,33.04" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[3328d925825e69d9e7cbeacdc819dd17]
+link Class1 to Class3--><path d="M204,38.2 C204,52.62 204,73.36 204,87.78 " fill="none" id="Class1-Class3" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="204,92.79,208,83.79,204,87.79,200,83.79,204,92.79" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="204,33.04,200,42.04,204,38.04,208,42.04,204,33.04" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[c241434efb2c1be819e3533a2f0198f9]
+link Class1 to Class7--><path d="M233.3,30.85 C283.37,46.84 384.84,79.23 434.83,95.19 " fill="none" id="Class1-Class7" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="439.79,96.77,432.4273,90.2286,435.0256,95.2534,430.0007,97.8517,439.79,96.77" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="228.46,29.31,235.8106,35.8651,233.2216,30.8354,238.2513,28.2465,228.46,29.31" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[717df94c9d990bcac39627c8514c8e7b]
+link Class2 to Database--><path d="M52.48,122.13 C41.58,135.83 27.12,156.8 21,178 C14.96,198.92 16.1,205.78 21,227 C39.93,308.92 40.67,341.69 104,397 C140.98,429.29 196.28,443.86 235.2,450.36 " fill="none" id="Class2-Database" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="240.35,451.19,232.1072,445.7997,235.4146,450.3889,230.8254,453.6963,240.35,451.19" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="55.73,118.12,46.9502,122.5827,52.577,122.0006,53.1591,127.6274,55.73,118.12" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[b823658275556f2157cb6dec68d8c023]
+link Class3 to Database--><path d="M214.84,122.76 C223.97,136.93 236.94,158.25 246,178 C278.93,249.82 287.59,269.68 298,348 C300.87,369.59 301.07,375.44 298,397 C296.54,407.25 293.71,418.22 290.77,427.86 " fill="none" id="Class3-Database" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="289.23,432.77,295.745,425.3839,290.7295,428.0001,288.1132,422.9847,289.23,432.77" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="211.9,118.24,213.4639,127.9639,214.6305,122.4286,220.1657,123.5951,211.9,118.24" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[a8c82026f858ce65e6f7754fec639d2f]
+link Class4 to Database--><path d="M215.59,207.45 C225.19,221.42 238.44,242.63 246,263 C266.85,319.15 275.58,389.28 279,427.49 " fill="none" id="Class4-Database" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="279.46,432.89,282.648,423.5714,279.0176,427.9096,274.6794,424.2792,279.46,432.89" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="212.49,203,214.3539,212.6709,215.3487,207.1022,220.9174,208.097,212.49,203" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[25839821ccbb63d6c672c15ad24836ab]
+link Class5 to Database--><path d="M190.53,292.14 C171.61,316.11 141.75,362.74 163,397 C178.83,422.52 209.47,437.25 235.56,445.55 " fill="none" id="Class5-Database" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="240.38,447.02,232.953,440.5517,235.6008,445.5506,230.6019,448.1984,240.38,447.02" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="193.69,288.22,184.9282,292.7178,190.5526,292.1132,191.1573,297.7376,193.69,288.22" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[947f7e6efd4fede3b4150e7e9dd0becc]
+link Class6 to Database--><path d="M216.76,377.08 C228.22,391.07 245.29,411.91 258.95,428.59 " fill="none" id="Class6-Database" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="262.35,432.73,259.7238,423.2377,259.1745,428.8679,253.5443,428.3186,262.35,432.73" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="213.44,373.03,216.0452,382.528,216.607,376.8991,222.2359,377.4609,213.44,373.03" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[6713b1a1d68fd676033d95573aa3029a]
+link Class7 to Database--><path d="M490.72,120.71 C510.61,132.94 536.28,152.62 548,178 C586.2,260.68 481.89,378.4 460,397 C422.09,429.22 366.01,443.81 326.75,450.34 " fill="none" id="Class7-Database" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="321.56,451.17,331.0846,453.6763,326.4954,450.3689,329.8028,445.7797,321.56,451.17" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="486.31,118.06,491.9695,126.1204,490.5975,120.6325,496.0854,119.2605,486.31,118.06" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[51ce34a97bf4a788a5d9606b35faee5d]
+link Class8 to Database--><path d="M423.6,208.63 C424.05,246.33 420.38,337.87 378,397 C365.22,414.83 345.16,428.23 326.59,437.67 " fill="none" id="Class8-Database" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="321.91,439.99,331.7509,439.5931,326.3935,437.7768,328.2097,432.4195,321.91,439.99" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="423.5,203.46,419.6549,212.5272,423.5857,208.4593,427.6537,212.3901,423.5,203.46" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[1e7158eff6f822edfae3486f2425263d]
+link Class9 to Database--><path d="M502.91,208.72 C495.11,247.37 471.23,341.98 416,397 C391.54,421.37 355.27,436.31 326.48,444.99 " fill="none" id="Class9-Database" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="321.56,446.44,331.32,447.76,326.36,445.04,329.08,440.08,321.56,446.44" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="503.94,203.43,498.2932,211.4993,502.9841,208.3378,506.1456,213.0287,503.94,203.43" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[d2ce86b96fca46b802a0d9e6df7abc40]
+link Class10 to Database--><path d="M68.27,208.68 C74.24,247.27 93.71,341.75 147,397 C170.82,421.7 206.85,436.62 235.55,445.21 " fill="none" id="Class10-Database" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="240.45,446.64,232.93,440.28,235.65,445.24,230.69,447.96,240.45,446.64" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="67.49,203.41,64.868,212.9034,68.231,208.3548,72.7796,211.7178,67.49,203.41" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[bea288ee1d943b03f9422c581659fe8a]
+@startuml
+
+skinparam shadowing false
+
+
+hide empty members
+
+hide circle
+
+
+skinparam package {
+style rectangle
+borderColor gray
+fontSize 12
+borderThickness 1
+}
+
+skinparam arrow {
+color gray
+fontColor gray
+thickness 1
+}
+
+skinparam class {
+
+borderColor black
+borderThickness 1
+backgroundColor white
+
+fontSize 13
+fontName Consolas
+
+attributeFontSize 12
+attributeFontName Consolas
+
+stereotypeFontSize 11
+}
+
+
+
+package Database <<Database>> {
+}
+
+together {
+Class2 <- -> Class10
+}
+
+together {
+Class3 <- -> Class4
+Class4 <- -> Class5
+Class5 <- -> Class6
+}
+
+together {
+Class7 <- -> Class8
+Class7 <- -> Class9
+}
+
+Class1 <- -> Class2
+Class1 <- -> Class3
+Class1 <- -> Class7
+
+Class2  <- - - - -> Database
+Class3  <- -> Database
+Class4  <- -> Database
+Class5  <- -> Database
+Class6  <- -> Database
+Class7  <- - - - -> Database
+Class8  <- -> Database
+Class9  <- -> Database
+Class10 <- -> Database
+
+@enduml
+
+PlantUML version 1.2019.11(Sun Sep 22 12:02:15 CEST 2019)
+(EPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11+28
+Operating System: Windows 10
+Default Encoding: Cp1250
+Language: hu
+Country: HU
+--></g></svg>

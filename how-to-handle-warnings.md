@@ -32,7 +32,7 @@ It seems that warnings are still the stepchildren of software development. Somet
 
 Warnings point to real problems in our source code. _Warnings are potential bugs._ Actually, they _are_ bugs because most of the bugs are caused by incorrect code parts, which could be detected via warnings.
 
-Moreover, warnings point to deeper structural problems in the code, which are not simple to fix. Probably that is why we do not like them. \(For example, unused parameters are usually a sign of bad class hierarchy.\)
+Moreover, warnings point to deeper structural problems in the code, which are not simple to fix. Probably that is why we do not like them. (For example, unused parameters are usually a sign of bad class hierarchy.)
 
 There is no fundamental difference between warnings and errors! They differ only in the arbitrary level that we assign to them. You can even set it in your IDE:
 
@@ -93,5 +93,4 @@ As I see the software industry simply does not need the code quality above a cer
 
 In this case, it can be a valid solution that we simply ignore all warnings in the code. But then we should not bother to install Sonar and watch the high number of warnings.
 
-![](.gitbook/assets/warnings.png)
-
+![](.gitbook/assets/Warnings.png)

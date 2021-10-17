@@ -11,7 +11,7 @@ We used to design the overall data model of the application, i.e. the entities i
 * Carefully design the data flow within every feature.
 * Clearly define the input and output data for each component.
 
-### Data Transfer Objects \(DTOs\)
+### Data Transfer Objects (DTOs)
 
 For this, we should create _data transfer objects_. These are data classes that only carry data and do not contain procedures implementing business logic.
 
@@ -29,17 +29,17 @@ Of course, data structures are made up of other data structures and data classes
 
 #### Do Not Copy
 
-If some data structures are already collected, whose attributes we need, we should not create new classes with the demanded attributes, and copy their values. Instead, we should simply add the already collected data as a whole to our new data objects. \(Of course, only if there is no objection against it, like memory consumption or others.\) 
+If some data structures are already collected, whose attributes we need, we should not create new classes with the demanded attributes, and copy their values. Instead, we should simply add the already collected data as a whole to our new data objects. (Of course, only if there is no objection against it, like memory consumption or others.) 
 
-I would simply call it _embedding_ a data structure into another one.
+I would simply call it _embedding _a data structure into another one.
 
 {% tabs %}
-{% tab title="Don\'t" %}
-![](.gitbook/assets/dto-copy.png)
+{% tab title="Don't" %}
+![](<.gitbook/assets/DTO - Copy.png>)
 {% endtab %}
 
 {% tab title="Do" %}
-![](.gitbook/assets/dto-embed.png)
+![](<.gitbook/assets/DTO - Embed.png>)
 {% endtab %}
 {% endtabs %}
 
@@ -50,17 +50,17 @@ With embedding, we can reach, let's say, `attribute9` with the following express
 We should avoid copying attributes because it requires more procedural code and possibilities for mistakes. With composition we have the following benefits:
 
 * It is simpler to put together the new data structures.
-* There is no need to change the existing data. \(It should be treated as immutable, see below.\)
+* There is no need to change the existing data. (It should be treated as immutable, see below.)
 
 #### Do Not Inherit
 
-For the same reason as in the case of copying, _inheritance_ is not useful either. With this, the attributes are inherited only on type level, but on object level \(in runtime\) we still need to copy them.
+For the same reason as in the case of copying, _inheritance_ is not useful either. With this, the attributes are inherited only on type level, but on object level (in runtime) we still need to copy them.
 
-Alternatively, if we declare the first data structure already for the new, extended data type, then we have to fill the extra attributes later, in a second step. This contradicts our goal to treat the data as immutable. \(See more in the next chapter.\)
+Alternatively, if we declare the first data structure already for the new, extended data type, then we have to fill the extra attributes later, in a second step. This contradicts our goal to treat the data as immutable. (See more in the next chapter.)
 
 {% tabs %}
-{% tab title="Don\'t" %}
-![](.gitbook/assets/dto-inherit.png)
+{% tab title="Don't" %}
+![](<.gitbook/assets/DTO - Inherit.png>)
 {% endtab %}
 {% endtabs %}
 
@@ -81,8 +81,8 @@ Actually, the data should be immutable, so that it cannot be modified during the
 Create all data once, via constructors—and factory methods—and don't change them after that. 
 
 {% tabs %}
-{% tab title="Don\'t" %}
-![](.gitbook/assets/dto-modify.png)
+{% tab title="Don't" %}
+![](<.gitbook/assets/DTO - Modify.png>)
 {% endtab %}
 {% endtabs %}
 
@@ -98,18 +98,18 @@ inputs.stream()
 
 ### Use Records
 
-In Java 16 the `record` keyword has been introduced. \(From Java 14 as a preview feature.\) Records implement everything, which is written above, and we don't even have to declare a class for them in the old way!  
+In Java 16 the `record` keyword has been introduced. (From Java 14 as a preview feature.) Records implement everything, which is written above, and we don't even have to declare a class for them in the old way!  
 
 * Records can be created simply from instances of data objects or other records. No need for class declaration.
-* Accessors \('getters'\) will be automatically generated, and they do nothing else but returning a property value. They cannot be overridden either.
-* Records have no mutators \('setters'\) at all. If records are composed of other records then the result will be close to _read-only_.
+* Accessors ('getters') will be automatically generated, and they do nothing else but returning a property value. They cannot be overridden either.
+* Records have no mutators ('setters') at all. If records are composed of other records then the result will be close to _read-only_.
 * The class does not support extension and inheritance, it is `final` too.
 
 Read more here, or find tutorials on the internet:
 
 * [Java 14 – Record data class](https://mkyong.com/java/java-14-record-data-class/)
-* [Java 14 – JEP 359: Records \(Preview\)](https://openjdk.java.net/jeps/359)
-* [Java 15 – JEP 384: Records \(Second Preview\)](https://openjdk.java.net/jeps/384)
+* [Java 14 – JEP 359: Records (Preview)](https://openjdk.java.net/jeps/359)
+* [Java 15 – JEP 384: Records (Second Preview)](https://openjdk.java.net/jeps/384)
 * [Java 16 – JEP 395: Records](https://openjdk.java.net/jeps/395)
 
 ### Put Together What Belongs Together
@@ -119,7 +119,7 @@ When collecting the data that should be processed do not simply create collectio
 Let's say every A has a B and multiple C-s.
 
 {% tabs %}
-{% tab title="Don\'t" %}
+{% tab title="Don't" %}
 ```java
 Collection<A> as;
 Collection<B> bs;
@@ -140,16 +140,16 @@ Collection<ADto> as;
 {% endtab %}
 {% endtabs %}
 
-In other words, you should _finish_ the preparation of the input data before the processing of the data.
+In other words, you should _finish _the preparation of the input data before the processing of the data.
 
 #### Avoid Maps
 
 The same goes for Maps.
 
-Maps are inherently _unfinished_ data structures. Despite having all objects mapped to their keys, the processing code must complete the mapping by getting an object by the key. And if we need the mapped object in multiple code parts then it must do the same mapping again and again, which is code repetition.
+Maps are inherently _unfinished _data structures. Despite having all objects mapped to their keys, the processing code must complete the mapping by getting an object by the key. And if we need the mapped object in multiple code parts then it must do the same mapping again and again, which is code repetition.
 
 {% tabs %}
-{% tab title="Don\'t" %}
+{% tab title="Don't" %}
 ```java
 Collection<A> as;
 Map<A, B> bs;
@@ -237,7 +237,7 @@ class ContractValidator { ... }      // note the visibility
 {% endtab %}
 {% endtabs %}
 
-When using records as DTOs \(see above\), we don't need to explicitly declare data classes. But in this case, we can still keep the factory classes.
+When using records as DTOs (see above), we don't need to explicitly declare data classes. But in this case, we can still keep the factory classes.
 
 ### Advantage In Testing
 
@@ -280,4 +280,3 @@ So for a certain modification of the code, we need to focus only on one feature'
 
 
 ![](.gitbook/assets/quote-smart-data-structures-and-dumb-code-works-a-lot-better-than-the-other-way-around-eric-s-raymond-63-60-65.jpg)
-

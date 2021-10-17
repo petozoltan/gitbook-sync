@@ -8,11 +8,11 @@ We are good programmers and we write good quality code. Despite that, I always s
 
 {% tabs %}
 {% tab title="Lost" %}
-![](../.gitbook/assets/maze-2.svg)
+![](<../.gitbook/assets/Maze 2.svg>)
 {% endtab %}
 
 {% tab title="Again and again..." %}
-![](../.gitbook/assets/mazes.svg)
+![](../.gitbook/assets/Mazes.svg)
 {% endtab %}
 {% endtabs %}
 
@@ -24,11 +24,11 @@ Programmers are notorious for pulling together similar code parts, saying they s
 
 Let's assume, we have two use cases consisting of similar but not equal steps:
 
-![](../.gitbook/assets/use-cases-logical.svg)
+![](<../.gitbook/assets/Use Cases Logical.svg>)
 
 Software developers will usually implement them in the following way:
 
-![](../.gitbook/assets/use-cases-implementation.svg)
+![](<../.gitbook/assets/Use Cases Implementation.svg>)
 
 That means that the common code will branch for the use cases, and then it goes again to the common code, then it will branch again.
 
@@ -36,11 +36,11 @@ With a simplified drawing—and rotating it with 90º—the following happens he
 
 {% tabs %}
 {% tab title="Merge" %}
-![](../.gitbook/assets/merge.svg)
+![](../.gitbook/assets/Merge.svg)
 {% endtab %}
 
 {% tab title="Variants" %}
-![](../.gitbook/assets/merges.svg)
+![](../.gitbook/assets/Merges.svg)
 {% endtab %}
 {% endtabs %}
 
@@ -66,7 +66,7 @@ Think of the program as a breakdown of the user requirements into features, use 
 
 Why is it good? Because it is much easier for the human mind to follow a sequence than several branchings.
 
-![](../.gitbook/assets/common-code-breakdown.svg)
+![](<../.gitbook/assets/Common code - breakdown.svg>)
 
 What is the most simple and natural implementation of a sequence of steps? What would you expect, how it is implemented? The answer is: 
 
@@ -78,11 +78,11 @@ The most simple and natural implementation of a sequence of steps is a _sequence
 
 How to achieve that the common code does not contain branching for the use cases? Of course, at a certain point, the program has to make a distinction between the use cases. But after this point we should never merge them again:
 
-![](../.gitbook/assets/separate.svg)
+![](<../.gitbook/assets/Separate (1).svg>)
 
 How do we eliminate the code duplication of the common steps? We can simply extract the parts which are equal to more use cases:
 
-![](../.gitbook/assets/separate-with-common-code.svg)
+![](<../.gitbook/assets/Separate With Common Code.svg>)
 
 So the rule is:
 
@@ -92,13 +92,13 @@ Extract common code only if it is exactly the same for the use cases and does no
 
 It also means that the extracted common code parts should be independent. They should be distinct methods or classes.
 
-Of course, a common code can contain branching for _other_ use cases. But for those use cases, it should be again the only one place for branching.
+Of course, a common code can contain branching for _other _use cases. But for those use cases, it should be again the only one place for branching.
 
 ### What to Merge And What Not
 
-You should only extract into common function _how_ a certain step is implemented, and not extract _that_ a use case contains that step. The steps of a use case make its _description_. The steps of another use case should be the independent description of that other use case, even if they are similar.
+You should only extract into common function _how _a certain step is implemented, and not extract _that _a use case contains that step. The steps of a use case make its _description_. The steps of another use case should be the independent description of that other use case, even if they are similar.
 
-![](../.gitbook/assets/common-code-merge.svg)
+![](<../.gitbook/assets/Common code - merge.svg>)
 
 The _naming rule_ can be helpful too: You should be able to add a meaningful, functional name to the extracted code. If it is not possible, then there is a chance that the code should not be extracted.
 
@@ -298,7 +298,7 @@ The most correct solution is, that if Use cases 1 and 2 use different data, then
 
 We often do this common code mistake with abstract parent classes. Calling abstract methods is just an elegant way to hide the ifs/switches for the use cases, but they are still there! Each and every abstract method represents branching for the use cases.
 
-It's even worse when we create multiple class hierarchies _for the same_ use cases. They are really the same branching again and again.
+It's even worse when we create multiple class hierarchies _for the same _use cases. They are really the same branching again and again.
 
 {% hint style="warning" %}
 Multiple class hierarchies for the same use cases should be treated as code repetition.
@@ -306,17 +306,21 @@ Multiple class hierarchies for the same use cases should be treated as code repe
 
 {% tabs %}
 {% tab title="Single" %}
-![](../.gitbook/assets/polymorphic-single.svg)
+![](<../.gitbook/assets/Polymorphic single.svg>)
+
+
 {% endtab %}
 
 {% tab title="Multiple" %}
-![](../.gitbook/assets/polymorphic-multiple.svg)
+![](<../.gitbook/assets/Polymorphic multiple (2).svg>)
+
+
 {% endtab %}
 {% endtabs %}
 
 Solution: we should create only one class hierarchy for the same use cases. Even better if we do not create any class hierarchies for them. The best is if we [Do Not Use Inheritance](../do-not-use-inheritance.md) at all.
 
-Putting common code into a parent class is a _misuse_ of inheritance because it generates unwanted dependencies between the classes. Common code should rather be _common functionality_, which should be put in independent components.
+Putting common code into a parent class is a _misuse _of inheritance because it generates unwanted dependencies between the classes. Common code should rather be _common functionality_, which should be put in independent components.
 
 ### Abstract Methods
 
@@ -407,7 +411,7 @@ class UseCase2 {
 {% endtab %}
 {% endtabs %}
 
-Why is this another incorrect usage of inheritance? Actually, it is an incorrect usage of _methods_, which should be _procedures_ and not values. So the methods in the use case classes should directly call the specific methods instead of returning the use case.
+Why is this another incorrect usage of inheritance? Actually, it is an incorrect usage of _methods_, which should be _procedures _and not values. So the methods in the use case classes should directly call the specific methods instead of returning the use case.
 
 ### How to Control the Program Flow?
 
@@ -463,7 +467,7 @@ void method2(Data data) {
 {% endtab %}
 {% endtabs %}
 
-Why is it not optimal? Because in every example `method1()` _already knows_ the use case and it knows that `doSomething()` should be called. But it postpones that and leaves it to `method2()`. If `method2()` is a common function than it is _polluted_ by the branching between the use cases.
+Why is it not optimal? Because in every example `method1()` _already knows_ the use case and it knows that `doSomething()` should be called. But it postpones that and leaves it to `method2()`. If `method2()` is a common function than it is _polluted _by the branching between the use cases.
 
 {% hint style="warning" %}
 Never control the program flow with input parameters, abstract methods, or any fixed information, that is already known outside of the method.
@@ -481,23 +485,23 @@ Implement branchings for the use cases _only once_, and as _early as possible_.
 
 In the entire code base, there may be many other merged codes. The problem is that they are not logical, since they do not come from business logic. Instead, they are unexpected and arbitrary. Every common code has its specific logic that must be understood by each developer who works on that part. This leads to the problem that is described in [What Is The Problem With Abstract Frameworks?](../what-is-the-problem-with-inheritance.md).
 
-In other words, common codes dangerously increase the number of _dependencies_ between the classes. Dependencies make the code hard to understand and maintain.
+In other words, common codes dangerously increase the number of _dependencies _between the classes. Dependencies make the code hard to understand and maintain.
 
 The following image shows a logical breakdown of a program into features, sub-features, use cases, sub-use cases, and steps. Ad-hoc common code can be dropped anywhere between any similar parts. Note, that in real life it would be much more complicated.
 
 {% tabs %}
 {% tab title="Without common codes" %}
-![](../.gitbook/assets/common-code-logical.svg)
+![](<../.gitbook/assets/Common code - logical.svg>)
 {% endtab %}
 
 {% tab title="With common codes" %}
-![](../.gitbook/assets/common-code-ad-hoc.svg)
+![](<../.gitbook/assets/Common code - ad hoc.svg>)
 {% endtab %}
 {% endtabs %}
 
 ### Common Code for Features
 
-Note on the above image, that _features_ may also have common code, which is even worse than use cases having it.
+Note on the above image, that _features _may also have common code, which is even worse than use cases having it.
 
 {% hint style="info" %}
 Features must not have a common code.
@@ -509,7 +513,7 @@ Not to mention that during the modifications of a program, features will have mo
 
 ### The Idea of Common Code
 
-When writing object-oriented programs with many classes, the big question is always: where should I add my code? And the answer is: the new code should have a well-defined functionality, that helps to _name_ it, and then we can see where to add it.
+When writing object-oriented programs with many classes, the big question is always: where should I add my code? And the answer is: the new code should have a well-defined functionality, that helps to _name _it, and then we can see where to add it.
 
 Unfortunately 'common code' is not a name. It is not a functionality. We often create abstract parent classes for the common code. But 'Abstract' is not a name either, and abstraction is not a functionality.
 
@@ -525,13 +529,13 @@ In general, the goal is the separation, not the merge.
 
 ### Rules
 
-**Extract** the implementation of _functionalities_ that are independent of the use cases, into a common code.
+**Extract **the implementation of _functionalities _that are independent of the use cases, into a common code.
 
 **Do not extract** the code, which is the _description of the use cases_, into a common code. Each use case should have its own distinct implementation, i.e. the description of the steps the use case consists of.
 
-**Never** merge features into a common code. Features should be independent.
+**Never **merge features into a common code. Features should be independent.
 
-**Implement** branchings for the use cases _only once_, and as _early as possible_.
+**Implement **branchings for the use cases _only once_, and as _early as possible_.
 
 **Organize** and name the code by business logic, i.e. features, use cases, steps, and functions.
 
@@ -548,4 +552,3 @@ Investigate every `if` command and every possible branching, whether they are in
 Common code creates a dependency between the classes. Dependencies also increase code complexity.
 
 ![](../.gitbook/assets/quote-controlling-complexity-is-the-essence-of-computer-programming-brian-kernighan-66-96-49.jpg)
-

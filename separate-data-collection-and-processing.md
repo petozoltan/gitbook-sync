@@ -6,19 +6,19 @@ description: 2021.08.08
 
 Do you remember this little numerical "machine" from the ground school?
 
-![](.gitbook/assets/machine.png)
+![](.gitbook/assets/Machine.png)
 
-It shows the kids an operation, like multiplying numbers by 2. It is actually a _function_ with input and output values, and it seems to be a basic element of programming too.
+It shows the kids an operation, like multiplying numbers by 2. It is actually a _function _with input and output values, and it seems to be a basic element of programming too.
 
 ## Problems With the Architecture
 
 Now let's take look at how we write our programs today. Every arrow on the image is a data flow between the components:
 
-![](.gitbook/assets/todays-program-no-data.svg)
+![](<.gitbook/assets/Todays Program - no Data.svg>)
 
 Can you find the little machine in this image? No, you cannot, because it is not there. On the UML image, it should look like this—with only one arrow:
 
-![](.gitbook/assets/function.png)
+![](.gitbook/assets/Function.png)
 
 Why is it a problem? What's wrong with our code above? There are more issues:
 
@@ -32,8 +32,8 @@ This also means that the data, which is processed, is never complete. It is neve
 
 #### Components Don't Return Properly
 
-Sometimes, components really don't have a clear return point, so they cannot return their output data. Instead, they pass their results forward to other components.   
-  
+Sometimes, components really don't have a clear return point, so they cannot return their output data. Instead, they pass their results forward to other components. \
+\
 I call it the [never-ending chain](overviews/clean-code-introduction/typical-issues.md#methods) antipattern. See `Class3` to `Class6` on the image as an example.
 
 #### Breach of SRP
@@ -54,15 +54,15 @@ To fix the architecture, we should clearly separate the two steps:
 
 {% tabs %}
 {% tab title="Simple" %}
-![](.gitbook/assets/collect-process-save-simple.png)
+![](<.gitbook/assets/Collect Process Save - Simple.png>)
 {% endtab %}
 
 {% tab title="Sub-steps" %}
-![](.gitbook/assets/collect-process-save-extended.png)
+![](<.gitbook/assets/Collect Process Save - Extended.png>)
 {% endtab %}
 
 {% tab title="Multiple" %}
-![](.gitbook/assets/collect-process-save-multiple.png)
+![](<.gitbook/assets/Collect Process Save - Multiple.png>)
 {% endtab %}
 {% endtabs %}
 
@@ -72,7 +72,7 @@ In other situations, there may be more big steps of processing, where the output
 
 #### Separate Write And Read Phases
 
-The separation of the collection and the processing aims also the separation when the data is written and when it is _only_ read:
+The separation of the collection and the processing aims also the separation when the data is written and when it is _only _read:
 
 * Collection: Write-only
 * Processing: Read-only
@@ -81,7 +81,6 @@ Of course, the processing step will create its own output data, and that is in t
 
 ## Create Data Structures
 
-The next thing we need to do besides the separation is to design the input and output data structures for each step. For this, we should create _data transfer objects_ \(DTOs\).
+The next thing we need to do besides the separation is to design the input and output data structures for each step. For this, we should create _data transfer objects_ (DTOs).
 
 See more in the next chapter, [how to create data structures](create-data-models.md).
-

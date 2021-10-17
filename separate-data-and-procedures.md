@@ -15,13 +15,13 @@ So a class contains:
 * member variables - I call them now 'data'
 * member functions - I call them procedures
 
-![](.gitbook/assets/class.png)
+![](.gitbook/assets/Class.png)
 
 But was it really a good idea?
 
 ### Impossible Mission
 
-Thinking of a large, real-life code base, is it possible to put really _all_ codes into the class where the data is located? I think, no. It would mean huge classes. We never do it.
+Thinking of a large, real-life code base, is it possible to put really _all _codes into the class where the data is located? I think, no. It would mean huge classes. We never do it.
 
 It would also mean, that the same classes would change again and again. Every developer would always work on the same few classes.
 
@@ -35,17 +35,17 @@ Procedures should also have well-defined input and output data, rather than bein
 
 ### Dependency Injection
 
-The final nail in the coffin of the class is the widespread use of dependency injection. We _already_ separate data and procedures and handle them in different ways.
+The final nail in the coffin of the class is the widespread use of dependency injection. We _already _separate data and procedures and handle them in different ways.
 
 * We use procedures in stateless singleton classes, which are instantiated by the injection framework.
 * We used to organize data in domain models or data models. They should not contain business logic.
 
 So we used to have these types of classes:
 
-|  | Procedural | Data |
-| :--- | :--- | :--- |
-| _Statefulness_ | stateless | stateful |
-| _Cardinality_ | singleton | prototype |
+|                 | Procedural             | Data                                |
+| --------------- | ---------------------- | ----------------------------------- |
+| _Statefulness_  | stateless              | stateful                            |
+| _Cardinality_   | singleton              | prototype                           |
 | _Instantiation_ | by injection framework | by application, ORM framework, etc. |
 
 ### No Classes
@@ -60,19 +60,19 @@ Unfortunately, today's languages like Java or C++ still call them classes. Not o
 
 The reason is simply, that they are _class-based languages_. Everything is a class. That's why we, programmers still treat them as classes.
 
-![](.gitbook/assets/difference.jpg)
+![](.gitbook/assets/Difference.jpg)
 
 Here is what we have by syntax:
 
-|  | Procedural | Data |
-| :--- | :--- | :--- |
-| _Name_ | `class` | `class` |
-| _Data members_ | Yes | Yes |
-| _Procedure members_ | Yes | Yes |
+|                     | Procedural | Data    |
+| ------------------- | ---------- | ------- |
+| _Name_              | `class`    | `class` |
+| _Data members_      | Yes        | Yes     |
+| _Procedure members_ | Yes        | Yes     |
 
 Do procedural classes really have data members? No. They have only other components injected. Does it make them stateful? Well, yes, but we just don't use to change the injected components. _So we use them differently as they are intended_.
 
-Do data classes really have procedural members? No. They have only accessors and mutators \(getters and setters\). They do not add any new information to the class besides accessing the data members. Does it make them having procedures? Well, yes, but we just don't use to write procedures in them. At least no complex business logic. _So we use them differently as they are intended_.
+Do data classes really have procedural members? No. They have only accessors and mutators (getters and setters). They do not add any new information to the class besides accessing the data members. Does it make them having procedures? Well, yes, but we just don't use to write procedures in them. At least no complex business logic. _So we use them differently as they are intended_.
 
 {% hint style="warning" %}
 We misuse data members in procedural classes and procedural members in data classes.
@@ -82,7 +82,7 @@ Why do we do this? Because we don't have other choices due to the syntax.
 
 ### Java Records
 
-In Java 14 the data _structure_ is brought back with the `record` keyword. This class is defined entirely by the data it carries:
+In Java 14 the data _structure _is brought back with the `record` keyword. This class is defined entirely by the data it carries:
 
 * It features automatically generated accessors, equals, hashcode, etc. 
 * It has only getters because all members are automatically `final`.
@@ -91,7 +91,7 @@ In Java 14 the data _structure_ is brought back with the `record` keyword. This 
 Read more here:
 
 * [Java 14 – Record data class](https://mkyong.com/java/java-14-record-data-class/)
-* [JEP 359: Records \(Preview\)](https://openjdk.java.net/jeps/359)
+* [JEP 359: Records (Preview)](https://openjdk.java.net/jeps/359)
 
 This also supports the idea that data classes are no classes, and it also gives a new language keyword for them.
 
@@ -104,14 +104,14 @@ We should see and treat separated data and procedural classes as something new. 
 
 So here is what we have in reality:
 
-|  | Procedural | Data |
-| :--- | :--- | :--- |
-| _Name_ | `unit` | `record` |
-| _Data members_ | No | Yes |
-| _Procedure members_ | Yes | No |
-| _Statefulness_ | stateless | stateful |
-| _Cardinality_ | singleton | prototype |
-| _Instantiation_ | by injection framework | by application, ORM framework, etc |
+|                     | Procedural             | Data                               |
+| ------------------- | ---------------------- | ---------------------------------- |
+| _Name_              | `unit`                 | `record`                           |
+| _Data members_      | No                     | Yes                                |
+| _Procedure members_ | Yes                    | No                                 |
+| _Statefulness_      | stateless              | stateful                           |
+| _Cardinality_       | singleton              | prototype                          |
+| _Instantiation_     | by injection framework | by application, ORM framework, etc |
 
 ### No OOP
 
@@ -123,9 +123,9 @@ If we separate procedural and data classes, we should not write programs in a cl
 
 I another article I suggest to [not use inheritance](do-not-use-inheritance.md) anymore.   
 
-* With this, most of the _encapsulation_, _polymorphism_, and _open-closed_ principles are gone.
+* With this, most of the _encapsulation_, _polymorphism_, and _open-closed _principles are gone.
 * Many [_design patterns_](https://en.wikipedia.org/wiki/Software_design_pattern) that use inheritance become unusable. Or we should redesign them without inheritance.
-* Some other rules, like the _dependency inversion_ principle, can remain valid. \(Allowing the usage of interfaces.\)
+* Some other rules, like the _dependency inversion_ principle, can remain valid. (Allowing the usage of interfaces.)
 * There can be ones, like the _law of Demeter_, which will be valid either for the procedural or the data classes.
 
 #### Law of Demeter
@@ -146,4 +146,3 @@ There are long articles on the internet struggling with this issue and sometimes
 
 * [Criticism of OOP](https://en.wikipedia.org/wiki/Object-oriented_programming#Criticism) in the Wikipedia article.
 * [Do Not Use Inheritance](do-not-use-inheritance.md)
-

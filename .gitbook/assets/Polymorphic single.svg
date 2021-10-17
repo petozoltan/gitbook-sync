@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="406px" preserveAspectRatio="none" style="width:487px;height:406px;" version="1.1" viewBox="0 0 487 406" width="487px" zoomAndPan="magnify"><defs/><g><!--MD5=[cf9bc73d4b319b8f5d50999aecc13d13]
+class Parent--><rect fill="#FFFFFF" height="195.7803" id="Parent" style="stroke: #808080; stroke-width: 1.5;" width="152" x="106.5" y="8"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="161.5" y="24.8765">Parent</text><line style="stroke: #808080; stroke-width: 1.5;" x1="107.5" x2="257.5" y1="33.2217" y2="33.2217"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="119.5" y="48.1846"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="119.5" y="62.2354">common() {</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="147.5" y="76.2861">method1();</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="147.5" y="90.3369">method2();</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="7" x="119.5" y="104.3877">}</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="119.5" y="118.4385"/><line style="stroke: #808080; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="107.5" x2="257.5" y1="125.5264" y2="125.5264"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="119.5" y="140.4893"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="56" x="119.5" y="154.54">abstract</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="182.5" y="154.54">method1()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="119.5" y="168.5908"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="56" x="119.5" y="182.6416">abstract</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="182.5" y="182.6416">method2()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="119.5" y="196.6924"/><!--MD5=[ed19e2c4cd91214afd1afc497bba70f0]
+class UseCase1--><rect fill="#FFFFFF" height="131.5771" id="UseCase1" style="stroke: #808080; stroke-width: 1.5;" width="159" x="6" y="264"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="56" x="57.5" y="280.8765">UseCase1</text><line style="stroke: #808080; stroke-width: 1.5;" x1="7" x2="164" y1="289.2217" y2="289.2217"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="19" y="304.1846"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="19" y="318.2354"/><text fill="#008080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="19" y="318.2354">@Override</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="19" y="332.2861"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="19" y="332.2861">protected</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="89" y="332.2861">method1()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="19" y="346.3369"/><text fill="#008080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="19" y="360.3877">@Override</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="19" y="374.4385"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="19" y="374.4385">protected</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="89" y="374.4385">method2()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="19" y="388.4893"/><!--MD5=[b35a2a0fbc1108900b9de51e908a33c0]
+class UseCase2--><rect fill="#FFFFFF" height="131.5771" id="UseCase2" style="stroke: #808080; stroke-width: 1.5;" width="159" x="200" y="264"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="56" x="251.5" y="280.8765">UseCase2</text><line style="stroke: #808080; stroke-width: 1.5;" x1="201" x2="358" y1="289.2217" y2="289.2217"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="213" y="304.1846"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="213" y="318.2354"/><text fill="#008080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="213" y="318.2354">@Override</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="213" y="332.2861"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="213" y="332.2861">protected</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="283" y="332.2861">method1()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="213" y="346.3369"/><text fill="#008080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="213" y="360.3877">@Override</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="213" y="374.4385"/><text fill="#800000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="213" y="374.4385">protected</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="283" y="374.4385">method2()</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="213" y="388.4893"/><path d="M293.5,52 L293.5,102 L258.64,106 L293.5,110 L293.5,160.1094 A0,0 0 0 0 293.5,160.1094 L475.5,160.1094 A0,0 0 0 0 475.5,160.1094 L475.5,62 L465.5,52 L293.5,52 A0,0 0 0 0 293.5,52 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M465.5,52 L465.5,62 L475.5,62 L465.5,52 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#008080" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="161" x="299.5" y="70.4951">// For each abstract method</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="303.5" y="86.8467"/><text fill="#800000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="37" x="303.5" y="103.1982">switch</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="67" x="344.5" y="103.1982">(useCase) {</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="28" x="303.5" y="119.5498">case</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="335.5" y="119.5498"/><text fill="#0000CD" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="25" x="335.5" y="119.5498">UC1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="20" x="360.5" y="119.5498">: ...</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="28" x="303.5" y="135.9014">case</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="335.5" y="135.9014"/><text fill="#0000CD" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="25" x="335.5" y="135.9014">UC2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="20" x="360.5" y="135.9014">: ...</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="4" x="303.5" y="152.2529">}</text><!--MD5=[a26838eeb695700e23f11349fa009a85]
+reverse link Parent to UseCase1--><path d="M131.99,222.6 C125.82,236.72 119.69,250.74 114.01,263.75 " fill="none" id="Parent&lt;-UseCase1" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="none" points="125.67,219.57,140.1,204.05,138.5,225.18,125.67,219.57" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[2ff54310ac1c69103c37b358d4721587]
+reverse link Parent to UseCase2--><path d="M233.01,222.6 C239.18,236.72 245.31,250.74 250.99,263.75 " fill="none" id="Parent&lt;-UseCase2" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="none" points="226.5,225.18,224.9,204.05,239.33,219.57,226.5,225.18" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[ebf16545e4a20569e91cc1dc1e2e206b]
+@startuml
+
+skinparam shadowing false
+
+
+hide empty members
+hide fields
+
+hide circle
+
+
+skinparam package {
+style rectangle
+borderColor gray
+fontSize 12
+}
+
+skinparam arrow {
+
+color gray
+}
+
+skinparam class {
+
+borderColor gray
+backgroundColor white
+
+fontSize 13
+fontName Consolas
+
+attributeFontSize 12
+attributeFontName Consolas
+
+stereotypeFontSize 12
+stereotypeFontColor gray
+stereotypeFontStyle normal
+stereotypeFontName Consolas
+}
+
+
+class Parent {
+\n common() {\n     method1();\n     method2(); \n }\n
+..
+
+<font color=maroon> abstract</font> method1()
+
+<font color=maroon> abstract</font> method2() \n
+}
+
+class UseCase1 extends Parent {
+
+\n <font color=teal>@Override</font>\n <font color=maroon>protected</font> method1()
+
+<font color=teal> @Override</font>\n <font color=maroon>protected</font> method2() \n
+
+}
+
+class UseCase2 extends Parent {
+
+\n <font color=teal>@Override</font>\n <font color=maroon>protected</font> method1()
+
+<font color=teal> @Override</font>\n <font color=maroon>protected</font> method2() \n
+
+}
+
+note as N1
+<font color=teal>// For each abstract method</font>
+
+<font color=maroon> switch</font> (useCase) {
+<font color=black> case</font> <font color=mediumblue>UC1</font>: ...
+<font color=black> case</font> <font color=mediumblue>UC2</font>: ...
+<font color=black> }
+end note
+Parent . N1
+
+@enduml
+
+PlantUML version 1.2019.11(Sun Sep 22 12:02:15 CEST 2019)
+(EPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11+28
+Operating System: Windows 10
+Default Encoding: Cp1250
+Language: hu
+Country: HU
+--></g></svg>

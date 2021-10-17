@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="492px" preserveAspectRatio="none" style="width:302px;height:492px;" version="1.1" viewBox="0 0 302 492" width="302px" zoomAndPan="magnify"><defs/><g><!--MD5=[db8947410cfcb5febdf8f8cf27669db4]
+class Class1--><rect fill="#FFFFFF" height="245.9326" id="Class1" style="stroke: #808080; stroke-width: 1.5;" width="236" x="30.5" y="8"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="127.5" y="24.8765">Class1</text><line style="stroke: #808080; stroke-width: 1.5;" x1="31.5" x2="265.5" y1="33.2217" y2="33.2217"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="43.5" y="48.1846"/><text fill="#0000CD" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="42" x="43.5" y="62.2354">data1;</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="43.5" y="76.2861"/><text fill="#0000CD" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="42" x="43.5" y="90.3369">data2;</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="43.5" y="104.3877"/><line style="stroke: #808080; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="31.5" x2="265.5" y1="111.4756" y2="111.4756"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="43.5" y="126.4385"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="line-through" textLength="98" x="43.5" y="140.4893">procedure1() {</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="line-through" textLength="84" x="71.5" y="154.54">doSomething(</text><text fill="#0000CD" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="line-through" textLength="35" x="155.5" y="154.54">data1</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="line-through" textLength="7" x="190.5" y="154.54">,</text><text fill="#0000CD" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="line-through" textLength="35" x="204.5" y="154.54">data2</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="line-through" textLength="14" x="239.5" y="154.54">);</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="line-through" textLength="7" x="43.5" y="168.5908">}</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="43.5" y="182.6416"/><line style="stroke: #808080; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="31.5" x2="265.5" y1="189.7295" y2="189.7295"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="43.5" y="204.6924"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="98" x="43.5" y="218.7432">procedure2() {</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="7" x="43.5" y="232.7939">}</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="43.5" y="246.8447"/><!--MD5=[097cec2c4502543b4bc821e1e2f7ea8d]
+class Class2--><rect fill="#FFFFFF" height="167.6787" id="Class2" style="stroke: #808080; stroke-width: 1.5;" width="285" x="6" y="314"/><text fill="#000000" font-family="Consolas" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="127.5" y="330.8765">Class2</text><line style="stroke: #808080; stroke-width: 1.5;" x1="7" x2="290" y1="339.2217" y2="339.2217"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="19" y="354.1846"/><text fill="#0000CD" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="42" x="19" y="368.2354">data3;</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="19" y="382.2861"/><line style="stroke: #808080; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="7" x2="290" y1="389.374" y2="389.374"/><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="19" y="404.3369"/><text fill="#008080" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="19" y="418.3877">@Override</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="98" x="19" y="432.4385">procedure1() {</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="84" x="47" y="446.4893">doSomething(</text><text fill="#0000CD" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="35" x="131" y="446.4893">data1</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="7" x="166" y="446.4893">,</text><text fill="#0000CD" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="35" x="180" y="446.4893">data2</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="7" x="215" y="446.4893">,</text><text fill="#0000CD" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="35" x="229" y="446.4893">data3</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="14" x="264" y="446.4893">);</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="7" x="19" y="460.54">}</text><text fill="#000000" font-family="Consolas" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="19" y="474.5908"/><!--MD5=[f1a75de57d453dbc6e2094e1a0ac9d41]
+reverse link Class1 to Class2--><path d="M148.5,274.47 C148.5,287.91 148.5,301.22 148.5,313.83 " fill="none" id="Class1&lt;-Class2" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="none" points="141.5,274.03,148.5,254.03,155.5,274.03,141.5,274.03" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[6e0bcca18f936a1f6c3cfc4eca84c0ac]
+@startuml
+
+skinparam shadowing false
+
+
+hide empty members
+
+hide circle
+
+
+
+skinparam package {
+style rectangle
+borderColor gray
+fontSize 12
+}
+
+skinparam arrow {
+
+color gray
+}
+
+skinparam class {
+
+borderColor gray
+backgroundColor white
+
+fontSize 13
+fontName Consolas
+
+attributeFontSize 12
+attributeFontName Consolas
+
+stereotypeFontSize 11
+}
+
+
+class Class1 {
+
+<font color=mediumblue> data1;
+
+<font color=mediumblue> data2;
+
+..
+
+<strike><font color=black> procedure1() {                 \n<strike>     doSomething(<font color=mediumblue>data1</font>, <font color=mediumblue>data2</font>); \n<strike> }                              \n
+..
+
+<font color=black> procedure2() {\n }
+
+}
+
+class Class2 extends Class1 {
+
+<font color=mediumblue> data3;
+
+..
+
+<font color=teal> @Override\n procedure1() {\n     doSomething(<font color=mediumblue>data1</font>, <font color=mediumblue>data2</font>, <font color=mediumblue>data3</font>); \n }
+
+}
+
+@enduml
+
+PlantUML version 1.2019.11(Sun Sep 22 12:02:15 CEST 2019)
+(EPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11+28
+Operating System: Windows 10
+Default Encoding: Cp1250
+Language: hu
+Country: HU
+--></g></svg>

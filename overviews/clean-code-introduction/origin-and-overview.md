@@ -3,11 +3,11 @@
 ### Uncle Bob & The Book
 
 * [Clean Code book](../clean-code-outline/) ![](../../.gitbook/assets/clean-code-book-cover.png) 
-* Robert C. Martin a.k.a. _Uncle Bob_ ![](../../.gitbook/assets/uncle_bob_400x400.png) 
+* Robert C. Martin a.k.a. _Uncle Bob _![](../../.gitbook/assets/Uncle_Bob\_400x400.png) 
 
 ### Named principles
 
-* In the book: SRP, OCP, DIP, \(IoC\), DI, DRY, LOD, BSR, F.I.R.S.T.
+* In the book: SRP, OCP, DIP, (IoC), DI, DRY, LOD, BSR, F.I.R.S.T.
 * Not in the book: LSP, ISP, YAGNI, KISS, S.O.L.I.D.
 
 Coding
@@ -15,7 +15,7 @@ Coding
 * **SRP** Single Responsibility Principle
 * **OCP** Open Closed Principle
 * **DIP** Dependency Inversion Principle
-* **\(IoC\)** Inversion of Control
+* **(IoC)** Inversion of Control
 * **DI** Dependency Injection
 * **DRY** Don't Repeat Yourself
 * **LOD** Law of Demeter
@@ -76,6 +76,4 @@ Programmer style
 * Tested
 * Bugs cannot hide
 * Art
-
-
 

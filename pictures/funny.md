@@ -4,33 +4,32 @@ description: 2021.07.16
 
 # Funny
 
-![](../.gitbook/assets/comments.jpg)
+![](../.gitbook/assets/Comments.jpg)
 
-![](../.gitbook/assets/comment.jpg)
+![](../.gitbook/assets/Comment.jpg)
 
-![](../.gitbook/assets/microsoftteams-image-21-.jpg)
+![](<../.gitbook/assets/MicrosoftTeams-image (21).jpg>)
 
-![](../.gitbook/assets/senior.jpg)
+![](../.gitbook/assets/Senior.jpg)
 
 ![](../.gitbook/assets/senior_dev_vs_junior_dev.jpg)
 
-![](../.gitbook/assets/little.jpg)
+![](../.gitbook/assets/Little.jpg)
 
-![](../.gitbook/assets/runs.jpg)
+![](../.gitbook/assets/Runs.jpg)
 
-![](../.gitbook/assets/headaches.png)
+![](../.gitbook/assets/Headaches.png)
 
-![](../.gitbook/assets/job.jpg)
+![](../.gitbook/assets/Job.jpg)
 
-![](../.gitbook/assets/warnings.png)
+![](../.gitbook/assets/Warnings.png)
 
-![](../.gitbook/assets/debugging.jpg)
+![](../.gitbook/assets/Debugging.jpg)
 
-![](../.gitbook/assets/bad-code.jpg)
+![](<../.gitbook/assets/Bad code.jpg>)
 
-![](../.gitbook/assets/microsoftteams-image-12-.png)
+![](<../.gitbook/assets/MicrosoftTeams-image (12).png>)
 
-![](../.gitbook/assets/microsoftteams-image-14-.jpg)
+![](<../.gitbook/assets/MicrosoftTeams-image (14).jpg>)
 
-![](../.gitbook/assets/spaghetti.png)
-
+![](../.gitbook/assets/Spaghetti.png)
