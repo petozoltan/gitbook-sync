@@ -4,6 +4,8 @@ description: 2021.05.18
 
 # Quotes
 
+![](../.gitbook/assets/Monolith.png)
+
 ![](../.gitbook/assets/hamilton-fear.jpg)
 
 ![](../.gitbook/assets/quote-the-most-damaging-phrase-in-the-language-is-it-s-always-been-done-that-way-grace-hopper-55-38-84.jpg)
