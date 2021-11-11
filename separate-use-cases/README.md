@@ -224,7 +224,7 @@ void useCase1() {
 }
 
 void useCase2() {
-	Data data = new Data("2", null);
+	Data data = new Data(null, "2");
 	
 	step2(data.getAttribute2() );
 }
@@ -243,14 +243,14 @@ void step2(Object attribute2) {
 // Use case 2 = Step 2
 
 void useCase1() {
-	Data data = DataFactory.createForUseCase1("1", "1");
+	Data1 data = new Data1("1", "1");
 	
 	step1(data.getAttribute1() );
 	step2(data.getAttribute2() );
 }
 
 void useCase2() {
-	Data data = DataFactory.createForUseCase2("2");
+	Data2 data = new Data2("2");
 	
 	step2(data.getAttribute2() );
 }
@@ -269,14 +269,14 @@ void step2(Object attribute2) {
 // Use case 2 = Step 2
 
 void useCase1() {
-	Data1 data = new Data1("1", "1");
+	Data data = DataFactory.createForUseCase1("1", "1");
 	
 	step1(data.getAttribute1() );
 	step2(data.getAttribute2() );
 }
 
 void useCase2() {
-	Data2 data = new Data2("2");
+	Data data = DataFactory.createForUseCase2("2");
 	
 	step2(data.getAttribute2() );
 }
