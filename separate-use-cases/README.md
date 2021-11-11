@@ -8,11 +8,11 @@ We are good programmers and we write good quality code. Despite that, I always s
 
 {% tabs %}
 {% tab title="Lost" %}
-![](<../.gitbook/assets/Maze 2.svg>)
+![](../.gitbook/assets/Maze.png)
 {% endtab %}
 
 {% tab title="Again and again..." %}
-![](../.gitbook/assets/Mazes.svg)
+![](../.gitbook/assets/Mazes.png)
 {% endtab %}
 {% endtabs %}
 
@@ -24,11 +24,11 @@ Programmers are notorious for pulling together similar code parts, saying they s
 
 Let's assume, we have two use cases consisting of similar but not equal steps:
 
-![](<../.gitbook/assets/Use Cases Logical.svg>)
+![](<../.gitbook/assets/Use Cases Logical.png>)
 
 Software developers will usually implement them in the following way:
 
-![](<../.gitbook/assets/Use Cases Implementation.svg>)
+![](<../.gitbook/assets/Use Cases Implementation.png>)
 
 That means that the common code will branch for the use cases, and then it goes again to the common code, then it will branch again.
 
@@ -36,11 +36,11 @@ With a simplified drawing—and rotating it with 90º—the following happens he
 
 {% tabs %}
 {% tab title="Merge" %}
-![](../.gitbook/assets/Merge.svg)
+![](../.gitbook/assets/Merge.png)
 {% endtab %}
 
 {% tab title="Variants" %}
-![](../.gitbook/assets/Merges.svg)
+![](../.gitbook/assets/Merges.png)
 {% endtab %}
 {% endtabs %}
 
@@ -66,9 +66,9 @@ Think of the program as a breakdown of the user requirements into features, use 
 
 Why is it good? Because it is much easier for the human mind to follow a sequence than several branchings.
 
-![](<../.gitbook/assets/Common code - breakdown.svg>)
+![](<../.gitbook/assets/Common code - breakdown.png>)
 
-What is the most simple and natural implementation of a sequence of steps? What would you expect, how it is implemented? The answer is: 
+What is the most simple and natural implementation of a sequence of steps? What would you expect, how it is implemented? The answer is:&#x20;
 
 {% hint style="info" %}
 The most simple and natural implementation of a sequence of steps is a _sequence of method calls_, without any branching.
@@ -82,7 +82,7 @@ How to achieve that the common code does not contain branching for the use cases
 
 How do we eliminate the code duplication of the common steps? We can simply extract the parts which are equal to more use cases:
 
-![](<../.gitbook/assets/Separate With Common Code.svg>)
+![](<../.gitbook/assets/Separate With Common Code.png>)
 
 So the rule is:
 
@@ -98,7 +98,7 @@ Of course, a common code can contain branching for _other _use cases. But for th
 
 You should only extract into common function _how _a certain step is implemented, and not extract _that _a use case contains that step. The steps of a use case make its _description_. The steps of another use case should be the independent description of that other use case, even if they are similar.
 
-![](<../.gitbook/assets/Common code - merge.svg>)
+![](<../.gitbook/assets/Common code - merge.png>)
 
 The _naming rule_ can be helpful too: You should be able to add a meaningful, functional name to the extracted code. If it is not possible, then there is a chance that the code should not be extracted.
 
@@ -306,13 +306,13 @@ Multiple class hierarchies for the same use cases should be treated as code repe
 
 {% tabs %}
 {% tab title="Single" %}
-![](<../.gitbook/assets/Polymorphic single.svg>)
+![](<../.gitbook/assets/Polymorphic single.png>)
 
 
 {% endtab %}
 
 {% tab title="Multiple" %}
-![](<../.gitbook/assets/Polymorphic multiple (2).svg>)
+![](<../.gitbook/assets/Polymorphic multiple.png>)
 
 
 {% endtab %}
@@ -415,7 +415,7 @@ Why is this another incorrect usage of inheritance? Actually, it is an incorrect
 
 ### How to Control the Program Flow?
 
-In all the above examples there is a common issue: we control the program flow with some information, which is passed as input parameter, abstract method, data, or in other ways. 
+In all the above examples there is a common issue: we control the program flow with some information, which is passed as input parameter, abstract method, data, or in other ways.&#x20;
 
 The following simplified code fragment shows where the `if` command controls the program flow:
 
@@ -491,11 +491,11 @@ The following image shows a logical breakdown of a program into features, sub-fe
 
 {% tabs %}
 {% tab title="Without common codes" %}
-![](<../.gitbook/assets/Common code - logical.svg>)
+![](<../.gitbook/assets/Common code - logical.png>)
 {% endtab %}
 
 {% tab title="With common codes" %}
-![](<../.gitbook/assets/Common code - ad hoc.svg>)
+![](<../.gitbook/assets/Common code - ad hoc.png>)
 {% endtab %}
 {% endtabs %}
 
@@ -507,7 +507,7 @@ Note on the above image, that _features _may also have common code, which is eve
 Features must not have a common code.
 {% endhint %}
 
-Features should be entirely independent of each other. Otherwise modifying a feature would risk the breaking of other features, which are already tested and delivered. 
+Features should be entirely independent of each other. Otherwise modifying a feature would risk the breaking of other features, which are already tested and delivered.&#x20;
 
 Not to mention that during the modifications of a program, features will have more and more differences, that must be added to the common parts, which adds unwanted complexity to the code.
 
@@ -543,7 +543,7 @@ In general, the goal is the separation, not the merge.
 
 #### Minimize Branchings
 
-Branchings increase _code complexity_. This is also known as [Cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity). Every `if` or `switch` command, every abstract method, or descendant class is a branching. In a real-life program, there are countless of them! This makes the code very complex and hard to understand.
+Branchings increase _code complexity_. This is also known as [Cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic\_complexity). Every `if` or `switch` command, every abstract method, or descendant class is a branching. In a real-life program, there are countless of them! This makes the code very complex and hard to understand.
 
 Investigate every `if` command and every possible branching, whether they are incorrect implementations of use cases, and rewrite them as shown above.
 
