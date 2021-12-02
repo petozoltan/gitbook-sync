@@ -4,7 +4,7 @@ description: 2020.11.06,  2021.02.14
 
 # Do Not Use Inheritance
 
-Inheritance in OOP is the most expensive way of coding. It really makes the code hard to understand and hard to modify. This article does not focus on the issues but the good news: 
+Inheritance in OOP is the most expensive way of coding. It really makes the code hard to understand and hard to modify. This article does not focus on the issues but the good news:&#x20;
 
 {% hint style="success" %}
 We do not have to use inheritance.
@@ -18,7 +18,7 @@ There is one reason why inheritance can be avoided. The article describes it and
 
 To see why we can avoid inheritance, we should understand why it was invented. The simplified story goes like that:
 
-Before inheritance, there were structural data types, like `struct` in C. 
+Before inheritance, there were structural data types, like `struct` in C.&#x20;
 
 But developers noticed that for the same data sets they usually needed the same procedures. So they packed the data together with their procedures and called it a `class`.
 
@@ -55,7 +55,7 @@ We do not pack data and procedures together anymore.
 
 ![](<.gitbook/assets/Separate Data and Procedure Classes.png>)
 
-So we are back at the pre-OOP times with data structures. Back to the future.:slight_smile:We do not do classical object-oriented programming as it was invented, so many of its rules are not valid.
+So we are back at the pre-OOP times with data structures. Back to the future.:slight\_smile:We do not do classical object-oriented programming as it was invented, so many of its rules are not valid.
 
 {% hint style="info" %}
 We don't have to use polymorphism because its original cause does not exist anymore.
@@ -65,7 +65,7 @@ We don't have to use polymorphism because its original cause does not exist anym
 
 Injection is not the only reason to separate data and procedures.
 
-It also makes the code cleaner and more simple by _separating the concerns_. Most applications process data so it should be clear what is the data and what is its processing. 
+It also makes the code cleaner and more simple by _separating the concerns_. Most applications process data so it should be clear what is the data and what is its processing.&#x20;
 
 For procedures we use classes merely to _organize the code_. So we also separate procedures from each-other and group them strictly by their functionality, responsibility, and cohesion.  The code should adhere to the [Single Responsibility Principle](single-responsibility-principle.md).
 
@@ -94,7 +94,7 @@ If we want to create different procedures for different variations of a data str
 {% endtab %}
 {% endtabs %}
 
-When data and procedures are in the same class that means one more thing: the procedures have some 'internal access' to the data variables. But should they have this kind of extra dependency? I think it is perfectly enough dependency to know the public interface of the data class. Procedures should just use their accessors and mutators. If a data structure has information like 'birth date' and it provides that via `getBirthDate()`, what else 'informal' or 'illegal' access does a procedure need to that? 
+When data and procedures are in the same class that means one more thing: the procedures have some 'internal access' to the data variables. But should they have this kind of extra dependency? I think it is perfectly enough dependency to know the public interface of the data class. Procedures should just use their accessors and mutators. If a data structure has information like 'birth date' and it provides that via `getBirthDate()`, what else 'informal' or 'illegal' access does a procedure need to that?&#x20;
 
 ### Data classes
 
@@ -104,7 +104,7 @@ Should we use inheritance for data classes? Which features of the inheritance co
 * `override`?
 * `protected` access?
 
-We do not want data classes to have business logic methods. Why? Because we want them only to carry the data and nothing else. But it means more: we also want that a certain data is this data and nothing else. 
+We do not want data classes to have business logic methods. Why? Because we want them only to carry the data and nothing else. But it means more: we also want that a certain data is this data and nothing else.&#x20;
 
 For example, if a data class contains a 'first name' then:
 
@@ -112,7 +112,7 @@ For example, if a data class contains a 'first name' then:
 * We expect an accessor named `getFirstName()` and we don't expect that it returns something else.
 * If `getFirstName()` provides only the first name, then it does not need access to other data fields.
 
-The above expectations mean that we should not use `override` to change an accessor during inheritance. And an accessor needs no access to other data members nor `protected` access to the parent class's members. 
+The above expectations mean that we should not use `override` to change an accessor during inheritance. And an accessor needs no access to other data members nor `protected` access to the parent class's members.&#x20;
 
 The only feature we could use is the _extension_. But this can be implemented with _composition_ instead of inheritance.
 
@@ -132,9 +132,9 @@ We do not have to use inheritance for data classes either.
 
 #### Records in Java 14
 
-In Java 14 the good old _structure _is brought back with the `record` keyword. This class is defined entirely by the data it carries:
+In Java 14 the good old _structure_ is brought back with the `record` keyword. This class is defined entirely by the data it carries:
 
-* It features automatically generated accessors, equals, hashcode, etc. 
+* It features automatically generated accessors, equals, hashcode, etc.&#x20;
 * It has only getters because all members are automatically `final`.
 * The class is not inheritable, it is `final` too.
 
@@ -145,7 +145,7 @@ Read more here:
 
 ## Coding without inheritance
 
-Now we talk only about procedural classes. 
+Now we talk only about procedural classes.&#x20;
 
 How should we solve the situations we used to implement with inheritance? How can we refactor inherited classes to no-inheritance code? I have identified two common use cases, which I simply call:
 
@@ -154,7 +154,7 @@ How should we solve the situations we used to implement with inheritance? How ca
 
 Of course, in real life we usually see the two cases mixed.
 
-### Children call the parent 
+### Children call the parent&#x20;
 
 This means that the descendant classes simply use the methods they inherit from their parent classes.
 
@@ -164,7 +164,7 @@ In this situation the solution is already given by the [Effective Java](overview
 Favor composition over inheritance
 {% endhint %}
 
-We should turn the parent classes into _components _and inject them into the former child classes.
+We should turn the parent classes into _components_ and inject them into the former child classes.
 
 Probably we should not use the parent classes as they are, but rather refactor them into more components by functionality and cohesion. This also makes the code more clear.
 
@@ -182,7 +182,7 @@ Probably we should not use the parent classes as they are, but rather refactor t
 
 #### Abstract methods
 
-Parents usually call their children via abstract methods. It is the [Template method](https://en.wikipedia.org/wiki/Template_method_pattern) design pattern.
+Parents usually call their children via abstract methods. It is the [Template method](https://en.wikipedia.org/wiki/Template\_method\_pattern) design pattern.
 
 An abstract class practically defines a new interface with its abstract methods. This interface must be implemented by the child classes. _(This is one reason why it is easy to get lost in a class hierarchy. The children implement totally different interfaces, and when we traverse down in the hierarchy we quickly get far from the original interface...)_
 
@@ -204,7 +204,7 @@ So move the abstract methods into one or more interfaces. Any class that impleme
 {% endtab %}
 {% endtabs %}
 
-This also means that classes are free to implement the interfaces in their own way, without strictly adhering to the parent classes' abstract and inherited methods. Not to mention the inherited injected classes. So it frees us from a big disadvantage of inheritance. A class simply needs that an interface is implemented without telling _how _it is implemented.
+This also means that classes are free to implement the interfaces in their own way, without strictly adhering to the parent classes' abstract and inherited methods. Not to mention the inherited injected classes. So it frees us from a big disadvantage of inheritance. A class simply needs that an interface is implemented without telling _how_ it is implemented.
 
 #### Overridden methods
 
@@ -246,7 +246,7 @@ So from clean code's point of view, procedural classes should be final, but it i
 
 Let's summarize the guidelines so that they can be followed and also checked during the coding.
 
-### Always separate data and procedures into distinct classes. 
+### Always separate data and procedures into distinct classes.&#x20;
 
 This is a pre-condition to write no-inheritance code.
 
@@ -282,7 +282,7 @@ Interfaces do not have the disadvantages that parent classes have:
 
 * Interfaces methods have no implementation so implementer classes cannot override existing implementation.
 * Interfaces do not make it possible to create multiple inheritance. (At least in Java.)
-* Interfaces require only what to implement but not how they are implemented. 
+* Interfaces require only what to implement but not how they are implemented.&#x20;
 
 One procedural class can implement only one interface. Why?
 
@@ -291,9 +291,9 @@ One procedural class can implement only one interface. Why?
 
 ### Rules for data classes
 
-#### Data classes should not have real procedures 
+#### Data classes should not have real procedures&#x20;
 
-More precisely they should not contain procedures that 
+More precisely they should not contain procedures that&#x20;
 
 * process data
 * create data
@@ -323,9 +323,9 @@ Implementing an interface means that the class is free to implement its methods 
 
 Are data classes free to implement methods in different ways? What implementation can have a method like `getFirstName()` other than the data structure really contains the first name?
 
-You may say, data classes could implement interfaces and this is some kind of adaptation [design pattern](https://en.wikipedia.org/wiki/Software_design_pattern). But it would mean that we adapt the data to a certain process and its classes. _But wait... _Don't we write the procedures for the data? Shouldn't we adapt the procedures to the data structures? More precisely, we create the procedures for certain applications and data so they are already 'adapted'.
+You may say, data classes could implement interfaces and this is some kind of adaptation [design pattern](https://en.wikipedia.org/wiki/Software\_design\_pattern). But it would mean that we adapt the data to a certain process and its classes. _But wait..._ Don't we write the procedures for the data? Shouldn't we adapt the procedures to the data structures? More precisely, we create the procedures for certain applications and data so they are already 'adapted'.
 
-You may say, this is the [Interface Segregation Principle](https://en.wikipedia.org/wiki/Interface_segregation_principle). _"A client should not depend on more methods than it uses."_ But I think it comes from the classical OOP where data and procedures are put together in the same class. In our new OOP we strictly separate them and get new chances to simplify the coding. A data structure is nothing else but a data structure as it is.
+You may say, this is the [Interface Segregation Principle](https://en.wikipedia.org/wiki/Interface\_segregation\_principle). _"A client should not depend on more methods than it uses."_ But I think it comes from the classical OOP where data and procedures are put together in the same class. In our new OOP we strictly separate them and get new chances to simplify the coding. A data structure is nothing else but a data structure as it is.
 
 {% hint style="info" %}
 If a client procedure uses a data structure then it should depend on it and use it as it is.
@@ -364,4 +364,4 @@ The following keywords can be used only in procedural classes since they can imp
 * `implements`
 * `override`
 
-Actually, the `override` keyword should be something else in this case, just like `extends` and `implements` are different. For example, these keywords should be `override` and `implement` respectively. In this case, we could add `override` to the list of the forbidden keywords. 
+Actually, the `override` keyword should be something else in this case, just like `extends` and `implements` are different. For example, these keywords should be `override` and `implement` respectively. In this case, we could add `override` to the list of the forbidden keywords.&#x20;

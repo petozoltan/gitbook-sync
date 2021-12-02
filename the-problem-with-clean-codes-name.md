@@ -16,9 +16,9 @@ or
 
 > First it should work then we'll clean it later.
 
-The word _clean _sounds just to make the code 'nicer'. Developers may interpret it as 'code beautifying', a bothering and low priority activity. Which is, of course, a misunderstanding.
+The word _clean_ sounds just to make the code 'nicer'. Developers may interpret it as 'code beautifying', a bothering and low priority activity. Which is, of course, a misunderstanding.
 
-What if we would call it **Clear **Code? It would mean that _it is clear what the code does_. Which is exactly the goal of clean code. This main goal is, if I had to summarize it in one sentence, that it should be clear that the code implements the specification, and how it does that. That's what programmers are paid for: to implement the requirements of the customer.
+What if we would call it **Clear** Code? It would mean that _it is clear what the code does_. Which is exactly the goal of clean code. This main goal is, if I had to summarize it in one sentence, that it should be clear that the code implements the specification, and how it does that. That's what programmers are paid for: to implement the requirements of the customer.
 
 Sentences like 'my code is not clear'—i.e. it is not clear what it does—would not sound so good anymore. 'Good but unclear' would be impossible. And it would also be easier to talk about _clarity issues_ than about cleanness issues.
 
@@ -78,11 +78,11 @@ HAVENORM        ABVAL   SIGN
 
 ### Language
 
-But the programming languages we use today are so-called [high-level languages](https://en.wikipedia.org/wiki/High-level_programming_language), that aim for readability by humans. According to the [Clean Code book](overviews/clean-code-outline/), the program should be readable like English prose. We ensure this by assigning and using _names_ of types, variables, and procedures.
+But the programming languages we use today are so-called [high-level languages](https://en.wikipedia.org/wiki/High-level\_programming\_language), that aim for readability by humans. According to the [Clean Code book](overviews/clean-code-outline/), the program should be readable like English prose. We ensure this by assigning and using _names_ of types, variables, and procedures.
 
-> It's much easier for most people to write an English statement than it is to use symbols. So I decided data processors ought to be able to write their programs in English, and the computers would translate them into machine code. I could say 'Subtract income tax from pay' instead of trying to write that in octal code or using all kinds of symbols. 
+> It's much easier for most people to write an English statement than it is to use symbols. So I decided data processors ought to be able to write their programs in English, and the computers would translate them into machine code. I could say 'Subtract income tax from pay' instead of trying to write that in octal code or using all kinds of symbols.&#x20;
 >
-> [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper), inventor of compiler, COBOL, software standards, shared libraries, computer networks.
+> [Grace Hopper](https://en.wikipedia.org/wiki/Grace\_Hopper), inventor of compiler, COBOL, software standards, shared libraries, computer networks.
 
 Here is an open-source example of the readable high-level language Java:
 
@@ -105,7 +105,7 @@ public static boolean isTranslucencySupported(Translucency translucencyKind) {
 
 ### Translation
 
-I suggest not to think of the program as a code, but rather as a _translation _of the specification into the programming language. To be more precise, it is a translation into a _pseudo-language_, where the keywords of this language are the _names_ we have given.
+I suggest not to think of the program as a code, but rather as a _translation_ of the specification into the programming language. To be more precise, it is a translation into a _pseudo-language_, where the keywords of this language are the _names_ we have given.
 
 Here we see a Hungarian poem and two texts in another language. Can you decide which one is the translation of the poem, without understanding a word?
 
@@ -149,7 +149,7 @@ Dunav je kroz povijest, a i danas, uvijek bio važan međunarodni plovni put. Du
 {% endtab %}
 {% endtabs %}
 
-Just by looking at the overall form of the texts, it is obvious that the first one is the translation of the original poem. We _expect _that the correct translation looks like the first one.
+Just by looking at the overall form of the texts, it is obvious that the first one is the translation of the original poem. We _expect_ that the correct translation looks like the first one.
 
 Now imagine that the original text is the specification and the translation is its implementation in a programming language. We expect that it is easy to recognize the specification in the implementation. Once again the rule:
 

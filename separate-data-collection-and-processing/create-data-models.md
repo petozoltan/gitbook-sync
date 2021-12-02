@@ -15,7 +15,7 @@ We used to design the overall data model of the application, i.e. the entities i
 
 For this, we should create _data transfer objects_. These are data classes that only carry data and do not contain procedures implementing business logic.
 
-Here we benefit from the method that we [separate procedural and data classes](separate-data-and-procedures.md). See more in that chapter.
+Here we benefit from the method that we [separate procedural and data classes](../separate-data-and-procedures.md). See more in that chapter.
 
 ### Data Model
 
@@ -29,17 +29,17 @@ Of course, data structures are made up of other data structures and data classes
 
 #### Do Not Copy
 
-If some data structures are already collected, whose attributes we need, we should not create new classes with the demanded attributes, and copy their values. Instead, we should simply add the already collected data as a whole to our new data objects. (Of course, only if there is no objection against it, like memory consumption or others.) 
+If some data structures are already collected, whose attributes we need, we should not create new classes with the demanded attributes, and copy their values. Instead, we should simply add the already collected data as a whole to our new data objects. (Of course, only if there is no objection against it, like memory consumption or others.)&#x20;
 
-I would simply call it _embedding _a data structure into another one.
+I would simply call it _embedding_ a data structure into another one.
 
 {% tabs %}
 {% tab title="Don't" %}
-![](<.gitbook/assets/DTO - Copy.png>)
+![](<../.gitbook/assets/DTO - Copy.png>)
 {% endtab %}
 
 {% tab title="Do" %}
-![](<.gitbook/assets/DTO - Embed.png>)
+![](<../.gitbook/assets/DTO - Embed.png>)
 {% endtab %}
 {% endtabs %}
 
@@ -60,29 +60,29 @@ Alternatively, if we declare the first data structure already for the new, exten
 
 {% tabs %}
 {% tab title="Don't" %}
-![](<.gitbook/assets/DTO - Inherit.png>)
+![](<../.gitbook/assets/DTO - Inherit.png>)
 {% endtab %}
 {% endtabs %}
 
-We should not use inheritance in data objects anyway, as described in this chapter: [Do Not Use Inheritance, _Rules For Data Classes_](do-not-use-inheritance.md#rules-for-data-classes).
+We should not use inheritance in data objects anyway, as described in this chapter: [Do Not Use Inheritance, _Rules For Data Classes_](../do-not-use-inheritance.md#rules-for-data-classes).
 
 #### Embed Entities
 
-You can even embed database entities if the memory consumption does not speak against it. 
+You can even embed database entities if the memory consumption does not speak against it.&#x20;
 
 It is recommended that they are detached from the database, in the terms of Hibernate. This simply means that we use the entities outside of the original reading transaction. In this way, they simply become 'data transfer objects' and we can add them to other DTOs.
 
 ### Treat Data As Immutable
 
-This has key importance to solve the problem that is described in [Separate Data Collection And Processing](separate-data-collection-and-processing.md). We want to clearly separate the writing and the reading of all data to make our code clean.
+This has key importance to solve the problem that is described in [Separate Data Collection And Processing](./). We want to clearly separate the writing and the reading of all data to make our code clean.
 
 Actually, the data should be immutable, so that it cannot be modified during the processing. When the processing generates more data, then it should be stored into other data objects, designed for the output.
 
-Create all data once, via constructors—and factory methods—and don't change them after that. 
+Create all data once, via constructors—and factory methods—and don't change them after that.&#x20;
 
 {% tabs %}
 {% tab title="Don't" %}
-![](<.gitbook/assets/DTO - Modify.png>)
+![](<../.gitbook/assets/DTO - Modify.png>)
 {% endtab %}
 {% endtabs %}
 
@@ -98,10 +98,10 @@ inputs.stream()
 
 ### Use Records
 
-In Java 16 the `record` keyword has been introduced. (From Java 14 as a preview feature.) Records implement everything, which is written above, and we don't even have to declare a class for them in the old way!  
+In Java 16 the `record` keyword has been introduced. (From Java 14 as a preview feature.) Records implement everything, which is written above, and we don't even have to declare a class for them in the old way! &#x20;
 
 * Records can be created simply from instances of data objects or other records. No need for class declaration.
-* Accessors ('getters') will be automatically generated, and they do nothing else but returning a property value. They cannot be overridden either.
+* Accessors ('getters') will be automatically generated, and they do nothing else but return a property value. They cannot be overridden either.
 * Records have no mutators ('setters') at all. If records are composed of other records then the result will be close to _read-only_.
 * The class does not support extension and inheritance, it is `final` too.
 
@@ -140,13 +140,13 @@ Collection<ADto> as;
 {% endtab %}
 {% endtabs %}
 
-In other words, you should _finish _the preparation of the input data before the processing of the data.
+In other words, you should _finish_ the preparation of the input data before the processing of the data.
 
 #### Avoid Maps
 
 The same goes for Maps.
 
-Maps are inherently _unfinished _data structures. Despite having all objects mapped to their keys, the processing code must complete the mapping by getting an object by the key. And if we need the mapped object in multiple code parts then it must do the same mapping again and again, which is code repetition.
+Maps are inherently _unfinished_ data structures. Despite having all objects mapped to their keys, the processing code must complete the mapping by getting an object by the key. And if we need the mapped object in multiple code parts then it must do the same mapping again and again, which is code repetition.
 
 {% tabs %}
 {% tab title="Don't" %}
@@ -203,9 +203,9 @@ If certain data can be created in different ways, then use factory classes and m
 
 Unlike constructors, factory methods have _names_. There is no clean code without names. Names describe the business logic, the program implements.
 
-The other reason is obvious from the article [Separate Data And Procedures](separate-data-and-procedures.md). For the data creation, we may need specific procedures and other components, including the database. These procedures and dependencies cannot be added to the DTO classes. Data classes should only carry the data and should not contain procedures.
+The other reason is obvious from the article [Separate Data And Procedures](../separate-data-and-procedures.md). For the data creation, we may need specific procedures and other components, including the database. These procedures and dependencies cannot be added to the DTO classes. Data classes should only carry the data and should not contain procedures.
 
-A simple way to create a factory class for every DTO. If the data creation consists of more components then the classes should be in a separate package, according to the Single Responsibility Principle. 
+A simple way to create a factory class for every DTO. If the data creation consists of more components then the classes should be in a separate package, according to the Single Responsibility Principle.&#x20;
 
 {% tabs %}
 {% tab title="Simple" %}
@@ -237,13 +237,17 @@ class ContractValidator { ... }      // note the visibility
 {% endtab %}
 {% endtabs %}
 
-When using records as DTOs (see above), we don't need to explicitly declare data classes. But in this case, we can still keep the factory classes.
+If more classes are needed to create certain DTOs, place them together with the factory classes and use the _package private_ (default) visibility. (See the example above.)
+
+When using factory methods, use _only one constructor_ for the DTO that requires all attributes.
+
+When using _records_ as DTOs (see above), we don't need to explicitly declare data classes. But in this case, we can still keep the factory classes.
 
 ### Advantage In Testing
 
-Creating clear input and output data for the components completely changes the unit testing, making it easier and more clear. 
+Creating clear input and output data for the components completely changes the unit testing, making it easier and more clear.&#x20;
 
-Instead of mocking the used components, we should simply create the data classes that serve as input. The same goes for the expected output if that's a well-defined data structure too. We should create the expected output and compare them with the actual one. 
+Instead of mocking the used components, we should simply create the data classes that serve as input. The same goes for the expected output if that's a well-defined data structure too. We should create the expected output and compare them with the actual one.&#x20;
 
 We can also implement the `equals()` methods of every class, so that we can simply test the classes for equality. Or, we can provide comparators if the testing needs a different comparison than the runtime equality. With records we will get the equality based on the data content, so the runtime comparison won't differ from the testing.
 
@@ -265,18 +269,18 @@ public void testSomething() {
 
 ### Avoid DTO Hell
 
-I expect the counterargument that we will have too many DTOs, so we will have a "DTO hell".
+Will we not have too many DTOs in the way as written above? In other words, won't we have a "DTO hell"?
 
-Yes, we may have many new classes. Factories can also increase the number of classes while using records can decrease it.
+Yes, we may have many new classes. Factories can also increase the number of classes. Good news is that using records can decrease it.
 
-But there is one important point because we would like to write clean code. We don't have to consider all DTOs together as a "big bunch" of classes. We should organize the code by business logic, we should separate features. 
+But there is one important point because we would like to write clean code. We don't have to consider all DTOs together as a "big bunch" of classes. We should organize the code by business logic, we should separate features.&#x20;
 
 {% hint style="warning" %}
-Do not create a 'dto' or 'data model' package to collect all data classes from different features.
+Do not create a global _dto_ or _model_ package to collect all data classes from different features.
 {% endhint %}
 
-So for a certain modification of the code, we need to focus only on one feature's or one use case's classes, which are independent of the others.
+So for a certain modification of the code, we need to focus only on one feature's classes, which are independent of the others.
 
 
 
-![](.gitbook/assets/quote-smart-data-structures-and-dumb-code-works-a-lot-better-than-the-other-way-around-eric-s-raymond-63-60-65.jpg)
+![](../.gitbook/assets/quote-smart-data-structures-and-dumb-code-works-a-lot-better-than-the-other-way-around-eric-s-raymond-63-60-65.jpg)

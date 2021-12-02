@@ -2,8 +2,8 @@
 
 ### Uncle Bob & The Book
 
-* [Clean Code book](../clean-code-outline/) ![](../../.gitbook/assets/clean-code-book-cover.png) 
-* Robert C. Martin a.k.a. _Uncle Bob _![](../../.gitbook/assets/Uncle_Bob\_400x400.png) 
+* [Clean Code book](../clean-code-outline/) ![](../../.gitbook/assets/clean-code-book-cover.png)&#x20;
+* Robert C. Martin a.k.a. _Uncle Bob_ ![](../../.gitbook/assets/Uncle\_Bob\_400x400.png)&#x20;
 
 ### Named principles
 
@@ -32,7 +32,7 @@ Testing
 
 ### Why clean code?
 
-* [The total cost of owning a mess](../clean-code-outline/why-clean-code.md#technical-debt) ![](../../.gitbook/assets/velocity-graph.png) 
+* [The total cost of owning a mess](../clean-code-outline/why-clean-code.md#technical-debt) ![](../../.gitbook/assets/velocity-graph.png)&#x20;
 * [The real measure of code quality](../clean-code-outline/clean-code.md#possible-measurements) ![](../../.gitbook/assets/code-quality-wtfs.png)
 
 ### What is bad code like?
@@ -44,7 +44,7 @@ Readability
 * Fragile code
 * Unreadable
 * Mind mapping
-* Duplication 
+* Duplication&#x20;
 * Unexpected
 * Magic numbers
 * Overcomplexity

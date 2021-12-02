@@ -21,21 +21,21 @@ But was it really a good idea?
 
 ### Impossible Mission
 
-Thinking of a large, real-life code base, is it possible to put really _all _codes into the class where the data is located? I think, no. It would mean huge classes. We never do it.
+Thinking of a large, real-life code base, is it possible to put really _all_ codes into the class where the data is located? I think, no. It would mean huge classes. We never do it.
 
 It would also mean, that the same classes would change again and again. Every developer would always work on the same few classes.
 
 ### Clean Code
 
-From a clean code aspect, bundling data and procedures is not a goal either. 
+From a clean code aspect, bundling data and procedures is not a goal either.&#x20;
 
-We would like to organize our code by features and not by data. We want to create many small and independent classes. 
+We would like to organize our code by features and not by data. We want to create many small and independent classes.&#x20;
 
 Procedures should also have well-defined input and output data, rather than being coupled with the data. When they are coupled with the data, which they read and write at the same time, then it is impossible to make a distinction between input and output data.
 
 ### Dependency Injection
 
-The final nail in the coffin of the class is the widespread use of dependency injection. We _already _separate data and procedures and handle them in different ways.
+The final nail in the coffin of the class is the widespread use of dependency injection. We _already_ separate data and procedures and handle them in different ways.
 
 * We use procedures in stateless singleton classes, which are instantiated by the injection framework.
 * We used to organize data in domain models or data models. They should not contain business logic.
@@ -56,7 +56,7 @@ Separated procedural and data classes are no classes!
 
 According to the original concept of classes, these are no classes at all, since they don't couple data and procedures.
 
-Unfortunately, today's languages like Java or C++ still call them classes. Not only the keywords are the same, but they both seem to have data and procedure members. So, by the syntax, there is no difference between them. 
+Unfortunately, today's languages like Java or C++ still call them classes. Not only the keywords are the same, but they both seem to have data and procedure members. So, by the syntax, there is no difference between them.&#x20;
 
 The reason is simply, that they are _class-based languages_. Everything is a class. That's why we, programmers still treat them as classes.
 
@@ -82,9 +82,9 @@ Why do we do this? Because we don't have other choices due to the syntax.
 
 ### Java Records
 
-In Java 14 the data _structure _is brought back with the `record` keyword. This class is defined entirely by the data it carries:
+In Java 14 the data _structure_ is brought back with the `record` keyword. This class is defined entirely by the data it carries:
 
-* It features automatically generated accessors, equals, hashcode, etc. 
+* It features automatically generated accessors, equals, hashcode, etc.&#x20;
 * It has only getters because all members are automatically `final`.
 * The class is not inheritable, it is `final` too.
 
@@ -115,22 +115,22 @@ So here is what we have in reality:
 
 ### No OOP
 
-[Object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming) is based on traditional classes. Should we still do OOP if we have no more classes? Logically, the answer is no.
+[Object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented\_programming) is based on traditional classes. Should we still do OOP if we have no more classes? Logically, the answer is no.
 
 {% hint style="info" %}
 If we separate procedural and data classes, we should not write programs in a classical OOP way. We should also revise all OOP principles, which are no more valid.
 {% endhint %}
 
-I another article I suggest to [not use inheritance](do-not-use-inheritance.md) anymore.   
+I another article I suggest to [not use inheritance](do-not-use-inheritance.md) anymore.  &#x20;
 
-* With this, most of the _encapsulation_, _polymorphism_, and _open-closed _principles are gone.
-* Many [_design patterns_](https://en.wikipedia.org/wiki/Software_design_pattern) that use inheritance become unusable. Or we should redesign them without inheritance.
+* With this, most of the _encapsulation_, _polymorphism_, and _open-closed_ principles are gone.
+* Many [_design patterns_](https://en.wikipedia.org/wiki/Software\_design\_pattern) that use inheritance become unusable. Or we should redesign them without inheritance.
 * Some other rules, like the _dependency inversion_ principle, can remain valid. (Allowing the usage of interfaces.)
 * There can be ones, like the _law of Demeter_, which will be valid either for the procedural or the data classes.
 
 #### Law of Demeter
 
-As an interesting example, let's take a look at the [LoD](https://en.wikipedia.org/wiki/Law_of_Demeter). It is also simplified as a "dot counting rule". So we should not write the following code:
+As an interesting example, let's take a look at the [LoD](https://en.wikipedia.org/wiki/Law\_of\_Demeter). It is also simplified as a "dot counting rule". So we should not write the following code:
 
 `getContractService().getUserService().getAddressService().getAddress()`
 
@@ -144,5 +144,5 @@ There are long articles on the internet struggling with this issue and sometimes
 
 ### Further Reading
 
-* [Criticism of OOP](https://en.wikipedia.org/wiki/Object-oriented_programming#Criticism) in the Wikipedia article.
+* [Criticism of OOP](https://en.wikipedia.org/wiki/Object-oriented\_programming#Criticism) in the Wikipedia article.
 * [Do Not Use Inheritance](do-not-use-inheritance.md)

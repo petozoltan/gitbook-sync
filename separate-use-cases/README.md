@@ -92,11 +92,11 @@ Extract common code only if it is exactly the same for the use cases and does no
 
 It also means that the extracted common code parts should be independent. They should be distinct methods or classes.
 
-Of course, a common code can contain branching for _other _use cases. But for those use cases, it should be again the only one place for branching.
+Of course, a common code can contain branching for _other_ use cases. But for those use cases, it should be again the only one place for branching.
 
 ### What to Merge And What Not
 
-You should only extract into common function _how _a certain step is implemented, and not extract _that _a use case contains that step. The steps of a use case make its _description_. The steps of another use case should be the independent description of that other use case, even if they are similar.
+You should only extract into common function _how_ a certain step is implemented, and not extract _that_ a use case contains that step. The steps of a use case make its _description_. The steps of another use case should be the independent description of that other use case, even if they are similar.
 
 ![](<../.gitbook/assets/Common code - merge.png>)
 
@@ -298,7 +298,7 @@ The most correct solution is, that if Use cases 1 and 2 use different data, then
 
 We often do this common code mistake with abstract parent classes. Calling abstract methods is just an elegant way to hide the ifs/switches for the use cases, but they are still there! Each and every abstract method represents branching for the use cases.
 
-It's even worse when we create multiple class hierarchies _for the same _use cases. They are really the same branching again and again.
+It's even worse when we create multiple class hierarchies _for the same_ use cases. They are really the same branching again and again.
 
 {% hint style="warning" %}
 Multiple class hierarchies for the same use cases should be treated as code repetition.
@@ -320,7 +320,7 @@ Multiple class hierarchies for the same use cases should be treated as code repe
 
 Solution: we should create only one class hierarchy for the same use cases. Even better if we do not create any class hierarchies for them. The best is if we [Do Not Use Inheritance](../do-not-use-inheritance.md) at all.
 
-Putting common code into a parent class is a _misuse _of inheritance because it generates unwanted dependencies between the classes. Common code should rather be _common functionality_, which should be put in independent components.
+Putting common code into a parent class is a _misuse_ of inheritance because it generates unwanted dependencies between the classes. Common code should rather be _common functionality_, which should be put in independent components.
 
 ### Abstract Methods
 
@@ -411,7 +411,7 @@ class UseCase2 {
 {% endtab %}
 {% endtabs %}
 
-Why is this another incorrect usage of inheritance? Actually, it is an incorrect usage of _methods_, which should be _procedures _and not values. So the methods in the use case classes should directly call the specific methods instead of returning the use case.
+Why is this another incorrect usage of inheritance? Actually, it is an incorrect usage of _methods_, which should be _procedures_ and not values. So the methods in the use case classes should directly call the specific methods instead of returning the use case.
 
 ### How to Control the Program Flow?
 
@@ -467,7 +467,7 @@ void method2(Data data) {
 {% endtab %}
 {% endtabs %}
 
-Why is it not optimal? Because in every example `method1()` _already knows_ the use case and it knows that `doSomething()` should be called. But it postpones that and leaves it to `method2()`. If `method2()` is a common function than it is _polluted _by the branching between the use cases.
+Why is it not optimal? Because in every example `method1()` _already knows_ the use case and it knows that `doSomething()` should be called. But it postpones that and leaves it to `method2()`. If `method2()` is a common function than it is _polluted_ by the branching between the use cases.
 
 {% hint style="warning" %}
 Never control the program flow with input parameters, abstract methods, or any fixed information, that is already known outside of the method.
@@ -485,7 +485,7 @@ Implement branchings for the use cases _only once_, and as _early as possible_.
 
 In the entire code base, there may be many other merged codes. The problem is that they are not logical, since they do not come from business logic. Instead, they are unexpected and arbitrary. Every common code has its specific logic that must be understood by each developer who works on that part. This leads to the problem that is described in [What Is The Problem With Abstract Frameworks?](../what-is-the-problem-with-inheritance.md).
 
-In other words, common codes dangerously increase the number of _dependencies _between the classes. Dependencies make the code hard to understand and maintain.
+In other words, common codes dangerously increase the number of _dependencies_ between the classes. Dependencies make the code hard to understand and maintain.
 
 The following image shows a logical breakdown of a program into features, sub-features, use cases, sub-use cases, and steps. Ad-hoc common code can be dropped anywhere between any similar parts. Note, that in real life it would be much more complicated.
 
@@ -501,7 +501,7 @@ The following image shows a logical breakdown of a program into features, sub-fe
 
 ### Common Code for Features
 
-Note on the above image, that _features _may also have common code, which is even worse than use cases having it.
+Note on the above image, that _features_ may also have common code, which is even worse than use cases having it.
 
 {% hint style="info" %}
 Features must not have a common code.
@@ -513,7 +513,7 @@ Not to mention that during the modifications of a program, features will have mo
 
 ### The Idea of Common Code
 
-When writing object-oriented programs with many classes, the big question is always: where should I add my code? And the answer is: the new code should have a well-defined functionality, that helps to _name _it, and then we can see where to add it.
+When writing object-oriented programs with many classes, the big question is always: where should I add my code? And the answer is: the new code should have a well-defined functionality, that helps to _name_ it, and then we can see where to add it.
 
 Unfortunately 'common code' is not a name. It is not a functionality. We often create abstract parent classes for the common code. But 'Abstract' is not a name either, and abstraction is not a functionality.
 
@@ -529,13 +529,13 @@ In general, the goal is the separation, not the merge.
 
 ### Rules
 
-**Extract **the implementation of _functionalities _that are independent of the use cases, into a common code.
+**Extract** the implementation of _functionalities_ that are independent of the use cases, into a common code.
 
 **Do not extract** the code, which is the _description of the use cases_, into a common code. Each use case should have its own distinct implementation, i.e. the description of the steps the use case consists of.
 
-**Never **merge features into a common code. Features should be independent.
+**Never** merge features into a common code. Features should be independent.
 
-**Implement **branchings for the use cases _only once_, and as _early as possible_.
+**Implement** branchings for the use cases _only once_, and as _early as possible_.
 
 **Organize** and name the code by business logic, i.e. features, use cases, steps, and functions.
 

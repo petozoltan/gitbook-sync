@@ -2,8 +2,8 @@
 
 ### 2021
 
-* [Create Data Models](create-data-models.md)
-* [Separate Data Collection And Processing](separate-data-collection-and-processing.md)
+* [Create Data Models](separate-data-collection-and-processing/create-data-models.md)
+* [Separate Data Collection And Processing](separate-data-collection-and-processing/)
 * [Software Killers](software-killers.md)
 * [Separate Data And Procedures](separate-data-and-procedures.md)
 * [Example: Separate Use Cases](separate-use-cases/example-separate-use-cases.md)
@@ -28,4 +28,3 @@
 * [When To Avoid Inheritance?](when-to-avoid-inheritance.md)
 * [How To Handle Warnings](how-to-handle-warnings.md)
 * [Do Not Create Constant Collection Classes](do-not-create-constant-collection-classes.md)
-

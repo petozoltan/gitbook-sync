@@ -5,12 +5,12 @@
 
 ## Clean Coding
 
----
+***
 
 * [Separate Data And Procedures](separate-data-and-procedures.md)
 * [Do Not Use Inheritance](do-not-use-inheritance.md)
-* [Separate Data Collection And Processing](separate-data-collection-and-processing.md)
-* [Create Data Models](create-data-models.md)
+* [Separate Data Collection And Processing](separate-data-collection-and-processing/README.md)
+  * [Create Data Models](separate-data-collection-and-processing/create-data-models.md)
 * [Separate Use Cases](separate-use-cases/README.md)
   * [Example: Separate Use Cases](separate-use-cases/example-separate-use-cases.md)
 * [When To Avoid Inheritance?](when-to-avoid-inheritance.md)
@@ -59,4 +59,3 @@
 * [Clean Code Links](overviews/clean-code-links.md)
 * [Clean Code TOC](overviews/clean-code-toc.md)
 * [Effective Java TOC](overviews/effective-java-toc.md)
-
