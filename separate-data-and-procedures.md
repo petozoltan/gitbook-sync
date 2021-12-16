@@ -21,7 +21,7 @@ But was it really a good idea?
 
 ### Impossible Mission
 
-Thinking of a large, real-life code base, is it possible to put really _all_ codes into the class where the data is located? I think, no. It would mean huge classes. We never do it.
+Thinking of a large, real-life code base, is it possible to put _all_ codes into the class where the data is located? I think, no. It would mean huge classes. We never do it.
 
 It would also mean, that the same classes would change again and again. Every developer would always work on the same few classes.
 
@@ -37,7 +37,7 @@ Procedures should also have well-defined input and output data, rather than bein
 
 The final nail in the coffin of the class is the widespread use of dependency injection. We _already_ separate data and procedures and handle them in different ways.
 
-* We use procedures in stateless singleton classes, which are instantiated by the injection framework.
+* We put procedures in stateless singleton classes, which are instantiated by the injection framework.
 * We used to organize data in domain models or data models. They should not contain business logic.
 
 So we used to have these types of classes:
