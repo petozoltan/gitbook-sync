@@ -26,7 +26,7 @@ Then they realized that the data may vary when they model real information. So t
 
 But that also means that the procedures packed together with the data should also be variable. And it is not enough to extend the class with new procedures because the existing ones may not correctly handle the new data. So they invented the `override` of existing procedures with new ones.
 
-![](.gitbook/assets/Override.svg)
+![](.gitbook/assets/Override.png)
 
 With `override` things started to be bad so the `abstract` methods have been added finally. These methods are not implemented, so the extending classes will not override any already existing implementation. Since a class with unimplemented methods cannot be instantiated, the entire class also has to be marked as `abstract`. In other words, abstract classes are _designed_ for inheritance.
 
@@ -86,11 +86,11 @@ If we want to create different procedures for different variations of a data str
 
 {% tabs %}
 {% tab title="Before" %}
-![](.gitbook/assets/Override.svg)
+![](.gitbook/assets/Override.png)
 {% endtab %}
 
 {% tab title="After" %}
-![](<.gitbook/assets/New class.svg>)
+![](<.gitbook/assets/New class.png>)
 {% endtab %}
 {% endtabs %}
 
@@ -122,11 +122,11 @@ We do not have to use inheritance for data classes either.
 
 {% tabs %}
 {% tab title="Before" %}
-![](<.gitbook/assets/New class.svg>)
+![](<.gitbook/assets/New class.png>)
 {% endtab %}
 
 {% tab title="After" %}
-![](<.gitbook/assets/Data composition.svg>)
+![](<.gitbook/assets/Data composition.png>)
 {% endtab %}
 {% endtabs %}
 
@@ -140,7 +140,7 @@ In Java 14 the good old _structure_ is brought back with the `record` keyword. T
 
 Read more here:
 
-* [Java 14 – Record data class](https://mkyong.com/java/java-14-record-data-class/)
+* [Java 14 – Record data class (Preview)](https://mkyong.com/java/java-14-record-data-class/)
 * [JEP 359: Records (Preview)](https://openjdk.java.net/jeps/359)
 
 ## Coding without inheritance
@@ -170,11 +170,11 @@ Probably we should not use the parent classes as they are, but rather refactor t
 
 {% tabs %}
 {% tab title="Before" %}
-![](<.gitbook/assets/Children call parent.svg>)
+![](<.gitbook/assets/Children call parent.png>)
 {% endtab %}
 
 {% tab title="After" %}
-![](<.gitbook/assets/Children call parent - composition.svg>)
+![](<.gitbook/assets/Children call parent - composition.png>)
 {% endtab %}
 {% endtabs %}
 
@@ -196,11 +196,11 @@ So move the abstract methods into one or more interfaces. Any class that impleme
 
 {% tabs %}
 {% tab title="Before" %}
-![](<.gitbook/assets/Parent calls children.svg>)
+![](<.gitbook/assets/Parent calls children.png>)
 {% endtab %}
 
 {% tab title="After" %}
-![](<.gitbook/assets/Parent calls children - interface.svg>)
+![](<.gitbook/assets/Parent calls children - interface.png>)
 {% endtab %}
 {% endtabs %}
 
@@ -220,11 +220,11 @@ Anyway, if there are overridden methods, it is no problem. That is the goal of t
 
 {% tabs %}
 {% tab title="Before" %}
-![](<.gitbook/assets/Override procedural.svg>)
+![](<.gitbook/assets/Override procedural.png>)
 {% endtab %}
 
 {% tab title="After" %}
-![](<.gitbook/assets/Override procedural - separate.svg>)
+![](<.gitbook/assets/Override procedural - separate.png>)
 {% endtab %}
 {% endtabs %}
 
