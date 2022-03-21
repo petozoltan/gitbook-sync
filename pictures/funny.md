@@ -1,8 +1,10 @@
 ---
-description: 2021.07.16
+description: 2021.07.16 (2022.03.21)
 ---
 
 # Funny
+
+![](<../.gitbook/assets/adLL15M\_700bwp BLACK.jpg>)
 
 ![](../.gitbook/assets/Comments.jpg)
 
@@ -12,7 +14,7 @@ description: 2021.07.16
 
 ![](../.gitbook/assets/Senior.jpg)
 
-![](../.gitbook/assets/senior_dev_vs_junior_dev.jpg)
+![](../.gitbook/assets/senior\_dev\_vs\_junior\_dev.jpg)
 
 ![](../.gitbook/assets/Little.jpg)
 

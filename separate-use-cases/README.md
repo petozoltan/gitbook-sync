@@ -552,3 +552,5 @@ Investigate every `if` command and every possible branching, whether they are in
 Common code creates a dependency between the classes. Dependencies also increase code complexity.
 
 ![](../.gitbook/assets/quote-controlling-complexity-is-the-essence-of-computer-programming-brian-kernighan-66-96-49.jpg)
+
+![](<../.gitbook/assets/adLL15M\_700bwp BLACK.jpg>)
