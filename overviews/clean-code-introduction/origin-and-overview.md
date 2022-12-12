@@ -2,8 +2,8 @@
 
 ### Uncle Bob & The Book
 
-* [Clean Code book](../clean-code-outline/) ![](../../.gitbook/assets/clean-code-book-cover.png)&#x20;
-* Robert C. Martin a.k.a. _Uncle Bob_ ![](../../.gitbook/assets/Uncle\_Bob\_400x400.png)&#x20;
+* [Clean Code book](../clean-code-outline/) <img src="../../.gitbook/assets/clean-code-book-cover.png" alt="" data-size="line">&#x20;
+* Robert C. Martin a.k.a. _Uncle Bob_ <img src="../../.gitbook/assets/Uncle_Bob_400x400.png" alt="" data-size="line">&#x20;
 
 ### Named principles
 
@@ -32,8 +32,8 @@ Testing
 
 ### Why clean code?
 
-* [The total cost of owning a mess](../clean-code-outline/why-clean-code.md#technical-debt) ![](../../.gitbook/assets/velocity-graph.png)&#x20;
-* [The real measure of code quality](../clean-code-outline/clean-code.md#possible-measurements) ![](../../.gitbook/assets/code-quality-wtfs.png)
+* [The total cost of owning a mess](../clean-code-outline/why-clean-code.md#technical-debt) <img src="../../.gitbook/assets/velocity-graph.png" alt="" data-size="line">&#x20;
+* [The real measure of code quality](../clean-code-outline/clean-code.md#possible-measurements) <img src="../../.gitbook/assets/code-quality-wtfs.png" alt="" data-size="line">
 
 ### What is bad code like?
 

@@ -45,9 +45,9 @@ getCustomers(Status status) {
 
 **Give names!**
 
-* Method level: 
+* Method level:&#x20;
   * Methods instead of [inline implementations](../clean-code-outline/classes.md#does-more-things-low-cohesion).
-* Class level: 
+* Class level:&#x20;
   * More, small classes instead of big, low cohesive classes.
 
 **Naming struggle is a code smell!**
@@ -121,7 +121,7 @@ public ResultBean saveSomething(InputBean input) {
 }
 ```
 
-[How to refactor](../clean-code-outline/duplication.md#dry-principle) ![](../../.gitbook/assets/refactoring-inline-implementation.png) 
+[How to refactor](../clean-code-outline/duplication.md#dry-principle) <img src="../../.gitbook/assets/refactoring-inline-implementation.png" alt="" data-size="line">&#x20;
 
 ## Enums
 
@@ -135,11 +135,11 @@ public ResultBean saveSomething(InputBean input) {
 
 * Single Responsibility Principle
 * Members should use each-other
-* [How to refactor](../clean-code-outline/classes.md#class-smells) ![](../../.gitbook/assets/refactoring-low-cohesion.png) 
+* [How to refactor](../clean-code-outline/classes.md#class-smells) <img src="../../.gitbook/assets/refactoring-low-cohesion.png" alt="" data-size="line">&#x20;
 
 **Loose coupling**
 
-* [Dependency inversion](../clean-code-outline/object-oriented-programming.md#dependency-inversion) ![](../../.gitbook/assets/uml-dependency-inversion.png) 
+* [Dependency inversion](../clean-code-outline/object-oriented-programming.md#dependency-inversion) <img src="../../.gitbook/assets/uml-dependency-inversion.png" alt="" data-size="line">&#x20;
 
 **Class types**
 
@@ -196,7 +196,7 @@ Links
 * Methods doing more than one thing.
 * This is unnamed functionality.
 
-Bad: Method doing more than one thing \(from the book\)
+Bad: Method doing more than one thing (from the book)
 
 ```java
 // It does three things
@@ -210,7 +210,7 @@ public void pay() {
 }
 ```
 
-Good: Methods doing one thing \(from the book\)
+Good: Methods doing one thing (from the book)
 
 ```java
 public void pay() {
@@ -304,11 +304,11 @@ void doReallyTheSave() {
 
 ## Antipatterns
 
-**Do not write 'handleError\(\)' methods**
+**Do not write 'handleError()' methods**
 
-* They does not express the program flow \(exception?\)
-* They cheat the compiler too \(unreachable code\)
-* Instead create a method with return value 
+* They does not express the program flow (exception?)
+* They cheat the compiler too (unreachable code)
+* Instead create a method with return value&#x20;
 
 Bad: What will happen? What does it do? What information is used?
 
@@ -325,6 +325,4 @@ Good: It is clear
         throw createServiceException(e, ...);
     }
 ```
-
-
 

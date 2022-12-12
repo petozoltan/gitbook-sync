@@ -4,6 +4,10 @@ description: 2021.07.16 (2022.03.21)
 
 # Funny
 
+<figure><img src="../.gitbook/assets/317140713_729581221362992_7547251464731726592_n.jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/318199314_3344059259157342_1813507504070951480_n.jpg" alt=""><figcaption></figcaption></figure>
+
 ![](<../.gitbook/assets/adLL15M\_700bwp BLACK.jpg>)
 
 ![](../.gitbook/assets/Comments.jpg)

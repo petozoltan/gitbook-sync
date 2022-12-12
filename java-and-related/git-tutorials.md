@@ -19,7 +19,7 @@ Here I have collected a couple of useful online documentation to learn Git.
 |                                                                                                                                                            |                                                   |
 | **Tutorials**                                                                                                                                              |                                                   |
 | [https://git-scm.com/docs/gittutorial](https://git-scm.com/docs/gittutorial)                                                                               | The official Git home page.                       |
-| [https://githowto.com/](https://githowto.com)                                                                                                              |                                                   |
+| [https://githowto.com/](https://githowto.com/)                                                                                                             |                                                   |
 | [http://gitimmersion.com/lab\_01.html](http://gitimmersion.com/lab\_01.html)                                                                               |                                                   |
 | [https://www.atlassian.com/git/tutorials/setting-up-a-repository](https://www.atlassian.com/git/tutorials/setting-up-a-repository)                         | Atlassian (Bitbucket).                            |
 |                                                                                                                                                            |                                                   |
@@ -28,7 +28,7 @@ Here I have collected a couple of useful online documentation to learn Git.
 | [https://backlog.com/git-tutorial/recording-changes/](https://backlog.com/git-tutorial/recording-changes/)                                                 |                                                   |
 |                                                                                                                                                            |                                                   |
 | **Interactive Tutorials**                                                                                                                                  |                                                   |
-| [https://learngitbranching.js.org/](https://learngitbranching.js.org)                                                                                      | Branches.                                         |
+| [https://learngitbranching.js.org/](https://learngitbranching.js.org/)                                                                                     | Branches.                                         |
 | [http://onlywei.github.io/explain-git-with-d3/](http://onlywei.github.io/explain-git-with-d3/)                                                             | Commands.                                         |
 | [http://ndpsoftware.com/git-cheatsheet.html](http://ndpsoftware.com/git-cheatsheet.html)                                                                   | Repositories.                                     |
 | [http://git-school.github.io/visualizing-git/](http://git-school.github.io/visualizing-git/)                                                               | Usage: chose something from the top-left list.    |
@@ -41,5 +41,5 @@ Here I have collected a couple of useful online documentation to learn Git.
 | [https://www.git-tower.com/learn/cheat-sheets/vcs-workflow](https://www.git-tower.com/learn/cheat-sheets/vcs-workflow)                                     | Download or open images.                          |
 |                                                                                                                                                            |                                                   |
 | **Quick Help**                                                                                                                                             |                                                   |
-| [https://ohshitgit.com/](https://ohshitgit.com)                                                                                                            | Troubleshooting oriented. :slight_smile:          |
+| [https://ohshitgit.com/](https://ohshitgit.com/)                                                                                                           | Troubleshooting oriented. :slight\_smile:         |
 
