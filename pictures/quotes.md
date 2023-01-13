@@ -1,8 +1,34 @@
 ---
-description: 2021.05.18
+description: 2021.05.18 (2023.01.13)
 ---
 
 # Quotes
+
+<figure><img src="../.gitbook/assets/f98a403cf41da8179750dcc006699166.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/quote-always-be-eager-to-learn-no-matter-how-successful-you-might-already-be-in-the-millionaires-jim-rohn-60-21-48.jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/quote-when-debugging-novices-insert-corrective-code-experts-remove-defective-code-richard-e-pattis-67-33-70.jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/2000881-Joel-Spolsky-Quote-It-s-harder-to-read-code-than-to-write-it.jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/C98uzYmXsAEFZSm.jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/quote-adding-manpower-to-a-late-software-project-makes-it-later-fred-brooks-59-63-04.jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/quote-the-trouble-with-programmers-is-that-you-can-never-tell-what-a-programmer-is-doing-until-seymour-cray-54-57-60.jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/Good-design-adds-value-faster-than-it-adds-cost-Programming-Quotes.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/D456SXAXsAAZzgq.jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/spf13_2019-Apr-23.jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/quote-object-oriented-design-is-the-roman-numerals-of-computing-rob-pike-81-95-00.jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/n9so3gksr8QmHQwyBu4XmQM3mY10cSS6yKhoOY9amos_proc.jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/6a0120a5e89f23970c0282e13b4cb6200b-600wi.jpg" alt=""><figcaption></figcaption></figure>
 
 ![](../.gitbook/assets/Monolith.png)
 
