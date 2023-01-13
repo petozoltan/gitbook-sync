@@ -4,6 +4,8 @@ description: 2021.05.18 (2023.01.13)
 
 # Quotes
 
+## Various
+
 <figure><img src="../.gitbook/assets/f98a403cf41da8179750dcc006699166.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/quote-always-be-eager-to-learn-no-matter-how-successful-you-might-already-be-in-the-millionaires-jim-rohn-60-21-48.jpg" alt=""><figcaption></figcaption></figure>
@@ -20,15 +22,9 @@ description: 2021.05.18 (2023.01.13)
 
 <figure><img src="../.gitbook/assets/Good-design-adds-value-faster-than-it-adds-cost-Programming-Quotes.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/D456SXAXsAAZzgq.jpg" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../.gitbook/assets/spf13_2019-Apr-23.jpg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/quote-object-oriented-design-is-the-roman-numerals-of-computing-rob-pike-81-95-00.jpg" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../.gitbook/assets/n9so3gksr8QmHQwyBu4XmQM3mY10cSS6yKhoOY9amos_proc.jpg" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/6a0120a5e89f23970c0282e13b4cb6200b-600wi.jpg" alt=""><figcaption></figcaption></figure>
 
 ![](../.gitbook/assets/Monolith.png)
 
@@ -63,3 +59,11 @@ description: 2021.05.18 (2023.01.13)
 ![](../.gitbook/assets/first.jpg)
 
 ![](../.gitbook/assets/Quotation-Albert-Einstein-Make-everything-as-simple-as-possible-but-not-simpler-8-73-34.jpg)
+
+## OOP
+
+<figure><img src="../.gitbook/assets/6a0120a5e89f23970c0282e13b4cb6200b-600wi.jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/D456SXAXsAAZzgq.jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/quote-object-oriented-design-is-the-roman-numerals-of-computing-rob-pike-81-95-00.jpg" alt=""><figcaption></figcaption></figure>
