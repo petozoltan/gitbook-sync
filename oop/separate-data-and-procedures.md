@@ -12,10 +12,10 @@ But developers noticed that for the same data sets they usually needed the same 
 
 So a class contains:
 
-* member variables - I call them now 'data'
+* &#x20;member variables - I call them now 'data'
 * member functions - I call them procedures
 
-![](.gitbook/assets/Class.png)
+![](../.gitbook/assets/Class.png)
 
 But was it really a good idea?
 
@@ -60,7 +60,7 @@ Unfortunately, today's languages like Java or C++ still call them classes. Not o
 
 The reason is simply, that they are _class-based languages_. Everything is a class. That's why we, programmers still treat them as classes.
 
-![](.gitbook/assets/Difference.jpg)
+![](../.gitbook/assets/Difference.jpg)
 
 Here is what we have by syntax:
 

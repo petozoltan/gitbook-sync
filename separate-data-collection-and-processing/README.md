@@ -34,7 +34,7 @@ This also means that the data, which is processed, is never complete. It is neve
 
 Sometimes, components really don't have a clear return point, so they cannot return their output data. Instead, they pass their results forward to other components. \
 \
-I call it the [never-ending chain](../overviews/clean-code-introduction/typical-issues.md#methods) antipattern. See `Class3` to `Class6` on the image as an example.
+I call it the [never-ending chain](../clean-code/clean-code-introduction/typical-issues.md#methods) antipattern. See `Class3` to `Class6` on the image as an example.
 
 #### Breach of SRP
 

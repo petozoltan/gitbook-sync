@@ -187,7 +187,7 @@ _From the Effective Java book: Design and document for inheritance or else prohi
 
 Links
 
-* [When to avoid inheritance?](../../when-to-avoid-inheritance.md)
+* [When to avoid inheritance?](../../oop/when-to-avoid-inheritance.md)
 
 ## Methods
 

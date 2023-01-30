@@ -318,7 +318,7 @@ Multiple class hierarchies for the same use cases should be treated as code repe
 {% endtab %}
 {% endtabs %}
 
-Solution: we should create only one class hierarchy for the same use cases. Even better if we do not create any class hierarchies for them. The best is if we [Do Not Use Inheritance](../do-not-use-inheritance.md) at all.
+Solution: we should create only one class hierarchy for the same use cases. Even better if we do not create any class hierarchies for them. The best is if we [Do Not Use Inheritance](../oop/do-not-use-inheritance.md) at all.
 
 Putting common code into a parent class is a _misuse_ of inheritance because it generates unwanted dependencies between the classes. Common code should rather be _common functionality_, which should be put in independent components.
 
@@ -483,7 +483,7 @@ Implement branchings for the use cases _only once_, and as _early as possible_.
 
 ### Too Many Ad-hoc Solutions
 
-In the entire code base, there may be many other merged codes. The problem is that they are not logical, since they do not come from business logic. Instead, they are unexpected and arbitrary. Every common code has its specific logic that must be understood by each developer who works on that part. This leads to the problem that is described in [What Is The Problem With Abstract Frameworks?](../what-is-the-problem-with-inheritance.md).
+In the entire code base, there may be many other merged codes. The problem is that they are not logical, since they do not come from business logic. Instead, they are unexpected and arbitrary. Every common code has its specific logic that must be understood by each developer who works on that part. This leads to the problem that is described in [What Is The Problem With Abstract Frameworks?](../oop/what-is-the-problem-with-inheritance.md).
 
 In other words, common codes dangerously increase the number of _dependencies_ between the classes. Dependencies make the code hard to understand and maintain.
 

@@ -62,7 +62,7 @@ There is another common breach of the SRP, which is less obvious though it happe
 
 I call it "_an implementation is the reason of another implementation_", which does not comply with the rule above that the code should change only if the specification has changed.
 
-It happens when there are too many dependencies between the code parts, which is usually caused by class hierarchies and [frameworks](what-is-the-problem-with-inheritance.md) or other overcomplexity.
+It happens when there are too many dependencies between the code parts, which is usually caused by class hierarchies and [frameworks](oop/what-is-the-problem-with-inheritance.md) or other overcomplexity.
 
 This leads to a very rigid code, which is hard to modify.
 

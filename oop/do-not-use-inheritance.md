@@ -26,7 +26,7 @@ Then they realized that the data may vary when they model real information. So t
 
 But that also means that the procedures packed together with the data should also be variable. And it is not enough to extend the class with new procedures because the existing ones may not correctly handle the new data. So they invented the `override` of existing procedures with new ones.
 
-![](.gitbook/assets/Override.png)
+![](../.gitbook/assets/Override.png)
 
 With `override` things started to be bad so the `abstract` methods have been added finally. These methods are not implemented, so the extending classes will not override any already existing implementation. Since a class with unimplemented methods cannot be instantiated, the entire class also has to be marked as `abstract`. In other words, abstract classes are _designed_ for inheritance.
 
@@ -53,7 +53,7 @@ The reason is that data types will have multiple instances, while we need only o
 We do not pack data and procedures together anymore.
 {% endhint %}
 
-![](<.gitbook/assets/Separate Data and Procedure Classes.png>)
+![](<../.gitbook/assets/Separate Data and Procedure Classes.png>)
 
 So we are back at the pre-OOP times with data structures. Back to the future.:slight\_smile:We do not do classical object-oriented programming as it was invented, so many of its rules are not valid.
 
@@ -67,7 +67,7 @@ Injection is not the only reason to separate data and procedures.
 
 It also makes the code cleaner and more simple by _separating the concerns_. Most applications process data so it should be clear what is the data and what is its processing.&#x20;
 
-For procedures we use classes merely to _organize the code_. So we also separate procedures from each-other and group them strictly by their functionality, responsibility, and cohesion.  The code should adhere to the [Single Responsibility Principle](single-responsibility-principle.md).
+For procedures we use classes merely to _organize the code_. So we also separate procedures from each-other and group them strictly by their functionality, responsibility, and cohesion.  The code should adhere to the [Single Responsibility Principle](../single-responsibility-principle.md).
 
 ## No inheritance
 
@@ -86,11 +86,11 @@ If we want to create different procedures for different variations of a data str
 
 {% tabs %}
 {% tab title="Before" %}
-![](.gitbook/assets/Override.png)
+![](../.gitbook/assets/Override.png)
 {% endtab %}
 
 {% tab title="After" %}
-![](<.gitbook/assets/New class.png>)
+![](<../.gitbook/assets/New class.png>)
 {% endtab %}
 {% endtabs %}
 
@@ -122,11 +122,11 @@ We do not have to use inheritance for data classes either.
 
 {% tabs %}
 {% tab title="Before" %}
-![](<.gitbook/assets/New class.png>)
+![](<../.gitbook/assets/New class.png>)
 {% endtab %}
 
 {% tab title="After" %}
-![](<.gitbook/assets/Data composition.png>)
+![](<../.gitbook/assets/Data composition.png>)
 {% endtab %}
 {% endtabs %}
 
@@ -158,7 +158,7 @@ Of course, in real life we usually see the two cases mixed.
 
 This means that the descendant classes simply use the methods they inherit from their parent classes.
 
-In this situation the solution is already given by the [Effective Java](overviews/effective-java-toc.md) book:
+In this situation the solution is already given by the [Effective Java](../clean-code/effective-java-toc.md) book:
 
 {% hint style="info" %}
 Favor composition over inheritance
@@ -170,11 +170,11 @@ Probably we should not use the parent classes as they are, but rather refactor t
 
 {% tabs %}
 {% tab title="Before" %}
-![](<.gitbook/assets/Children call parent.png>)
+![](<../.gitbook/assets/Children call parent.png>)
 {% endtab %}
 
 {% tab title="After" %}
-![](<.gitbook/assets/Children call parent - composition.png>)
+![](<../.gitbook/assets/Children call parent - composition.png>)
 {% endtab %}
 {% endtabs %}
 
@@ -186,7 +186,7 @@ Parents usually call their children via abstract methods. It is the [Template me
 
 An abstract class practically defines a new interface with its abstract methods. This interface must be implemented by the child classes. _(This is one reason why it is easy to get lost in a class hierarchy. The children implement totally different interfaces, and when we traverse down in the hierarchy we quickly get far from the original interface...)_
 
-The solution for this also comes from the [Effective Java](overviews/effective-java-toc.md) book:
+The solution for this also comes from the [Effective Java](../clean-code/effective-java-toc.md) book:
 
 {% hint style="info" %}
 Prefer interfaces to abstract classes
@@ -196,11 +196,11 @@ So move the abstract methods into one or more interfaces. Any class that impleme
 
 {% tabs %}
 {% tab title="Before" %}
-![](<.gitbook/assets/Parent calls children.png>)
+![](<../.gitbook/assets/Parent calls children.png>)
 {% endtab %}
 
 {% tab title="After" %}
-![](<.gitbook/assets/Parent calls children - interface.png>)
+![](<../.gitbook/assets/Parent calls children - interface.png>)
 {% endtab %}
 {% endtabs %}
 
@@ -208,7 +208,7 @@ This also means that classes are free to implement the interfaces in their own w
 
 #### Overridden methods
 
-Not surprisingly the [Effective Java](overviews/effective-java-toc.md) book has something to tell about this too:
+Not surprisingly the [Effective Java](../clean-code/effective-java-toc.md) book has something to tell about this too:
 
 {% hint style="info" %}
 Design and document for inheritance or else prohibit it
@@ -220,17 +220,17 @@ Anyway, if there are overridden methods, it is no problem. That is the goal of t
 
 {% tabs %}
 {% tab title="Before" %}
-![](<.gitbook/assets/Override procedural.png>)
+![](<../.gitbook/assets/Override procedural.png>)
 {% endtab %}
 
 {% tab title="After" %}
-![](<.gitbook/assets/Override procedural - separate.png>)
+![](<../.gitbook/assets/Override procedural - separate.png>)
 {% endtab %}
 {% endtabs %}
 
 ### Procedural classes should be final, but...
 
-Also referring to this rule from the [Effective Java](overviews/effective-java-toc.md) book:
+Also referring to this rule from the [Effective Java](../clean-code/effective-java-toc.md) book:
 
 {% hint style="info" %}
 Design and document for inheritance or else prohibit it
