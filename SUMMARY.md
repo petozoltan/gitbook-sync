@@ -1,21 +1,18 @@
 # Table of contents
 
-* [Introduction](README.md)
-* [Simple Code Overview](<README (2).md>)
-* [Software Killers](software-killers.md)
-* [Timeline](<README (1).md>)
+* [Software Killers](README.md)
+* [Introduction](<README (1).md>)
+* [Timeline](<README (1) (1).md>)
 
 ## Simple Code
 
 ***
 
+* [Simple Code Overview](<README (2).md>)
 * [Separate Data Collection And Processing](separate-data-collection-and-processing/README.md)
   * [Create Data Models](separate-data-collection-and-processing/create-data-models.md)
 * [Separate Use Cases](separate-use-cases/README.md)
   * [Example: Separate Use Cases](separate-use-cases/example-separate-use-cases.md)
-* [The problem with Clean Code's name](the-problem-with-clean-codes-name.md)
-* [The Real Single Responsibility Principle](single-responsibility-principle.md)
-* [How To Handle Warnings](how-to-handle-warnings.md)
 * [Do Not Create Constant Collection Classes](do-not-create-constant-collection-classes.md)
 
 ## OOP
@@ -24,6 +21,13 @@
 * [Do Not Use Inheritance](oop/do-not-use-inheritance.md)
 * [When To Avoid Inheritance?](oop/when-to-avoid-inheritance.md)
 * [What Is The Problem With Abstract Frameworks?](oop/what-is-the-problem-with-inheritance.md)
+
+## Explained
+
+* [Page 1](explained/page-1.md)
+* [The Real Single Responsibility Principle](explained/single-responsibility-principle.md)
+* [The problem with Clean Code's name](explained/the-problem-with-clean-codes-name.md)
+* [How To Handle Warnings](explained/how-to-handle-warnings.md)
 
 ## Pictures
 

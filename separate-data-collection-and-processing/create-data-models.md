@@ -267,7 +267,7 @@ public void testSomething() {
 }
 ```
 
-### Avoid DTO Hell
+### Too many data classes?
 
 Will we not have too many DTOs in the way as written above? In other words, won't we have a "DTO hell"?
 

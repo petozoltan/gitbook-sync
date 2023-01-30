@@ -26,7 +26,7 @@ No boilerplate code templates
 
 Not for code checkers
 
-* Human readability, expressivity 
+* Human readability, expressivity&#x20;
 
 Not matter of taste
 
@@ -41,7 +41,7 @@ Not waste of time
 Not easy
 
 * Self discipline
-  * it is easy to know the rules but not easy to apply them to ourselves 
+  * it is easy to know the rules but not easy to apply them to ourselves&#x20;
   * easy to see other's bad code but not easy to recognize when we do them
 * Long practice
 
@@ -69,7 +69,7 @@ If it is _decidable_ whether it is good.
 
 ### Single Responsibility Principle
 
-[SRP is the core rule of clean code.](../../single-responsibility-principle.md)
+[SRP is the core rule of clean code.](../../explained/single-responsibility-principle.md)
 
 ### Reading the code with clean code view
 
@@ -91,13 +91,11 @@ I see independent, named code blocks { }:
 Before modification
 
 * Understand affected parts
-* Check cleanness 
+* Check cleanness&#x20;
 * If not clean, refactor
 
 Do modification
 
 * Change names first
 * Implement code
-
-
 

@@ -67,7 +67,7 @@ Injection is not the only reason to separate data and procedures.
 
 It also makes the code cleaner and more simple by _separating the concerns_. Most applications process data so it should be clear what is the data and what is its processing.&#x20;
 
-For procedures we use classes merely to _organize the code_. So we also separate procedures from each-other and group them strictly by their functionality, responsibility, and cohesion.  The code should adhere to the [Single Responsibility Principle](../single-responsibility-principle.md).
+For procedures we use classes merely to _organize the code_. So we also separate procedures from each-other and group them strictly by their functionality, responsibility, and cohesion.  The code should adhere to the [Single Responsibility Principle](../explained/single-responsibility-principle.md).
 
 ## No inheritance
 

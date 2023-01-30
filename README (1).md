@@ -1,53 +1,17 @@
-# Timeline
+---
+description: 2023.01.30
+---
 
-## 2023
+# Introduction
 
-[README (2).md](<README (2).md> "mention")
+In my whole life as a programmer, I was always been thinking about how the source code should look, how it is logical, and how it can reflect what it is doing.
 
+Later I learned about the Clean Code book and other books on good coding practices. I realized that I have a 'clean code approach' to programming. I collected all my knowledge in this field and added my thoughts too—you can find them on the left, under the Clean Code group. I also did a few presentations and training about clean code.
 
+But I realized that despite most programmers knowing the main clean code rules and despite having experienced software engineers everywhere, the source code becomes very complicated. So in recent years, I tried to find the traps we often fall into and to understand the programming habits that may lead to overcomplicated code.
 
-## 2021
+This is what you can read under 'simple code'. It is all based on the clean code principles. I also realized what the most important goal is: to implement and express the business logic of the program. So actually,
 
-[create-data-models.md](separate-data-collection-and-processing/create-data-models.md "mention")
-
-[separate-data-collection-and-processing](separate-data-collection-and-processing/ "mention")
-
-[software-killers.md](software-killers.md "mention")
-
-[separate-data-and-procedures.md](oop/separate-data-and-procedures.md "mention")
-
-[example-separate-use-cases.md](separate-use-cases/example-separate-use-cases.md "mention")
-
-[quotes.md](pictures/quotes.md "mention")
-
-[git-tutorials.md](technology/git-tutorials.md "mention")
-
-[separate-use-cases](separate-use-cases/ "mention")
-
-## 2020
-
-[do-not-use-inheritance.md](oop/do-not-use-inheritance.md "mention")
-
-[the-problem-with-clean-codes-name.md](the-problem-with-clean-codes-name.md "mention")
-
-[single-responsibility-principle.md](single-responsibility-principle.md "mention")
-
-## 2016
-
-[clean-code-introduction](clean-code/clean-code-introduction/ "mention")
-
-[clean-code-outline](clean-code/clean-code-outline/ "mention")
-
-[clean-code-links.md](clean-code/clean-code-links.md "mention")
-
-[clean-code-toc.md](clean-code/clean-code-toc.md "mention")
-
-[effective-java-toc.md](clean-code/effective-java-toc.md "mention")
-
-[what-is-the-problem-with-inheritance.md](oop/what-is-the-problem-with-inheritance.md "mention")
-
-[when-to-avoid-inheritance.md](oop/when-to-avoid-inheritance.md "mention")
-
-[how-to-handle-warnings.md](how-to-handle-warnings.md "mention")
-
-[do-not-create-constant-collection-classes.md](do-not-create-constant-collection-classes.md "mention")
+{% hint style="success" %}
+Simple code = Business code = Clean code
+{% endhint %}

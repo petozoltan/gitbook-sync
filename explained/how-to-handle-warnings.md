@@ -36,7 +36,7 @@ Moreover, warnings point to deeper structural problems in the code, which are no
 
 There is no fundamental difference between warnings and errors! They differ only in the arbitrary level that we assign to them. You can even set it in your IDE:
 
-![](.gitbook/assets/warning-levels.png)
+![](../.gitbook/assets/warning-levels.png)
 
 And I do not have to mention that warnings should not be fixed via `SuppressWarnings`...
 
@@ -60,8 +60,8 @@ A simple "psychological" reason is that nobody will notice if the warning count 
 I suggest applying this approach even when we start to check warnings in the middle of the project, when we have tens of thousands:
 
 1. Turn off all warnings for all modules at first.
-2. Decide to clear one warning level or one warning type or one code module. 
-3. Turn on warnings only for this. 
+2. Decide to clear one warning level or one warning type or one code module.&#x20;
+3. Turn on warnings only for this.&#x20;
 4. Fix the warnings immediately.
 5. Repeat from step 2.
 
@@ -75,7 +75,7 @@ There is one more thing missing from the scenario at the beginning: The tasks, r
 
 * Plan:
   * Create an execution plan.
-  * Plan the results to be reached. 
+  * Plan the results to be reached.&#x20;
   * Plan how to measure them by numbers if possible.
 * Do:
   * Assign resources.
@@ -84,7 +84,7 @@ There is one more thing missing from the scenario at the beginning: The tasks, r
   * Check the results.
   * Measure the numbers.
 * Act:
-  * Review the whole thing, whether it yields the desired results. 
+  * Review the whole thing, whether it yields the desired results.&#x20;
   * If not, change it.
 
 ### Ignore warnings?
@@ -93,4 +93,4 @@ As I see the software industry simply does not need the code quality above a cer
 
 In this case, it can be a valid solution that we simply ignore all warnings in the code. But then we should not bother to install Sonar and watch the high number of warnings.
 
-![](.gitbook/assets/Warnings.png)
+![](../.gitbook/assets/Warnings.png)

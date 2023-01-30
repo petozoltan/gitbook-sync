@@ -10,54 +10,56 @@ Draft
 
 ## Separate everything
 
-Separate in 'time and space'
+Separate the program in 'time and space'.
 
 * Time
-  * Identify steps&#x20;
-  * Create sequence of steps
+  * [Separate steps](<README (2).md#separate-steps>)
 * Space
-  * Different features and use cases by different code
-  * No common code
+  * Implement different parts of the business logic in different parts of the code.
 
-### [Separate data and procedures](oop/separate-data-and-procedures.md)
+### Separate steps
 
-[Create data models](separate-data-collection-and-processing/create-data-models.md)
-
-* For data processing
-* Model the data
-* Create data loader/collector
-* Java: implements equals(), hashcode() and toString()
-* Avoid using Maps in data models
-
-Create code units with
-
-* Well defined and immutable input data model
-* Well defined and immutable output data model
-* No additional data collection during data processing
-
-Test code units simply
-
-* Define input
-* Define expected output
-* Test equality
-
-### Separate steps in time
-
-[Separate data collection and data processing](separate-data-collection-and-processing/)
-
-Always think about what can be distinct steps
+* Split the algorithms into separate steps that can be done one by one.
+* Design the intermediate data to be created by the steps and used by the next ones.
+* Create sequences of steps. That is the easiest to be understood by the human mind.&#x20;
+* [Separate data collection and data processing](separate-data-collection-and-processing/).
 
 ### Separate features
 
 Separate features
 
-* Avoid common code above different features
+* Implement different features and use cases in different parts of the code.
+* Avoid common code above different features.
+* Avoid implementing use cases with a common code and then branching them from there.
 
 [Separate use cases](separate-use-cases/)
 
-* As early as possible
-* In data models
-* Never join separated use cases
+* As early as possible.
+* Already in data models.
+* Never join use cases again, once they are separated.
+
+### [Separate data and procedures](oop/separate-data-and-procedures.md)
+
+[Create data models](separate-data-collection-and-processing/create-data-models.md)
+
+* For data processing always design the data first.
+* _Model_ the business results with the data. That's why it is called a 'data model'.
+* Create separate data loaders/collectors and data processors.&#x20;
+* In Java implement `equals()`, `hashcode()` and `toString()`  of data classes.&#x20;
+  * It will help the testing and debugging.
+* Avoid using Maps in data models. They will make the data 'unfinished'.
+
+Create code units with
+
+* a well-defined and immutable (or effectively immutable) _input_ data model,
+* and a well-defined and immutable (or effectively immutable) _output_ data model.
+* Avoid additional data collection during data processing.
+
+Test code units with input/output data.
+
+* Create input data.
+* Create expected output.
+* Simply test equality.
 
 ### Separate method types
 
@@ -73,7 +75,7 @@ Implementation method
 
 ### Separate constants
 
-Don't collect constants on the top of the class
+Don't collect constants at the top of the class.
 
 [Don't collect constants in a class or interface.](do-not-create-constant-collection-classes.md)
 
@@ -103,7 +105,7 @@ Don't implement unnamed functionality
 
 ### Organize code by SRP
 
-[Single Responsibility Principle](single-responsibility-principle.md)
+[Single Responsibility Principle](explained/single-responsibility-principle.md)
 
 * Everything should do only one thing
 * On every level of the code structure

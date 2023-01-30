@@ -14,7 +14,7 @@ When new constants have to be created it is not mandatory to add them to the col
 
 ### Classes should not always be modified
 
-It breaches the [Single Responsibility Principle](single-responsibility-principle.md) because such classes may contain information for more different functionality.
+It breaches the [Single Responsibility Principle](explained/single-responsibility-principle.md) because such classes may contain information for more different functionality.
 
 ### Finish and test
 
@@ -182,7 +182,7 @@ A service must provide a public interface, i.e. a set of public methods. To avoi
 
 Note: Check out the API documentation of Spring's [@Service](http://docs.spring.io/autorepo/docs/spring-framework/3.0.x/javadoc-api/org/springframework/stereotype/Service.html) annotation:
 
-> Indicates that an annotated class is a "Service" \(e.g. a business service facade\).
+> Indicates that an annotated class is a "Service" (e.g. a business service facade).
 
 ### Do Not Collect Constants at the Top of the Class
 
@@ -239,4 +239,3 @@ class ContractService {
 {% endtabs %}
 
 In the upper example, the `ContractService` class is not responsible for defining the constant for the special user ID. It is rather related to User services.
-

@@ -72,13 +72,13 @@ HAVENORM        ABVAL   SIGN
 {% endtab %}
 
 {% tab title="A real coder" %}
-![Margaret Hamilton with the code of the Apollo space program](.gitbook/assets/margaret-hamilton.jpg)
+![Margaret Hamilton with the code of the Apollo space program](../.gitbook/assets/margaret-hamilton.jpg)
 {% endtab %}
 {% endtabs %}
 
 ### Language
 
-But the programming languages we use today are so-called [high-level languages](https://en.wikipedia.org/wiki/High-level\_programming\_language), that aim for readability by humans. According to the [Clean Code book](clean-code/clean-code-outline/), the program should be readable like English prose. We ensure this by assigning and using _names_ of types, variables, and procedures.
+But the programming languages we use today are so-called [high-level languages](https://en.wikipedia.org/wiki/High-level\_programming\_language), that aim for readability by humans. According to the [Clean Code book](../clean-code/clean-code-outline/), the program should be readable like English prose. We ensure this by assigning and using _names_ of types, variables, and procedures.
 
 > It's much easier for most people to write an English statement than it is to use symbols. So I decided data processors ought to be able to write their programs in English, and the computers would translate them into machine code. I could say 'Subtract income tax from pay' instead of trying to write that in octal code or using all kinds of symbols.&#x20;
 >
