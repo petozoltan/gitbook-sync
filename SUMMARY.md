@@ -24,7 +24,6 @@
 
 ## Explained
 
-* [Page 1](explained/page-1.md)
 * [The Real Single Responsibility Principle](explained/single-responsibility-principle.md)
 * [The problem with Clean Code's name](explained/the-problem-with-clean-codes-name.md)
 * [How To Handle Warnings](explained/how-to-handle-warnings.md)
