@@ -1,5 +1,5 @@
 ---
-description: 2020.11.06,  2021.02.14
+description: 2020.11.06 - 2021.02.14
 ---
 
 # Do Not Use Inheritance

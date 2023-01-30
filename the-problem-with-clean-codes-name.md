@@ -1,5 +1,5 @@
 ---
-description: 2020.05.16,  2021.03.07
+description: 2020.05.16 - 2021.03.07
 ---
 
 # The problem with Clean Code's name

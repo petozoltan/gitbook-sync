@@ -1,5 +1,5 @@
 ---
-description: 2020.05.16,  2021.01.25
+description: 2020.05.16 - 2021.01.25
 ---
 
 # The Real Single Responsibility Principle

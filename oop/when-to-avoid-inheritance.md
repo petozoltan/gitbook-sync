@@ -1,5 +1,5 @@
 ---
-description: '2016.06.18,  2020.03.09'
+description: 2016.06.18 - 2020.03.09
 ---
 
 # When To Avoid Inheritance?
@@ -16,7 +16,7 @@ Common methods could go into a simple class that is used by reference. And if th
 
 Parent and child classes must be variants _of the same type_. So if a parent is only a bunch of common methods they are probably not.
 
-#### Do not create a parent class only to inherit common members \(class variables\)
+#### Do not create a parent class only to inherit common members (class variables)
 
 Repeating class variables and injected instances is not code repetition. It is a misunderstanding. The same functionality must not be implemented more times. But declaring references can be explicitly expressed, even if copy-pasted.
 
@@ -24,7 +24,7 @@ Repeating class variables and injected instances is not code repetition. It is a
 
 The class hierarchy is very wrong if the child classes:
 
-* have empty implementations for the abstract methods, 
+* have empty implementations for the abstract methods,&#x20;
 * do not use input parameters of the inherited methods,
 * must override already implemented methods.
 
@@ -36,8 +36,8 @@ This is similar to the previous case because you might get warnings about unused
 
 If you
 
-* have to call `super` but not in a constructor, or 
-* have to pass `this` from parent to child or opposite, 
+* have to call `super` but not in a constructor, or&#x20;
+* have to pass `this` from parent to child or opposite,&#x20;
 
 then parent and child just simply call each other as independent classes. No need for inheritance between them.
 
@@ -73,7 +73,7 @@ A class must behave as its name tells. Classes in a hierarchy must have the same
 
 #### Do not create a parent class when you cannot unit test its behavior
 
-All classes should be unit tested. And parent classes are also classes. Abstract classes too. 
+All classes should be unit tested. And parent classes are also classes. Abstract classes too.&#x20;
 
 #### Do not create a parent class if you cannot find a good name for it
 
@@ -121,13 +121,13 @@ If only values are different it is no reason for a class. Classes are for proced
 
 #### Create a separate interface for the parent and child classes instead of inheritance
 
-For example, the parent has the public interface _A_ \(a set of public methods\) and it has the set _B_ of abstract methods. The children practically have interface _B_, a different interface than _A_. So the hierarchy can be simply refactored into a service/sub-services or a runner/runnables architecture.
+For example, the parent has the public interface _A_ (a set of public methods) and it has the set _B_ of abstract methods. The children practically have interface _B_, a different interface than _A_. So the hierarchy can be simply refactored into a service/sub-services or a runner/runnables architecture.
 
 #### Do not use type-cast
 
 If you have to use type-cast at some point, then the class hierarchy is not well implemented. In this case:
 
-* Either redesign the class hierarchy, 
+* Either redesign the class hierarchy,&#x20;
 * or try to implement it without inheritance.
 
 #### Do not create an abstract framework on top of a framework
@@ -142,7 +142,7 @@ Test cases must be simple and _independent_.
 
 #### Make methods final
 
-"Design and document for inheritance or else prohibit it." \(Effective Java book\)
+"Design and document for inheritance or else prohibit it." (Effective Java book)
 
 Overriding an implemented method is nonsense and it is also dangerous. You must not override an existing implementation of a method. The parent class is closed, complete, and tested. If you change only a portion of it, it can be broken.
 
@@ -171,4 +171,3 @@ We want to avoid any kind of dependencies because they multiply the complexity o
 #### Occam's razor
 
 Do not create code that is not necessary. Maintaining masses of unnecessary code needs a lot of effort.
-

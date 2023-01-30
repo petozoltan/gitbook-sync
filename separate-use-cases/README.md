@@ -1,5 +1,5 @@
 ---
-description: 2021.01.31 (2021.07.16)
+description: 2021.01.31 - 2021.07.16
 ---
 
 # Separate Use Cases

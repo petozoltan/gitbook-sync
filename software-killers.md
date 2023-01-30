@@ -1,9 +1,9 @@
 # Software Killers
 
-### The Biggest Software Killers
+### The biggest software killers
 
-![](<.gitbook/assets/Common Code d1 b.jpg>) ![](<.gitbook/assets/Inheritance d1.jpg>) ![](<.gitbook/assets/Abstraction d1.jpg>) ![](<.gitbook/assets/Indirection d1.jpg>) 
+<img src=".gitbook/assets/Common Code d1 b.jpg" alt="" data-size="original"> <img src=".gitbook/assets/Inheritance d1.jpg" alt="" data-size="original"> <img src=".gitbook/assets/Abstraction d1.jpg" alt="" data-size="original"> <img src=".gitbook/assets/Indirection d1.jpg" alt="" data-size="original">&#x20;
 
-### And Their Clients, Who Hired Them: The Big Bosses
+### And their clients, who hired them: the big bosses
 
-![](<.gitbook/assets/Complexity d1.jpg>) ![](<.gitbook/assets/Dependency d1.jpg>) 
+<img src=".gitbook/assets/Complexity d1.jpg" alt="" data-size="original"> <img src=".gitbook/assets/Dependency d1.jpg" alt="" data-size="original">&#x20;
