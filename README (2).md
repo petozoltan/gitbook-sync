@@ -290,6 +290,11 @@ Minimize interfaces
 
 ## Focus on business logic
 
+Forget about coding
+
+* Put aside you programming language
+* Put aside your implementation ideas
+
 Organize code by business logic
 
 * Feature
