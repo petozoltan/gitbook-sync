@@ -4,9 +4,9 @@ description: 2021.07.16 - 2023.01.25
 
 # Funny
 
-<figure><img src="../.gitbook/assets/Cw_mrIGXgAAiPJx.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Automate.jpg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/DI3c023VYAAcOPM.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Cw_mrIGXgAAiPJx.jpg" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/317140713_729581221362992_7547251464731726592_n.jpg" alt=""><figcaption></figcaption></figure>
 
