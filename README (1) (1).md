@@ -4,7 +4,7 @@
 
 [README (1).md](<README (1).md> "mention")
 
-[README (2).md](<README (2).md> "mention")
+[simple-code-rules.md](simple-code-rules.md "mention")
 
 ## 2021
 

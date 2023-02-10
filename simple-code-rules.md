@@ -2,7 +2,7 @@
 description: 2023.01.30
 ---
 
-# Simple Code Overview
+# Simple Code Rules
 
 {% hint style="danger" %}
 Draft
@@ -13,7 +13,7 @@ Draft
 Separate the program in 'time and space'.
 
 * Time
-  * [Separate steps](<README (2).md#separate-steps>)
+  * [Separate steps](simple-code-rules.md#separate-steps)
 * Space
   * Implement different parts of the business logic in different parts of the code.
 
@@ -35,7 +35,7 @@ Separate features
 [Separate use cases](separate-use-cases/)
 
 * As early as possible.
-* Already in data models.
+* [Already in data models.](separate-use-cases/example-separate-use-cases.md)
 * Never join use cases again, once they are separated.
 
 ### [Separate data and procedures](oop/separate-data-and-procedures.md)
@@ -63,7 +63,7 @@ Test code units with input/output data.
 
 ### Separate method types
 
-Orchestrator/dispatcher method
+Dispatcher method
 
 * One branching
 * Redirecting method outputs to method inputs.
@@ -72,6 +72,10 @@ Implementation method
 
 * Implements one thing.
 * Usually returns a result.
+
+Strive to create only these two method types.
+
+* Break methods into multiple methods until you reach it.
 
 ### Separate constants
 
@@ -85,11 +89,20 @@ Collect constant value sets into `enum`s.
 
 ### Separate business code and technical code
 
-Hide technical details behind business logic
+Hide technical details behind business logic.
 
-Don't inline business functionality
+Don't 'pollute' business functionality with technical details or the other way around.
 
-Don't implement unnamed functionality
+Don't extend generic technical classes (e.g. Collections) to create a business-specific implementation.
+
+Always name variables after their business meaning.
+
+* E.g. don't call a map 'map', a result 'result', etc.
+
+Don't inline business functionality.
+
+* Don't implement unnamed functionality.
+* It would also lead to code repetition.
 
 <details>
 
@@ -107,9 +120,9 @@ Don't implement unnamed functionality
 
 [Single Responsibility Principle](explained/single-responsibility-principle.md)
 
-* Everything should do only one thing
-* On every level of the code structure
-  * method, class, package, module, etc.
+* Every part of the code should implement only one part of the business logic. (The original SRP.)
+* Every part of the business logic should be implemented by one part of the code.
+* A 'part' of the code can be any level, like a method, class, package, module, etc.
 
 Use high cohesion
 

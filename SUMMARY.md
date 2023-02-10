@@ -8,7 +8,7 @@
 
 ***
 
-* [Simple Code Overview](<README (2).md>)
+* [Simple Code Rules](simple-code-rules.md)
 * [Separate Data Collection And Processing](separate-data-collection-and-processing/README.md)
   * [Create Data Models](separate-data-collection-and-processing/create-data-models.md)
 * [Separate Use Cases](separate-use-cases/README.md)
