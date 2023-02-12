@@ -1,53 +1,36 @@
 # Timeline
 
-## 2023
+### 2023
 
-[.](./ "mention")
+* [Simple Code Overview](introduction/simple-code-overview.md)
+* [About This Book](./)
+* [Simple Code Rules](introduction/simple-code-rules.md) (in progress)
 
-[simple-code-rules.md](introduction/simple-code-rules.md "mention")
+### 2021
 
-## 2021
+* [Create Data Models](simple-code/separate-data-collection-and-processing/create-data-models.md)
+* [Separate Data Collection And Processing](simple-code/separate-data-collection-and-processing/)
+* [Software Killers](<README (1).md>)
+* [Separate Data And Procedures](oop/separate-data-and-procedures.md)
+* [Example: Separate Use Cases](simple-code/separate-use-cases/example-separate-use-cases.md)
+* [Quotes](pictures/quotes.md)
+* [Git Tutorials](technology/git-tutorials.md)
+* [Separate Use Cases](simple-code/separate-use-cases/)
 
-[create-data-models.md](simple-code/separate-data-collection-and-processing/create-data-models.md "mention")
+### 2020
 
-[separate-data-collection-and-processing](simple-code/separate-data-collection-and-processing/ "mention")
+* [Do Not Use Inheritance](oop/do-not-use-inheritance.md)
+* [The problem with Clean Code's name](explained/the-problem-with-clean-codes-name.md)
+* [The Real Single Responsibility Principle](explained/single-responsibility-principle.md)
 
-[README (1).md](<README (1).md> "mention")
+### 2016
 
-[separate-data-and-procedures.md](oop/separate-data-and-procedures.md "mention")
-
-[example-separate-use-cases.md](simple-code/separate-use-cases/example-separate-use-cases.md "mention")
-
-[quotes.md](pictures/quotes.md "mention")
-
-[git-tutorials.md](technology/git-tutorials.md "mention")
-
-[separate-use-cases](simple-code/separate-use-cases/ "mention")
-
-## 2020
-
-[do-not-use-inheritance.md](oop/do-not-use-inheritance.md "mention")
-
-[the-problem-with-clean-codes-name.md](explained/the-problem-with-clean-codes-name.md "mention")
-
-[single-responsibility-principle.md](explained/single-responsibility-principle.md "mention")
-
-## 2016
-
-[clean-code-introduction](clean-code/clean-code-introduction/ "mention")
-
-[clean-code-outline](clean-code/clean-code-outline/ "mention")
-
-[clean-code-links.md](clean-code/clean-code-links.md "mention")
-
-[clean-code-toc.md](clean-code/clean-code-toc.md "mention")
-
-[effective-java-toc.md](clean-code/effective-java-toc.md "mention")
-
-[what-is-the-problem-with-inheritance.md](oop/what-is-the-problem-with-inheritance.md "mention")
-
-[when-to-avoid-inheritance.md](oop/when-to-avoid-inheritance.md "mention")
-
-[how-to-handle-warnings.md](explained/how-to-handle-warnings.md "mention")
-
-[do-not-create-constant-collection-classes.md](simple-code/do-not-create-constant-collection-classes.md "mention")
+* [Clean Code Introduction](clean-code/clean-code-introduction/)
+* [Clean Code Outline](clean-code/clean-code-outline/)
+* [Clean Code Links](clean-code/clean-code-links.md)
+* [Clean Code TOC](clean-code/clean-code-toc.md)
+* [Effective Java TOC](clean-code/effective-java-toc.md)
+* [What Is The Problem With Abstract Frameworks?](oop/what-is-the-problem-with-inheritance.md)
+* [When To Avoid Inheritance?](oop/when-to-avoid-inheritance.md)
+* [How To Handle Warnings](explained/how-to-handle-warnings.md)
+* [Do Not Create Constant Collection Classes](simple-code/do-not-create-constant-collection-classes.md)
