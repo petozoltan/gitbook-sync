@@ -1,8 +1,12 @@
 ---
-description: 2021.07.16 - 2023.01.25
+description: 2021.07.16 - 2023.02.12
 ---
 
 # Funny
+
+<figure><img src="../.gitbook/assets/Simple.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/OOP.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/Automate.jpg" alt=""><figcaption></figcaption></figure>
 
