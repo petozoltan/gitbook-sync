@@ -104,18 +104,6 @@ Don't inline business functionality.
 * Don't implement unnamed functionality.
 * It would also lead to code repetition.
 
-<details>
-
-<summary></summary>
-
-* Bad: `x.substr(2,5)`&#x20;
-  * inlined in multiple places&#x20;
-* Good: `getSomeCode(x)`&#x20;
-  * implemented once
-  * called from multiple places
-
-</details>
-
 ### Organize code by SRP
 
 [Single Responsibility Principle](../explained/single-responsibility-principle.md)
@@ -249,6 +237,8 @@ Image with common code
 Image with branching
 
 Branchings are parallels
+
+Write common code that is really common
 
 ## Decrease dependencies
 
