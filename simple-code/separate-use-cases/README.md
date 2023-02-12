@@ -8,11 +8,11 @@ We are good programmers and we write good quality code. Despite that, I always s
 
 {% tabs %}
 {% tab title="Lost" %}
-![](../.gitbook/assets/Maze.png)
+![](../../.gitbook/assets/Maze.png)
 {% endtab %}
 
 {% tab title="Again and again..." %}
-![](../.gitbook/assets/Mazes.png)
+![](../../.gitbook/assets/Mazes.png)
 {% endtab %}
 {% endtabs %}
 
@@ -24,11 +24,11 @@ Programmers are notorious for pulling together similar code parts, saying they s
 
 Let's assume, we have two use cases consisting of similar but not equal steps:
 
-![](<../.gitbook/assets/Use Cases Logical.png>)
+![](<../../.gitbook/assets/Use Cases Logical.png>)
 
 Software developers will usually implement them in the following way:
 
-![](<../.gitbook/assets/Use Cases Implementation.png>)
+![](<../../.gitbook/assets/Use Cases Implementation.png>)
 
 That means that the common code will branch for the use cases, and then it goes again to the common code, then it will branch again.
 
@@ -36,11 +36,11 @@ With a simplified drawing—and rotating it with 90º—the following happens he
 
 {% tabs %}
 {% tab title="Merge" %}
-![](../.gitbook/assets/Merge.png)
+![](../../.gitbook/assets/Merge.png)
 {% endtab %}
 
 {% tab title="Variants" %}
-![](../.gitbook/assets/Merges.png)
+![](../../.gitbook/assets/Merges.png)
 {% endtab %}
 {% endtabs %}
 
@@ -66,7 +66,7 @@ Think of the program as a breakdown of the user requirements into features, use 
 
 Why is it good? Because it is much easier for the human mind to follow a sequence than several branchings.
 
-![](<../.gitbook/assets/Common code - breakdown.png>)
+![](<../../.gitbook/assets/Common code - breakdown.png>)
 
 What is the most simple and natural implementation of a sequence of steps? What would you expect, how it is implemented? The answer is:&#x20;
 
@@ -78,11 +78,11 @@ The most simple and natural implementation of a sequence of steps is a _sequence
 
 How to achieve that the common code does not contain branching for the use cases? Of course, at a certain point, the program has to make a distinction between the use cases. But after this point we should never merge them again:
 
-![](<../.gitbook/assets/Separate Use Cases.png>)
+![](<../../.gitbook/assets/Separate Use Cases.png>)
 
 How do we eliminate the code duplication of the common steps? We can simply extract the parts which are equal to more use cases:
 
-![](<../.gitbook/assets/Separate With Common Code.png>)
+![](<../../.gitbook/assets/Separate With Common Code.png>)
 
 So the rule is:
 
@@ -98,7 +98,7 @@ Of course, a common code can contain branching for _other_ use cases. But for th
 
 You should only extract into common function _how_ a certain step is implemented, and not extract _that_ a use case contains that step. The steps of a use case make its _description_. The steps of another use case should be the independent description of that other use case, even if they are similar.
 
-![](<../.gitbook/assets/Common code - merge.png>)
+![](<../../.gitbook/assets/Common code - merge.png>)
 
 The _naming rule_ can be helpful too: You should be able to add a meaningful, functional name to the extracted code. If it is not possible, then there is a chance that the code should not be extracted.
 
@@ -306,19 +306,19 @@ Multiple class hierarchies for the same use cases should be treated as code repe
 
 {% tabs %}
 {% tab title="Single" %}
-![](<../.gitbook/assets/Polymorphic single.png>)
+![](<../../.gitbook/assets/Polymorphic single.png>)
 
 
 {% endtab %}
 
 {% tab title="Multiple" %}
-![](<../.gitbook/assets/Polymorphic multiple.png>)
+![](<../../.gitbook/assets/Polymorphic multiple.png>)
 
 
 {% endtab %}
 {% endtabs %}
 
-Solution: we should create only one class hierarchy for the same use cases. Even better if we do not create any class hierarchies for them. The best is if we [Do Not Use Inheritance](../oop/do-not-use-inheritance.md) at all.
+Solution: we should create only one class hierarchy for the same use cases. Even better if we do not create any class hierarchies for them. The best is if we [Do Not Use Inheritance](../../oop/do-not-use-inheritance.md) at all.
 
 Putting common code into a parent class is a _misuse_ of inheritance because it generates unwanted dependencies between the classes. Common code should rather be _common functionality_, which should be put in independent components.
 
@@ -483,7 +483,7 @@ Implement branchings for the use cases _only once_, and as _early as possible_.
 
 ### Too Many Ad-hoc Solutions
 
-In the entire code base, there may be many other merged codes. The problem is that they are not logical, since they do not come from business logic. Instead, they are unexpected and arbitrary. Every common code has its specific logic that must be understood by each developer who works on that part. This leads to the problem that is described in [What Is The Problem With Abstract Frameworks?](../oop/what-is-the-problem-with-inheritance.md).
+In the entire code base, there may be many other merged codes. The problem is that they are not logical, since they do not come from business logic. Instead, they are unexpected and arbitrary. Every common code has its specific logic that must be understood by each developer who works on that part. This leads to the problem that is described in [What Is The Problem With Abstract Frameworks?](../../oop/what-is-the-problem-with-inheritance.md).
 
 In other words, common codes dangerously increase the number of _dependencies_ between the classes. Dependencies make the code hard to understand and maintain.
 
@@ -491,11 +491,11 @@ The following image shows a logical breakdown of a program into features, sub-fe
 
 {% tabs %}
 {% tab title="Without common codes" %}
-![](<../.gitbook/assets/Common code - logical.png>)
+![](<../../.gitbook/assets/Common code - logical.png>)
 {% endtab %}
 
 {% tab title="With common codes" %}
-![](<../.gitbook/assets/Common code - ad hoc.png>)
+![](<../../.gitbook/assets/Common code - ad hoc.png>)
 {% endtab %}
 {% endtabs %}
 
@@ -551,6 +551,6 @@ Investigate every `if` command and every possible branching, whether they are in
 
 Common code creates a dependency between the classes. Dependencies also increase code complexity.
 
-![](../.gitbook/assets/quote-controlling-complexity-is-the-essence-of-computer-programming-brian-kernighan-66-96-49.jpg)
+![](../../.gitbook/assets/quote-controlling-complexity-is-the-essence-of-computer-programming-brian-kernighan-66-96-49.jpg)
 
-![](<../.gitbook/assets/adLL15M\_700bwp BLACK.jpg>)
+![](<../../.gitbook/assets/adLL15M\_700bwp BLACK.jpg>)

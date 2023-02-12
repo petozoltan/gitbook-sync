@@ -22,7 +22,7 @@ Separate the program in 'time and space'.
 * Split the algorithms into separate steps that can be done one by one.
 * Design the intermediate data to be created by the steps and used by the next ones.
 * Create sequences of steps. That is the easiest to be understood by the human mind.&#x20;
-* [Separate data collection and data processing](separate-data-collection-and-processing/).
+* [Separate data collection and data processing](../simple-code/separate-data-collection-and-processing/).
 
 ### Separate features
 
@@ -32,15 +32,15 @@ Separate features
 * Avoid common code above different features.
 * Avoid implementing use cases with a common code and then branching them from there.
 
-[Separate use cases](separate-use-cases/)
+[Separate use cases](../simple-code/separate-use-cases/)
 
 * As early as possible.
-* [Already in data models.](separate-use-cases/example-separate-use-cases.md)
+* [Already in data models.](../simple-code/separate-use-cases/example-separate-use-cases.md)
 * Never join use cases again, once they are separated.
 
-### [Separate data and procedures](oop/separate-data-and-procedures.md)
+### [Separate data and procedures](../oop/separate-data-and-procedures.md)
 
-[Create data models](separate-data-collection-and-processing/create-data-models.md)
+[Create data models](../simple-code/separate-data-collection-and-processing/create-data-models.md)
 
 * For data processing always design the data first.
 * _Model_ the business results with the data. That's why it is called a 'data model'.
@@ -81,7 +81,7 @@ Strive to create only these two method types.
 
 Don't collect constants at the top of the class.
 
-[Don't collect constants in a class or interface.](do-not-create-constant-collection-classes.md)
+[Don't collect constants in a class or interface.](../simple-code/do-not-create-constant-collection-classes.md)
 
 Put constants in the class that is responsible for it by business logic.
 
@@ -118,7 +118,7 @@ Don't inline business functionality.
 
 ### Organize code by SRP
 
-[Single Responsibility Principle](explained/single-responsibility-principle.md)
+[Single Responsibility Principle](../explained/single-responsibility-principle.md)
 
 * Every part of the code should implement only one part of the business logic. (The original SRP.)
 * Every part of the business logic should be implemented by one part of the code.

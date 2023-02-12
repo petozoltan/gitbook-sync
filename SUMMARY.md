@@ -4,19 +4,17 @@
 
 * [About This Book](README.md)
 * [Simple Code Overview](introduction/simple-code-overview.md)
-* [Software Killers](introduction/software-killers.md)
-* [Timeline](introduction/master.md)
+* [Simple Code Rules](introduction/simple-code-rules.md)
+* [Software Killers](<README (1).md>)
+* [Timeline](<README (1) (1).md>)
 
 ## Simple Code
 
-***
-
-* [Simple Code Rules](simple-code-rules.md)
-* [Separate Data Collection And Processing](separate-data-collection-and-processing/README.md)
-  * [Create Data Models](separate-data-collection-and-processing/create-data-models.md)
-* [Separate Use Cases](separate-use-cases/README.md)
-  * [Example: Separate Use Cases](separate-use-cases/example-separate-use-cases.md)
-* [Do Not Create Constant Collection Classes](do-not-create-constant-collection-classes.md)
+* [Separate Data Collection And Processing](simple-code/separate-data-collection-and-processing/README.md)
+  * [Create Data Models](simple-code/separate-data-collection-and-processing/create-data-models.md)
+* [Separate Use Cases](simple-code/separate-use-cases/README.md)
+  * [Example: Separate Use Cases](simple-code/separate-use-cases/example-separate-use-cases.md)
+* [Do Not Create Constant Collection Classes](simple-code/do-not-create-constant-collection-classes.md)
 
 ## OOP
 

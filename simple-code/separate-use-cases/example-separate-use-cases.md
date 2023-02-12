@@ -329,7 +329,7 @@ As a consequence of the new data structure, we could also re-organize the for-ea
 
 What we really did in the previous step is that we created a _data model for the feature_. We also made the new data as a clear input of the calculation.
 
-Now it's time to re-organize our code into the proper units. 
+Now it's time to re-organize our code into the proper units.&#x20;
 
 I suggest creating a sub-package called model and put the DTOs and their factories here. I also suggest naming the factory classes exactly after the data classes they create.
 
@@ -678,7 +678,7 @@ public class SecondCalculator {
 
 You may say that the resulting code is pretty much longer than the original one. Yes, it's true. But how can it be better, and how can we say that it is simpler?
 
-Think of the daily work of a programmer. We need to develop and modify features and use cases. Imagine that we need to do a change or fix a bug in one of the use cases. 
+Think of the daily work of a programmer. We need to develop and modify features and use cases. Imagine that we need to do a change or fix a bug in one of the use cases.&#x20;
 
 * How could we find it in the code, if it has no name? If it is just embedded somewhere?
 * How could we find it, if it is implemented in more places? If it is "hiding" in more code parts?
@@ -696,4 +696,4 @@ Also, note that by writing more code lines we also have moved them into more sma
 
 And remember, this is a simplified example. A real-life code is much more complicated. And if the parts of a complicated code are mixed and not named either, then we will have problems with maintaining that code.
 
-![](../.gitbook/assets/Quotation-Albert-Einstein-Make-everything-as-simple-as-possible-but-not-simpler-8-73-34.jpg)
+![](../../.gitbook/assets/Quotation-Albert-Einstein-Make-everything-as-simple-as-possible-but-not-simpler-8-73-34.jpg)
