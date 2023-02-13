@@ -58,6 +58,7 @@ Besides the obvious branching commands there are other hidden branchings we must
 
 The possible ways to decrease the number of branchings are based on the above situations:
 
+* Put related static constants in enums to reach them without branching.
 * [Separate use cases and never join them again into a common code.](../simple-code/separate-use-cases/)
 * [Create data models without nullable or Optional members.](../simple-code/separate-data-collection-and-processing/create-data-models.md)
 * Avoid explicitly passing or returning `null`.

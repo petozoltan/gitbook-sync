@@ -240,6 +240,12 @@ Branchings are parallels
 
 Write common code that is really common
 
+Put related static information into enums.&#x20;
+
+* Once you have the enums, you can get the related information without branching.
+* Don't use it to reach procedural code. I.e. don't use it for functions, lambdas, method references. They need a different solution.
+* In one case you can use method references: for data attributes. ([Because they are actually not procedures.](../oop/separate-data-and-procedures.md#the-new-classes))
+
 ## Decrease dependencies
 
 Make everything final / immutable

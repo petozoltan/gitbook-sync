@@ -99,8 +99,17 @@ This also supports the idea that data classes are no classes, and it also gives 
 
 We should see and treat separated data and procedural classes as something new. What if we would at least 'imagine' different names for them?
 
-* Procedural classes could be called _units_. That would immediately make clear what we test via unit testing.
-* Data classes could be called _records_. I have just taken the name from the new Java records.
+#### Procedural classes
+
+Procedural classes could be called _units_. That would immediately make clear what we test via unit testing.
+
+Also their members should be called _procedures_.&#x20;
+
+#### Data classes
+
+Data classes could be called _records_. I have just taken the name from the new Java records.
+
+Their accessors and mutators should be called _attributes_.
 
 So here is what we have in reality:
 
@@ -108,7 +117,7 @@ So here is what we have in reality:
 | ------------------- | ---------------------- | ---------------------------------- |
 | _Name_              | `unit`                 | `record`                           |
 | _Data members_      | No                     | Yes                                |
-| _Procedure members_ | Yes                    | No                                 |
+| _Procedure members_ | procedure              | attribute                          |
 | _Statefulness_      | stateless              | stateful                           |
 | _Cardinality_       | singleton              | prototype                          |
 | _Instantiation_     | by injection framework | by application, ORM framework, etc |
