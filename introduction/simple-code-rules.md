@@ -17,11 +17,9 @@ Separate the program in 'time and space'.
 * Space
   * Implement different parts of the business logic in different parts of the code.
 
-### Separate steps
-
 <details>
 
-<summary></summary>
+<summary>Separate steps</summary>
 
 * Split the algorithms into separate steps that can be done one by one.
 * Design the intermediate data to be created by the steps and used by the next ones.
@@ -30,16 +28,9 @@ Separate the program in 'time and space'.
 
 </details>
 
-* Split the algorithms into separate steps that can be done one by one.
-* Design the intermediate data to be created by the steps and used by the next ones.
-* Create sequences of steps. That is the easiest to be understood by the human mind.&#x20;
-* [Separate data collection and data processing](../simple-code/separate-data-collection-and-processing.md).
-
-### Separate features
-
 <details>
 
-<summary></summary>
+<summary>Separate features</summary>
 
 Separate features
 
@@ -55,19 +46,11 @@ Separate features
 
 </details>
 
-Separate features
+<details>
 
-* Implement different features and use cases in different parts of the code.
-* Avoid common code above different features.
-* Avoid implementing use cases with a common code and then branching them from there.
+<summary>Separate data and procedures</summary>
 
-[Separate use cases](../simple-code/separate-use-cases.md)
-
-* As early as possible.
-* [Already in data models.](../examples/separate-use-cases-with-data-model.md)
-* Never join use cases again, once they are separated.
-
-### [Separate data and procedures](../oop/separate-data-and-procedures.md)
+[Separate data and procedures](../oop/separate-data-and-procedures.md)
 
 [Create data models](../simple-code/create-data-models.md)
 
@@ -89,6 +72,8 @@ Test code units with input/output data.
 * Create input data.
 * Create expected output.
 * Simply test equality.
+
+</details>
 
 ### Separate method types
 
