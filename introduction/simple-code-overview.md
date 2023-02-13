@@ -14,7 +14,7 @@ Object-oriented programming is the most complicated and least readable way of co
 * It adds the strongest dependencies to the code.
 * It enforces indirection and abstraction.
 * Every class is an incomplete fragment despite its own _encapsulation_ principle.
-* It does not decreasee cyclomatic complexity.
+* It does not decrease cyclomatic complexity.
 * It is easy to misuse OOP.
 
 Since we want to [separate the data and procedural classes](../oop/separate-data-and-procedures.md), we don't even have the _classes_ that OOP was invented for. It is simply not necessary.
@@ -35,9 +35,9 @@ We should create these small, independent parts by the following rules:
 * Single responsibility principle.
 * High cohesion.
 
-'Separation in time' means that we should identify and design the steps of the algorithm that can be executed after each other. For this, we should break down the implemented functionality into use cases and the use cases into steps. In the code, we should [separate the implementation of the use cases](../simple-code/separate-use-cases/).&#x20;
+'Separation in time' means that we should identify and design the steps of the algorithm that can be executed after each other. For this, we should break down the implemented functionality into use cases and the use cases into steps. In the code, we should [separate the implementation of the use cases](../simple-code/separate-use-cases.md).&#x20;
 
-The output of one step will be an intermediate result that will be the input of the next step. It is especially important in _data-processing_ code. We should [separate data collection and preparation from the processing of the data](../simple-code/separate-data-collection-and-processing/) so that both steps will be simpler and more independent.
+The output of one step will be an intermediate result that will be the input of the next step. It is especially important in _data-processing_ code. We should [separate data collection and preparation from the processing of the data](../simple-code/separate-data-collection-and-processing.md) so that both steps will be simpler and more independent.
 
 We should strictly separate the implementation of different _business functions_ so that modifying one will not affect the others.
 
@@ -59,7 +59,7 @@ Besides the obvious branching commands there are other hidden branchings we must
 The possible ways to decrease the number of branchings are based on the above situations:
 
 * Put related static constants in enums to reach them without branching.
-* [Separate use cases and never join them again into a common code.](../simple-code/separate-use-cases/)
-* [Create data models without nullable or Optional members.](../simple-code/separate-data-collection-and-processing/create-data-models.md)
+* [Separate use cases and never join them again into a common code.](../simple-code/separate-use-cases.md)
+* [Create data models without nullable or Optional members.](../simple-code/create-data-models.md)
 * Avoid explicitly passing or returning `null`.
 * Quit OOP

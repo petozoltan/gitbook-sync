@@ -8,14 +8,14 @@
 
 ### 2021
 
-* [Create Data Models](simple-code/separate-data-collection-and-processing/create-data-models.md)
-* [Separate Data Collection And Processing](simple-code/separate-data-collection-and-processing/)
+* [Create Data Models](simple-code/create-data-models.md)
+* [Separate Data Collection And Processing](simple-code/separate-data-collection-and-processing.md)
 * [Software Killers](<README (1).md>)
 * [Separate Data And Procedures](oop/separate-data-and-procedures.md)
-* [Example: Separate Use Cases](simple-code/separate-use-cases/example-separate-use-cases.md)
+* [Example: Separate Use Cases](examples/separate-use-cases-with-data-model.md)
 * [Quotes](pictures/quotes.md)
 * [Git Tutorials](technology/git-tutorials.md)
-* [Separate Use Cases](simple-code/separate-use-cases/)
+* [Separate Use Cases](simple-code/separate-use-cases.md)
 
 ### 2020
 

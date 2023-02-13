@@ -10,11 +10,14 @@
 
 ## Simple Code
 
-* [Separate Data Collection And Processing](simple-code/separate-data-collection-and-processing/README.md)
-  * [Create Data Models](simple-code/separate-data-collection-and-processing/create-data-models.md)
-* [Separate Use Cases](simple-code/separate-use-cases/README.md)
-  * [Example: Separate Use Cases](simple-code/separate-use-cases/example-separate-use-cases.md)
+* [Separate Data Collection And Processing](simple-code/separate-data-collection-and-processing.md)
+* [Create Data Models](simple-code/create-data-models.md)
+* [Separate Use Cases](simple-code/separate-use-cases.md)
 * [Do Not Create Constant Collection Classes](simple-code/do-not-create-constant-collection-classes.md)
+
+## Examples
+
+* [Separate Use Cases With Data Model](examples/separate-use-cases-with-data-model.md)
 
 ## OOP
 

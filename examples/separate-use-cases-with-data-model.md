@@ -2,7 +2,7 @@
 description: 2021.08.04
 ---
 
-# Example: Separate Use Cases
+# Separate Use Cases With Data Model
 
 ## The Feature
 
@@ -117,13 +117,13 @@ The primary problems with this code are:
 * It passes `null` values to methods.
 * It uses `null` values to control the program flow.
 
-Controlling the program flow with artificial `null` values is the [Insider Information](./#insider-information) antipattern. It means that _"if Value is null then the Data was empty"_. So it "finds out" the original situation, instead of receiving it as clear information.
+Controlling the program flow with artificial `null` values is the [Insider Information](../simple-code/separate-use-cases.md#insider-information) antipattern. It means that _"if Value is null then the Data was empty"_. So it "finds out" the original situation, instead of receiving it as clear information.
 
 The last two issues together also make it a _spaghetti code_: we pass the nulls _with the purpose_, to make branching in the other method. So the first method "continues" in the second one, instead of completing the branches.
 
 ## Separate Use Cases
 
-To fix the above code we should follow the article [Separate Use Cases](./):
+To fix the above code we should follow the article [Separate Use Cases](../simple-code/separate-use-cases.md):
 
 * Create branching for the use cases only once.
 * Separate the implementations of the use cases.
@@ -696,4 +696,4 @@ Also, note that by writing more code lines we also have moved them into more sma
 
 And remember, this is a simplified example. A real-life code is much more complicated. And if the parts of a complicated code are mixed and not named either, then we will have problems with maintaining that code.
 
-![](../../.gitbook/assets/Quotation-Albert-Einstein-Make-everything-as-simple-as-possible-but-not-simpler-8-73-34.jpg)
+![](../.gitbook/assets/Quotation-Albert-Einstein-Make-everything-as-simple-as-possible-but-not-simpler-8-73-34.jpg)
