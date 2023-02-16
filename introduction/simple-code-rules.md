@@ -64,7 +64,9 @@ Test code units with input/output data.
 
 </details>
 
-### Separate method types
+<details>
+
+<summary>Separate method types</summary>
 
 Dispatcher method
 
@@ -80,7 +82,11 @@ Strive to create only these two method types.
 
 * Break methods into multiple methods until you reach it.
 
-### Separate constants
+</details>
+
+<details>
+
+<summary>Separate constants</summary>
 
 Don't collect constants at the top of the class.
 
@@ -90,7 +96,11 @@ Put constants in the class that is responsible for it by business logic.
 
 Collect constant value sets into `enum`s.
 
-### Separate business code and technical code
+</details>
+
+<details>
+
+<summary>Separate business code and technical code</summary>
 
 Hide technical details behind business logic.
 
@@ -107,7 +117,11 @@ Don't inline business functionality.
 * Don't implement unnamed functionality.
 * It would also lead to code repetition.
 
-### Organize code by SRP
+</details>
+
+<details>
+
+<summary>Organize code by SRP</summary>
 
 [Single Responsibility Principle](../explained/single-responsibility-principle.md)
 
@@ -130,6 +144,8 @@ Treat classes as code units
 * closed
 * finished / final
 * tested
+
+</details>
 
 ## Simplest solution by default
 
