@@ -1,21 +1,10 @@
 ---
-description: 2023.01.30
+description: 2023.01.30 DRAFT
 ---
 
 # Simple Code Rules
 
-{% hint style="danger" %}
-Draft
-{% endhint %}
-
 ## Separate everything
-
-Separate the program in 'time and space'.
-
-* Time
-  * [Separate steps](simple-code-rules.md#separate-steps)
-* Space
-  * Implement different parts of the business logic in different parts of the code.
 
 <details>
 
