@@ -68,7 +68,7 @@ We, programmers, like to write code. We like to create abstract, generic solutio
 
 The problem is that these complex and [ad-hoc solutions](../oop/what-is-the-problem-with-inheritance.md) will require a very high maintenance time from the team. They also introduce a lot of dependencies between the features.
 
-Our programming languages can also be misleading. For example, they are object-oriented. But that does not mean that we should use OOP for every task _by default_. OOP is only a tool, and it is the most expensive one by the way.
+Our programming languages can also be misleading because they offer too many techniques and possibilities. For example, they are object-oriented. But that does not mean that we should use OOP for every task _by default_. OOP is only a tool, and it is the most expensive one by the way.
 
 The same goes for other language tools like generics or, lambdas. Not to mention the design patterns. Don't use them by default.
 
@@ -76,4 +76,4 @@ All modern programming languages are _structured languages_. That means that we 
 
 Before deciding to implement a complex solution we should properly _design_ it. We should discuss them with the team, and estimate their complexity and _maintenance cost_. If they are high then we should reject them.
 
-Always do direct programming by default, instead of using _indirection_. Avoid the Hollywood principle: "Don't call us, we will call you back". The business logic should not be implemented with call-backs, frameworks, lambdas, etc. because they are only a lot of code fragments. They make it impossible to follow the business logic they implement.
+Always do direct programming by default, instead of using _indirection_. Call-backs, frameworks, lambdas, etc. are only code fragments. They make it impossible to follow the business logic they implement.
