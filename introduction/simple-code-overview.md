@@ -1,5 +1,5 @@
 ---
-description: 2023.02.12
+description: 2023.02.12 IN PROGRESS
 ---
 
 # Simple Code Overview
@@ -49,11 +49,9 @@ But the code checker tools measure it only in one method or class. If the progra
 
 Besides the obvious branching commands there are other hidden branchings we must be aware of:
 
-* `if - else if` commands
-* `switch` commands
+* `if - else if` or `switch` commands
 * ternary expressions
-* nullable values (because we will have to check them for `null)`
-* `Optional` values (similar to nullable values)
+* nullable or `Optional` values (because we will have to check before usage`)`
 * polymorphic classes
 
 The possible ways to decrease the number of branchings are based on the above situations:
@@ -63,3 +61,19 @@ The possible ways to decrease the number of branchings are based on the above si
 * [Create data models without nullable or Optional members.](../simple-code/create-data-models.md)
 * Avoid explicitly passing or returning `null`.
 * Quit OOP
+
+## Simple by default
+
+We, programmers, like to write code. We like to create abstract, generic solutions so that we can _automate_ the tasks of the program. We are also prone to jump into coding as soon as possible, instead of spending more time with the specification or design. I think this is only a habit that we should not follow.
+
+The problem is that these complex and [ad-hoc solutions](../oop/what-is-the-problem-with-inheritance.md) will require a very high maintenance time from the team. They also introduce a lot of dependencies between the features.
+
+Our programming languages can also be misleading. For example, they are object-oriented. But that does not mean that we should use OOP for every task _by default_. OOP is only a tool, and it is the most expensive one by the way.
+
+The same goes for other language tools like generics or, lambdas. Not to mention the design patterns. Don't use them by default.
+
+All modern programming languages are _structured languages_. That means that we can write sub-routines and call them directly. We can also organize them into components. We should stick to this approach by default, and choose complex solutions only when really needed.&#x20;
+
+Before deciding to implement a complex solution we should properly _design_ it. We should discuss them with the team, and estimate their complexity and _maintenance cost_. If they are high then we should reject them.
+
+Always do direct programming by default, instead of using _indirection_. Avoid the Hollywood principle: "Don't call us, we will call you back". The business logic should not be implemented with call-backs, frameworks, lambdas, etc. because they are only a lot of code fragments. They make it impossible to follow the business logic they implement.
