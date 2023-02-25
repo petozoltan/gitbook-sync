@@ -4,6 +4,12 @@ description: 2021.07.16 - 2023.02.12
 
 # Funny
 
+<figure><img src="../.gitbook/assets/reading-other-peoples-code.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/junior_dev.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/programmermeme2_proc.jpg" alt=""><figcaption></figcaption></figure>
+
 <figure><img src="../.gitbook/assets/Simple.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/OOP.png" alt=""><figcaption></figcaption></figure>
