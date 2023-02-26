@@ -1,5 +1,5 @@
 ---
-description: 2023.02.12 IN PROGRESS
+description: 2023.02.26
 ---
 
 # Simple Code Overview
@@ -8,7 +8,7 @@ description: 2023.02.12 IN PROGRESS
 
 ## Quit OOP
 
-Object-oriented programming is the most complicated and least readable way of coding. The problem is with the _abstraction_, _inheritance_, and _overriding_ mechanism. It goes against everything what simple coding is.
+Object-oriented programming is the most complicated and least readable way of coding. The problem is with the _abstraction_, _inheritance_, and _overriding_ mechanism. It goes against everything that simple coding is.
 
 * It separates what belongs together and puts together what may not.
 * It adds the strongest dependencies to the code.
@@ -68,7 +68,7 @@ We, programmers, like to write code. We like to create abstract, generic solutio
 
 The problem is that these complex and [ad-hoc solutions](../oop/what-is-the-problem-with-inheritance.md) will require a very high maintenance time from the team. They also introduce a lot of dependencies between the features.
 
-Our programming languages can also be misleading because they offer too many techniques and possibilities. For example, they are object-oriented. But that does not mean that we should use OOP for every task _by default_. OOP is only a tool, and it is the most expensive one by the way.
+Our programming languages can also be misleading because they offer too many techniques and possibilities. For example, they are object-oriented. But that does not mean we should use OOP for every task _by default_. OOP is only a tool, and it is the most expensive one by the way.
 
 The same goes for other language tools like generics or, lambdas. Not to mention the design patterns. Don't use them by default.
 
@@ -80,4 +80,18 @@ Always do direct programming by default, instead of using _indirection_. Call-ba
 
 ## Focus on business logic
 
-Before coding try to write down the feature with clear text. Break it down in bullet points. If it is a complex data processing write data examples in a table. If you can't do this in clear text or a table, you won't be able to implement it in the code either.&#x20;
+We, programmers, like to think in terms of coding. We like to write our solutions and structures in the code and then we groom them. I suggest always thinking in terms of the specification instead. Don't get lost in the implementation details.
+
+We also like to jump into coding as fast as possible. I suggest instead, that we spend more time on the specification and design. We should break down the specification into _features_, _use cases_, _edge cases_, and _steps_. We should create examples, especially for complex data processing. Examples will also help later to find bugs or undetected edge cases.
+
+If we cannot write down with clear text what the program does, if we cannot draw a flowchart, and if we cannot create an example for it, then we won't be able to implement it in any programming language.
+
+In an ideal way, we should refine the specification into a pseudo-code. And then the real code should contain the pseudo-code. The program should implement the steps in the pseudo-code. What if we treated specification, design, implementation code, and even test code as one integrated document?
+
+The steps or 'commands' of the pseudo-code will be the names of types, variables, and procedures. That's why names in the code are more important than the actual implementation. But only if we use business-relevant names that describe the business logic. Avoid using technical names, e.g. don't call an object 'object', don't call a map a 'map', etc.
+
+Strive to separate business code and technical code. Technical implementation details should not pollute the business-relevant code and the other way around: business code should not be dispersed in a mass of technical code. Business logic should not be hidden as an implementation detail somewhere in the code.
+
+Organize the code by business logic. Implement one feature in one place. Implement one use case in one place. Prefer this approach, instead of creating technical layers.
+
+_"What does this code do?"_ That's what we usually ask when reading a code. I suggest continuously asking it also when writing the code. If we do not write the business logic into the code, we won't be able to read it!&#x20;

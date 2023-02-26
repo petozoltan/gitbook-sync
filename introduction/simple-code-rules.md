@@ -348,3 +348,6 @@ Extract named functionality
 * Don't inline&#x20;
   * without name
   * at multiple places
+* Don't create business relevant implementations of generic types, e.g. a collection with business specific behaviour.
+  * Instead you create a business speficic component that uses a generic type as it is.
+  * You can create specific versions of types without business logic, like Collection > Set > SortedSet. But in general I disrecommend it too.
