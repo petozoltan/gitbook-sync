@@ -4,7 +4,7 @@ description: 2023.01.30 DRAFT
 
 # Simple Code Rules
 
-## Separate everything
+## [Separate everything](simple-code-overview.md#separate-everything)
 
 <details>
 
@@ -147,7 +147,7 @@ Treat classes as code units
 
 </details>
 
-## Simplest solution by default
+## [Simplest solution by default](simple-code-overview.md#simple-by-default)
 
 ### Organize code by business logic
 
@@ -225,7 +225,7 @@ Callbacks are "frameworks"
 
 Image with callback: parallels
 
-## Decrease branching
+## [Decrease branching](simple-code-overview.md#decrease-branching)
 
 Separate use cases
 
@@ -318,7 +318,7 @@ Minimize interfaces
 * Access the one functionality through one way (one method)
 * low coupling
 
-## Focus on business logic
+## [Focus on business logic](simple-code-overview.md#focus-on-business-logic)
 
 Forget about coding
 

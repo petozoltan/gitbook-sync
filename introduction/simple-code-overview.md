@@ -77,3 +77,7 @@ All modern programming languages are _structured languages_. That means that we 
 Before deciding to implement a complex solution we should properly _design_ it. We should discuss them with the team, and estimate their complexity and _maintenance cost_. If they are high then we should reject them.
 
 Always do direct programming by default, instead of using _indirection_. Call-backs, frameworks, lambdas, etc. are only code fragments. They make it impossible to follow the business logic they implement.
+
+## Focus on business logic
+
+Before coding try to write down the feature with clear text. Break it down in bullet points. If it is a complex data processing write data examples in a table. If you can't do this in clear text or a table, you won't be able to implement it in the code either.&#x20;
