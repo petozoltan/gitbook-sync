@@ -60,7 +60,7 @@ Test code units with input/output data.
 
 * Create input data.
 * Create expected output.
-* Simply test equality.
+* Simply test their equality.
 
 </details>
 
@@ -80,7 +80,7 @@ Implementation method
 
 Strive to create only these two method types.
 
-* Break methods into multiple methods until you reach it.
+* Break long methods into multiple methods until you reach it.
 
 </details>
 
@@ -104,13 +104,13 @@ Collect constant value sets into `enum`s.
 
 Hide technical details behind business logic.
 
-Don't 'pollute' business functionality with technical details or the other way around.
+Don't _pollute_ business functionality with technical details or the other way around.
 
-Don't extend generic technical classes (e.g. Collections) to create a business-specific implementation.
+Don't extend generic technical classes (e.g., Collections) to create a business-specific implementation.
 
 Always name variables after their business meaning.
 
-* E.g. don't call a map 'map', a result 'result', etc.
+* E.g., don't call a map 'map' a result 'result' etc.
 
 Don't inline business functionality.
 
@@ -129,20 +129,22 @@ Don't inline business functionality.
 * Every part of the business logic should be implemented by one part of the code.
 * A 'part' of the code can be any level, like a method, class, package, module, etc.
 
-Use high cohesion
+Apply high cohesion
 
 * Put together what belongs together.
   * Methods or classes that call each other.
-* Method and class implementation is actually a code block `{  }`&#x20;
-* A code block is actually only a bracket that holds elements together.
-* Create inner classes to group a few methods.
-* A package is also a bracket that hold classes together
-* Minimize interface to a group of code
+* Method and class implementation are simply code blocks that hold elements together.
+* Create inner classes to group a few methods within a larger class.
+* A package is also a bracket that holds classes together
+* Minimize the interface to a group of procedural codes.
+  * One public method for one class.
+  * One public class for one package.
 
 Treat classes as code units
 
 * closed
-* finished / final
+* finished
+* final
 * tested
 
 </details>
@@ -151,7 +153,7 @@ Treat classes as code units
 
 ### Organize code by business logic
 
-Consider maintenance costs when choosing a solution
+Consider maintenance costs when choosing a solutions.
 
 Use language as a structured language
 

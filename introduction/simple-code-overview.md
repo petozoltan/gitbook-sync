@@ -13,7 +13,7 @@ Object-oriented programming is the most complicated and least readable way of co
 * It separates what belongs together and puts together what may not.
 * It adds the strongest dependencies to the code.
 * It enforces indirection and abstraction.
-* Every class is an incomplete fragment despite its own _encapsulation_ principle.
+* Every class is an incomplete fragment despite its _encapsulation_ principle.
 * It does not decrease cyclomatic complexity.
 * It is easy to misuse OOP.
 
@@ -25,9 +25,9 @@ Every object-oriented programming language is a _structured language_ too. It me
 
 ## Separate everything
 
-We have to separate everything in the code in _'time and space'_.&#x20;
+We have to separate everything in the code _in time and space_.&#x20;
 
-'In space' means that we should split the source code into _small_, _independent_, easy-to-understand, and easy-to-maintain parts. We should do this on all levels: methods, classes, packages, modules, etc.
+_In space_ means that we should split the source code into _small_, _independent_, easy-to-understand, and easy-to-maintain parts. We should do this on all levels: methods, classes, packages, modules, etc.
 
 We should create these small, independent parts by the following rules:
 
@@ -35,7 +35,7 @@ We should create these small, independent parts by the following rules:
 * Single responsibility principle.
 * High cohesion.
 
-'Separation in time' means that we should identify and design the steps of the algorithm that can be executed after each other. For this, we should break down the implemented functionality into use cases and the use cases into steps. In the code, we should [separate the implementation of the use cases](../simple-code/separate-use-cases.md).&#x20;
+_Separation in time_ means that we should identify and design the steps of the algorithm that can be executed after each other. For this, we should break down the implemented functionality into use cases and the use cases into steps. In the code, we should [separate the implementation of the use cases](../simple-code/separate-use-cases.md).&#x20;
 
 The output of one step will be an intermediate result that will be the input of the next step. It is especially important in _data-processing_ code. We should [separate data collection and preparation from the processing of the data](../simple-code/separate-data-collection-and-processing.md) so that both steps will be simpler and more independent.
 
@@ -45,7 +45,7 @@ We should strictly separate the implementation of different _business functions_
 
 Branching is what we most simply do with the `if - else if` commands. It makes the program more complex and that is what we measure with _cyclomatic complexity_.
 
-But the code checker tools measure it only in one method or class. If the program is full of branching then it has very high complexity. Programmers will not be able to keep every possible outcome in mind. Every change in the code will be risky and lead to bugs.&#x20;
+But the code checker tools measure it only in one method. If the entire program is full of branching then it has very high complexity. Programmers will not be able to keep every possible outcome in mind. Every change in the code will be risky and lead to bugs.&#x20;
 
 Besides the obvious branching commands there are other hidden branchings we must be aware of:
 
@@ -72,7 +72,7 @@ Our programming languages can also be misleading because they offer too many tec
 
 The same goes for other language tools like generics or, lambdas. Not to mention the design patterns. Don't use them by default.
 
-All modern programming languages are _structured languages_. That means that we can write sub-routines and call them directly. We can also organize them into components. We should stick to this approach by default, and choose complex solutions only when really needed.&#x20;
+All modern programming languages are _structured languages_. That means that we can write sub-routines and call them directly. We can also organize them into components. We should stick to this approach by default, and choose complex solutions only when needed.&#x20;
 
 Before deciding to implement a complex solution we should properly _design_ it. We should discuss them with the team, and estimate their complexity and _maintenance cost_. If they are high then we should reject them.
 
