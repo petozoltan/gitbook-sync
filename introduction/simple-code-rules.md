@@ -106,16 +106,14 @@ Hide technical details behind business logic.
 
 Don't _pollute_ business functionality with technical details or the other way around.
 
-Don't extend generic technical classes (e.g., Collections) to create a business-specific implementation.
+Don't mix technical implementations with business logic implementations.
+
+* Don't extend generic technical classes (e.g., Collections) to create a business-specific implementation.
 
 Always name variables after their business meaning.
 
+* Avoid technical names.
 * E.g., don't call a map 'map' a result 'result' etc.
-
-Don't inline business functionality.
-
-* Don't implement unnamed functionality.
-* It would also lead to code repetition.
 
 </details>
 
@@ -150,8 +148,6 @@ Treat classes as code units
 </details>
 
 ## [Simplest solution by default](simple-code-overview.md#simple-by-default)
-
-### Organize code by business logic
 
 Consider maintenance costs when choosing a solutions.
 
@@ -322,34 +318,79 @@ Minimize interfaces
 
 ## [Focus on business logic](simple-code-overview.md#focus-on-business-logic)
 
-Forget about coding
+<details>
 
-* Put aside you programming language
-* Put aside your implementation ideas
+<summary>Fully understand the business requirement before coding</summary>
 
-Organize code by business logic
+Don't start with the coding.
 
-* Feature
-* Use case
+* Put aside your programming language.
+* Put aside your implementation ideas.
+* Don't code until you don't understand the specification perfectly.
 
-Refine spec and design before coding
+Don't skip the design.
 
-* Refine to pseudo code
-* Create names
-* Implement the final steps
-* Treat specification, design, implementation code, and test code as one integrated document
+* Create examples if necessary.
+* Create graphs or UML-s if necessary.
+* Identify use cases.
 
-Identify use cases
+</details>
 
-Create examples
+<details>
 
-Separate business code and technical code
+<summary>Refine the specification into code</summary>
 
-Extract named functionality
+Refine the specification into a pseudo-code.
 
-* Don't inline&#x20;
-  * without name
-  * at multiple places
-* Don't create business relevant implementations of generic types, e.g. a collection with business specific behaviour.
-  * Instead you create a business speficic component that uses a generic type as it is.
-  * You can create specific versions of types without business logic, like Collection > Set > SortedSet. But in general I disrecommend it too.
+* This is a language-independent implementation of the business logic.
+* This is the actual program programmers should write!
+
+Implement the pseudo-code in your programming language.
+
+* Names in the program should be the same as in the pseudo-code.
+* Implement the steps of the pseudo-code in the real code.
+* E.g., the call hierarchy of the methods should be the pseudo-code.
+
+Chose the most simple and straightforward implementation.
+
+* Usually, this consists only of simple method calls.
+* The methods are simply grouped into components (procedural classes).
+
+</details>
+
+<details>
+
+<summary>Organize code by business logic</summary>
+
+Implement one feature under one package or module.
+
+Name components and variables by their business meaning.
+
+* Name them by actions, functions, use cases, etc.
+* Avoid technical names.
+* Reading the names in the code should show the business logic.
+* Names are important.
+
+</details>
+
+<details>
+
+<summary>Always provide business code with names</summary>
+
+Extract implementations of the business logic into methods and components with proper names.
+
+Don't inline business implementation into other code.
+
+Implement one business functionality only once.
+
+Avoid code repetition.
+
+</details>
+
+<details>
+
+<summary>Separate business code and technical code</summary>
+
+See above, under [#separate-everything](simple-code-rules.md#separate-everything "mention").
+
+</details>
