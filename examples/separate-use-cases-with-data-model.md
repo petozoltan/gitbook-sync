@@ -49,8 +49,7 @@ class Feature {
     }
 
     Collection<Data> loadData() {
-        // ...
-        return emptySet();
+        return ...;
     }
 
     void calculate(Collection<Data> dataCollection) {
@@ -140,8 +139,7 @@ class Feature {
     }
 
     Collection<Data> loadData() {
-        // ...
-        return emptySet();
+        return ...;
     }
 
     // The only branching for the use cases
@@ -245,8 +243,7 @@ class Feature {
     }
 
     Collection<Data> loadData() {
-        // ...
-        return emptySet();
+        return ...;
     }
 
     // The only branching for the use cases
@@ -352,8 +349,7 @@ public class Feature {
     }
 
     private Collection<Data> loadData() {
-        // ...
-        return emptySet();
+        return ...;
     }
 }
 ```
@@ -517,8 +513,7 @@ public class Feature {
     }
 
     private Collection<Data> loadData() {
-        // ...
-        return emptySet();
+        return ...;
     }
 }
 ```
