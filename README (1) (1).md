@@ -2,9 +2,9 @@
 
 ### 2023
 
-* [Simple Code Overview](introduction/simple-code-overview.md) (in progress)
-* [About This Book](./)
 * [Simple Code Rules](introduction/simple-code-rules.md) (in progress)
+* [Simple Code Overview](introduction/simple-code-overview.md)
+* [About This Book](./)
 
 ### 2021
 
