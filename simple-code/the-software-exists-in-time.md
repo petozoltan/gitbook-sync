@@ -55,3 +55,13 @@ We need to choose solutions that are easy to maintain.
 {% endhint %}
 
 And the "next deadline" sounds like a secondary goal, considering _all_ deadlines during the software's lifecycle.
+
+### Other benefits
+
+These rules for maintainability primarily affect the development team. It is about the _ability_ of the team to deliver error-free software on time for the long term. Needless to say that this affects the customer too.
+
+But these rules have other benefits:
+
+They work against the _burn-out_ of developers who would need to work on an increasingly unmaintainable code base.
+
+Also, they should decrease the fluctuation in the team (above the natural level). Developers leaving the team make the work on the project even harder and slower.
