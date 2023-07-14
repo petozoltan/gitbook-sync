@@ -2,6 +2,7 @@
 
 ### 2023
 
+* [Don't Feed the Monsters](simple-code/dont-feed-the-monsters.md)
 * [Simple Code Rules](introduction/simple-code-rules.md) (in progress)
 * [Simple Code Overview](introduction/simple-code-overview.md)
 * [About This Book](./)

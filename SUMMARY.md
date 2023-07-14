@@ -13,6 +13,7 @@
 * [Separate Data Collection And Processing](simple-code/separate-data-collection-and-processing.md)
 * [Create Data Models](simple-code/create-data-models.md)
 * [Separate Use Cases](simple-code/separate-use-cases.md)
+* [Don't Feed the Monsters](simple-code/dont-feed-the-monsters.md)
 * [Do Not Create Constant Collection Classes](simple-code/do-not-create-constant-collection-classes.md)
 
 ## Examples
