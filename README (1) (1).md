@@ -4,8 +4,9 @@
 
 
 
-* [The Software Exists In Time](simple-code/the-software-exists-in-time.md)
-* [Don't Feed the Monsters](simple-code/dont-feed-the-monsters.md)
+* [Consider the Maintenance Cost](maintenance-cost/consider-the-maintenance-cost.md)
+* [The Software Exists In Time](maintenance-cost/the-software-exists-in-time.md)
+* [Don't Feed the Monsters](maintenance-cost/dont-feed-the-monsters.md)
 * [Simple Code Rules](introduction/simple-code-rules.md) (in progress)
 * [Simple Code Overview](introduction/simple-code-overview.md)
 * [About This Book](./)

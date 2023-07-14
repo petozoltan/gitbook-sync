@@ -13,13 +13,17 @@
 * [Separate Data Collection And Processing](simple-code/separate-data-collection-and-processing.md)
 * [Create Data Models](simple-code/create-data-models.md)
 * [Separate Use Cases](simple-code/separate-use-cases.md)
-* [Don't Feed the Monsters](simple-code/dont-feed-the-monsters.md)
-* [The Software Exists In Time](simple-code/the-software-exists-in-time.md)
 * [Do Not Create Constant Collection Classes](simple-code/do-not-create-constant-collection-classes.md)
 
 ## Examples
 
 * [Separate Use Cases With Data Model](examples/separate-use-cases-with-data-model.md)
+
+## Maintenance Cost
+
+* [Consider the Maintenance Cost](maintenance-cost/consider-the-maintenance-cost.md)
+* [The Software Exists In Time](maintenance-cost/the-software-exists-in-time.md)
+* [Don't Feed the Monsters](maintenance-cost/dont-feed-the-monsters.md)
 
 ## OOP
 

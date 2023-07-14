@@ -30,7 +30,7 @@ Why is it better? Because it has the consequence:
 We need to implement different features with the least possible dependencies.
 {% endhint %}
 
-Unfortunately, solutions like [OOP](../oop/do-not-use-inheritance.md), [frameworks](../oop/what-is-the-problem-with-inheritance.md), and [common code that is not common](separate-use-cases.md), create many unwanted dependencies in the code.
+Unfortunately, solutions like [OOP](../oop/do-not-use-inheritance.md), [frameworks](../oop/what-is-the-problem-with-inheritance.md), and [common code that is not common](../simple-code/separate-use-cases.md), create many unwanted dependencies in the code.
 
 ### Design for a long-term maintenance
 

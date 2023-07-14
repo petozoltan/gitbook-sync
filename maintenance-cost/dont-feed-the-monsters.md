@@ -43,3 +43,5 @@ Software management never estimates the maintenance cost of the design decisions
 Yes, we estimate each task we implement. But we never compare implementing a task _with or without_ a certain technology. We have a blind spot for this. We never talk about this.
 
 <figure><img src="../.gitbook/assets/Little.jpg" alt="" width="375"><figcaption></figcaption></figure>
+
+See more here: [Consider the Maintenance Cost](consider-the-maintenance-cost.md).
