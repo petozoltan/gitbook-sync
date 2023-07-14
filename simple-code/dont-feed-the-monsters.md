@@ -18,7 +18,7 @@ Imagine just a simple class hierarchy. After introducing it we will have to crea
 
 But remember, professional software development is not a Tamagotchi game. We don't have to do this. But how can we avoid having these hungry monsters?
 
-<figure><img src="../.gitbook/assets/Tamagotchi s-l500 PSX.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Tamagotchi s-l500 PSX.jpg" alt="" width="155"><figcaption></figcaption></figure>
 
 ### Requirements
 
@@ -42,4 +42,4 @@ Software management cannot estimate the real cost and benefit of a design decisi
 
 Yes, we estimate each task we do. But we never compare implementing a task _with or without_ a certain technology. We have a blind spot for this. We don't even like to talk about this, since we like to write fancy algorithms and architectures.
 
-<figure><img src="../.gitbook/assets/Little.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Little.jpg" alt="" width="375"><figcaption></figcaption></figure>

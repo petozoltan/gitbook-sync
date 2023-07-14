@@ -14,6 +14,7 @@
 * [Create Data Models](simple-code/create-data-models.md)
 * [Separate Use Cases](simple-code/separate-use-cases.md)
 * [Don't Feed the Monsters](simple-code/dont-feed-the-monsters.md)
+* [The Software Exists In Time](simple-code/the-software-exists-in-time.md)
 * [Do Not Create Constant Collection Classes](simple-code/do-not-create-constant-collection-classes.md)
 
 ## Examples
