@@ -32,14 +32,14 @@ Focus always on the business requirements and not on the solutions.
 
 ### Price–Benefit Balance
 
-The second question is: Is it worth introducing a certain solution? Do we want to pay the cost for the benefit it brings?
+The second question is: Is it worth introducing a certain solution? Do we want to pay the cost for the benefit it brings? By cost I mean the _cost of maintenance_.
 
 And this is where software development seems to fail. We have methods for everything: project management, build, delivery, code checking, etc.&#x20;
 
 {% hint style="warning" %}
-Software management cannot estimate the real cost and benefit of a design decision.
+Software management never estimates the maintenance cost of the design decisions.
 {% endhint %}
 
-Yes, we estimate each task we do. But we never compare implementing a task _with or without_ a certain technology. We have a blind spot for this. We don't even like to talk about this, since we like to write fancy algorithms and architectures.
+Yes, we estimate each task we implement. But we never compare implementing a task _with or without_ a certain technology. We have a blind spot for this. We never talk about this.
 
 <figure><img src="../.gitbook/assets/Little.jpg" alt="" width="375"><figcaption></figcaption></figure>
