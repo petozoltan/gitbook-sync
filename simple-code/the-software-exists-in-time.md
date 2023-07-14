@@ -8,9 +8,9 @@ Another issue that may lead to a confusing code is that we tend to ignore that o
 
 ### The code is continuously changing
 
-One of the obvious goals of software development is that the program works correctly as specified. So the definition of _goodness_ is based on the correct and tested functionality. So far, so good.
+One of the obvious goals of software development is that the program works correctly as specified. So the definition of _goodness_ is based on the correct and tested functionality.&#x20;
 
-But what do all the software developers in the world do each and every day?
+But is it enough? Is everything we implement a _write-once-and-forget_ code? What do all the software developers in the world do each and every day?
 
 They sit down to their computers and start modifying the code. They change the code that was written yesterday or last week or last month.
 
