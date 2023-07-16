@@ -10,7 +10,7 @@ description: DRAFT
 
 {% tabs %}
 {% tab title="Problems" %}
-OOP is a very hard-to-read and hard-to-write way of coding. It hides the business logic, which is the opposite of what the code should do.
+OOP results in very hard-to-read and hard-to-write code. It hides the business logic, which is the opposite of what the code should do.
 
 It is the most expensive way of coding. Most of the coding time is spent solely on understanding and maintaining class hierarchies. This time is missing from working on the business requirements. A lot of time is _wasted_.
 
