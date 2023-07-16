@@ -151,8 +151,6 @@ Treat classes as code units
 
 Consider maintenance costs when choosing a solutions.
 
-Use language as a structured language
-
 Directly call subroutines
 
 No internal ad hoc frameworks
@@ -163,13 +161,23 @@ No fancy solutions
 
 No tricky solutions
 
-Quit oop
 
-No Inheritance
 
-Override forbidden
+<details>
 
-See effective java
+<summary>Quit OOP</summary>
+
+Don't use inheritance. Overriding is forbidden.
+
+Use composition.
+
+Use classes to simply organize code into components.
+
+Use your programming language as a structured language.
+
+* Write procedures and call them directly.
+
+</details>
 
 No frameworks over frameworks
 
