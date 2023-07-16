@@ -3,10 +3,11 @@
 ## Introduction
 
 * [About This Book](README.md)
+* [Timeline](<README (1) (1).md>)
+* [Software Killers](<README (1).md>)
+* [Billion Dollar Mistakes](introduction/billion-dollar-mistakes.md)
 * [Simple Code Overview](introduction/simple-code-overview.md)
 * [Simple Code Rules](introduction/simple-code-rules.md)
-* [Software Killers](<README (1).md>)
-* [Timeline](<README (1) (1).md>)
 
 ## Simple Code
 

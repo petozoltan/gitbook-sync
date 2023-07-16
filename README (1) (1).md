@@ -2,8 +2,7 @@
 
 ### 2023
 
-
-
+* [Billion Dollar Mistakes](introduction/billion-dollar-mistakes.md)
 * [Consider the Maintenance Cost](maintenance-cost/consider-the-maintenance-cost.md)
 * [The Software Exists In Time](maintenance-cost/the-software-exists-in-time.md)
 * [Don't Feed the Monsters](maintenance-cost/dont-feed-the-monsters.md)
