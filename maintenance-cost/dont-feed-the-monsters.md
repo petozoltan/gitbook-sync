@@ -4,11 +4,9 @@ description: 2023.07.14
 
 # Don't Feed the Monsters
 
-Every solution we introduce to the code comes at a price. Frameworks, layers, queues, architectural decisions, third-party tools, class hierarchies, models, techniques, and our own design ideas.
+Every solution we introduce to the code comes at a price. Frameworks, layers, queues, architectural decisions, third-party tools, class hierarchies, models, techniques, and our own design ideas. This price is the [maintenance cost](consider-the-maintenance-cost.md).
 
-The price is that they will affect our coding. They will change it. Change from what?
-
-All we need to do is to focus on the business logic. The user requirements. We should understand it, we should implement it, and the code should reflect it. This is called _clean code_.
+All we should do is focus on the business logic. The user requirements. We should understand it, we should implement it, and the code should reflect it. This is called _clean code_.
 
 But the technical solutions we add will _distract_ us from the business logic. We will spend an increasing amount of time writing code that is solely required by those frameworks and solutions and which has nothing to do with the user requirements.
 
@@ -32,7 +30,7 @@ Focus always on the business requirements and not on the solutions.
 
 ### Price–Benefit Balance
 
-The second question is: Is it worth introducing a certain solution? Do we want to pay the cost for the benefit it brings? By cost I mean the _cost of maintenance_.
+The second question is: Is it worth introducing a certain solution? Do we want to pay the cost for the benefit it brings? By cost, I mean the _cost of maintenance_.
 
 And this is where software development seems to fail. We have methods for everything: project management, build, delivery, code checking, etc.&#x20;
 
