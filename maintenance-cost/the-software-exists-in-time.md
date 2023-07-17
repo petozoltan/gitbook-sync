@@ -36,7 +36,7 @@ Unfortunately, solutions like [OOP](../oop/do-not-use-inheritance.md), [framewor
 
 Besides goodness, the other goal is the next deadline. All plans and estimations aim at the next deadline. The result is the following:
 
-* It _may_ lead to quick & dirty programming.
+* It may lead to quick & dirty programming.
 * Technical debt is collected.
 * It will seriously slow down the development and put future deadlines at risk.
 

@@ -4,7 +4,11 @@ description: DRAFT
 
 # Billion Dollar Mistakes
 
-<figure><img src="../.gitbook/assets/Billion Dollar Mistakes 2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Billion Dollar Mistakes 10.png" alt=""><figcaption></figcaption></figure>
+
+This page narrows down the problems to the few biggest ones. They make code very hard to maintain so they make coding a very time-consuming activity.
+
+Unfortunately, they are all part of our usual coding practices. We don't even treat them as issues. We think that they are what we call _programming_. I'd like to point out that they shouldn't be.
 
 ## Object-oriented programming
 
@@ -66,7 +70,19 @@ Everything that is known in coding time should be written in the code and explic
 {% endtab %}
 {% endtabs %}
 
-## Incorrect Data Processing
+## Common code that is not common
+
+{% tabs %}
+{% tab title="Problems" %}
+This problem goes hand-in-hand with the branching problem and the automation.
+{% endtab %}
+
+{% tab title="Solutions" %}
+[Separate everything](simple-code-rules.md#separate-everything).
+{% endtab %}
+{% endtabs %}
+
+## Incorrect data processing
 
 {% tabs %}
 {% tab title="Problems" %}

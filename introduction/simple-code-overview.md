@@ -4,7 +4,7 @@ description: 2023.02.26
 
 # Simple Code Overview
 
-<figure><img src="../.gitbook/assets/Simple Code Diagram 3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Simple Code Diagram 5.png" alt=""><figcaption></figcaption></figure>
 
 ## Quit OOP
 
