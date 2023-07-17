@@ -14,7 +14,7 @@ When new constants have to be created it is not mandatory to add them to the col
 
 ### Classes should not always be modified
 
-It breaches the [Single Responsibility Principle](../explained/single-responsibility-principle.md) because such classes may contain information for more different functionality.
+It breaches the [Single Responsibility Principle](single-responsibility-principle.md) because such classes may contain information for more different functionality.
 
 ### Finish and test
 

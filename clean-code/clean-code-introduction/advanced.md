@@ -69,7 +69,7 @@ If it is _decidable_ whether it is good.
 
 ### Single Responsibility Principle
 
-[SRP is the core rule of clean code.](../../explained/single-responsibility-principle.md)
+[SRP is the core rule of clean code.](../../various/single-responsibility-principle.md)
 
 ### Reading the code with clean code view
 

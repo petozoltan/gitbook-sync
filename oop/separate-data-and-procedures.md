@@ -101,9 +101,14 @@ We should see and treat separated data and procedural classes as something new. 
 
 #### Procedural classes
 
-Procedural classes could be called _units_. That would immediately make clear what we test via unit testing.
+Procedural classes could be called _unit_ or _component_.&#x20;
 
-Also their members should be called _procedures_.&#x20;
+* _unit_ would make clear what we test via unit testing.
+* _component_ advantages:
+  * It would remember us to use the composite pattern instead of OOP.&#x20;
+  * With Java/Spring we would usually mark a component with the `@Component` annotation.
+
+Also, their members should be called _procedures_.&#x20;
 
 #### Data classes
 
@@ -115,7 +120,7 @@ So here is what we have in reality:
 
 |                     | Procedural             | Data                               |
 | ------------------- | ---------------------- | ---------------------------------- |
-| _Name_              | `unit`                 | `record`                           |
+| _Name_              | `unit` or `component`  | `record`                           |
 | _Data members_      | No                     | Yes                                |
 | _Procedure members_ | procedure              | attribute                          |
 | _Statefulness_      | stateless              | stateful                           |
@@ -130,7 +135,7 @@ So here is what we have in reality:
 If we separate procedural and data classes, we should not write programs in a classical OOP way. We should also revise all OOP principles, which are no more valid.
 {% endhint %}
 
-I another article I suggest to [not use inheritance](do-not-use-inheritance.md) anymore.  &#x20;
+In another article, I suggest [not using inheritance](do-not-use-inheritance.md) anymore.  &#x20;
 
 * With this, most of the _encapsulation_, _polymorphism_, and _open-closed_ principles are gone.
 * Many [_design patterns_](https://en.wikipedia.org/wiki/Software\_design\_pattern) that use inheritance become unusable. Or we should redesign them without inheritance.

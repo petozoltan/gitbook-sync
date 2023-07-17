@@ -90,7 +90,7 @@ Strive to create only these two method types.
 
 Don't collect constants at the top of the class.
 
-[Don't collect constants in a class or interface.](../simple-code/do-not-create-constant-collection-classes.md)
+[Don't collect constants in a class or interface.](../various/do-not-create-constant-collection-classes.md)
 
 Put constants in the class that is responsible for it by business logic.
 
@@ -121,7 +121,7 @@ Always name variables after their business meaning.
 
 <summary>Organize code by SRP</summary>
 
-[Single Responsibility Principle](../explained/single-responsibility-principle.md)
+[Single Responsibility Principle](../various/single-responsibility-principle.md)
 
 * Every part of the code should implement only one part of the business logic. (The original SRP.)
 * Every part of the business logic should be implemented by one part of the code.

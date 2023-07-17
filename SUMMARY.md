@@ -14,7 +14,6 @@
 * [Separate Data Collection And Processing](simple-code/separate-data-collection-and-processing.md)
 * [Create Data Models](simple-code/create-data-models.md)
 * [Separate Use Cases](simple-code/separate-use-cases.md)
-* [Do Not Create Constant Collection Classes](simple-code/do-not-create-constant-collection-classes.md)
 
 ## Examples
 
@@ -33,11 +32,12 @@
 * [When To Avoid Inheritance?](oop/when-to-avoid-inheritance.md)
 * [What Is The Problem With Abstract Frameworks?](oop/what-is-the-problem-with-inheritance.md)
 
-## Explained
+## VARIOUS
 
-* [The Real Single Responsibility Principle](explained/single-responsibility-principle.md)
-* [The problem with Clean Code's name](explained/the-problem-with-clean-codes-name.md)
-* [How To Handle Warnings](explained/how-to-handle-warnings.md)
+* [The Real Single Responsibility Principle](various/single-responsibility-principle.md)
+* [The problem with Clean Code's name](various/the-problem-with-clean-codes-name.md)
+* [How To Handle Warnings](various/how-to-handle-warnings.md)
+* [Do Not Create Constant Collection Classes](various/do-not-create-constant-collection-classes.md)
 
 ## Pictures
 
