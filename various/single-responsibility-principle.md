@@ -22,7 +22,7 @@ And additionally, it is not only about a **class**. This rule can affect any par
 
 ## The extended SRP
 
-For me it means the relation between one part of the specification and one part of the implementation:
+For me, it means the relation between one part of the specification and one part of the implementation:
 
 ![](<../.gitbook/assets/Single Responsibility Principle 0.png>)
 
@@ -60,10 +60,14 @@ You will recognize this when, in case of a functional change, many parts of the 
 
 There is another common breach of the SRP, which is less obvious though it happens often.&#x20;
 
-I call it "_an implementation is the reason of another implementation_", which does not comply with the rule above that the code should change only if the specification has changed.
+I call it "_an implementation is the reason for another implementation_", which does not comply with the rule above that the code should change only if the specification has changed.
 
 It happens when there are too many dependencies between the code parts, which is usually caused by class hierarchies and [frameworks](../oop/what-is-the-problem-with-inheritance.md) or other overcomplexity.
 
 This leads to a very rigid code, which is hard to modify.
 
 ![](../.gitbook/assets/single-responsibility-principle-3-impl.png)
+
+## Bijection
+
+Other articles about correct coding mention this principle as [_bijection_](https://en.wikipedia.org/wiki/Bijection). Parts of the specification and part of the code should be bijective. In other words, they should be in a _one-to-one_ relationship.

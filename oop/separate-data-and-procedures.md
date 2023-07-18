@@ -4,7 +4,7 @@ description: 2021.08.06
 
 # Separate Data And Procedures
 
-### Classes
+## Classes
 
 Before classes, there were procedures and data. Data could be structured data. In C they are called `struct`.
 
@@ -12,20 +12,20 @@ But developers noticed that for the same data sets they usually needed the same 
 
 So a class contains:
 
-* &#x20;member variables - I call them now 'data'
+* member variables - I call them now 'data'
 * member functions - I call them procedures
 
 ![](../.gitbook/assets/Class.png)
 
 But was it really a good idea?
 
-### Impossible Mission
+## Impossible Mission
 
 Thinking of a large, real-life code base, is it possible to put _all_ codes into the class where the data is located? I think, no. It would mean huge classes. We never do it.
 
 It would also mean, that the same classes would change again and again. Every developer would always work on the same few classes.
 
-### Clean Code
+## Clean Code
 
 From a clean code aspect, bundling data and procedures is not a goal either.&#x20;
 
@@ -33,7 +33,7 @@ We would like to organize our code by features and not by data. We want to creat
 
 Procedures should also have well-defined input and output data, rather than being coupled with the data. When they are coupled with the data, which they read and write at the same time, then it is impossible to make a distinction between input and output data.
 
-### Dependency Injection
+## Dependency Injection
 
 The final nail in the coffin of the class is the widespread use of dependency injection. We _already_ separate data and procedures and handle them in different ways.
 
@@ -48,7 +48,7 @@ So we used to have these types of classes:
 | _Cardinality_   | singleton              | prototype                           |
 | _Instantiation_ | by injection framework | by application, ORM framework, etc. |
 
-### No Classes
+## No Classes
 
 {% hint style="warning" %}
 Separated procedural and data classes are no classes!
@@ -80,7 +80,7 @@ We misuse data members in procedural classes and procedural members in data clas
 
 Why do we do this? Because we don't have other choices due to the syntax.
 
-### Java Records
+## Java Records
 
 In Java 14 the data _structure_ is brought back with the `record` keyword. This class is defined entirely by the data it carries:
 
@@ -95,11 +95,11 @@ Read more here:
 
 This also supports the idea that data classes are no classes, and it also gives a new language keyword for them.
 
-### The New Classes
+## The New Classes
 
 We should see and treat separated data and procedural classes as something new. What if we would at least 'imagine' different names for them?
 
-#### Procedural classes
+### Procedural classes
 
 Procedural classes could be called _unit_ or _component_.&#x20;
 
@@ -110,7 +110,7 @@ Procedural classes could be called _unit_ or _component_.&#x20;
 
 Also, their members should be called _procedures_.&#x20;
 
-#### Data classes
+### Data classes
 
 Data classes could be called _records_. I have just taken the name from the new Java records.
 
@@ -127,7 +127,7 @@ So here is what we have in reality:
 | _Cardinality_       | singleton              | prototype                          |
 | _Instantiation_     | by injection framework | by application, ORM framework, etc |
 
-### No OOP
+## No OOP
 
 [Object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented\_programming) is based on traditional classes. Should we still do OOP if we have no more classes? Logically, the answer is no.
 
@@ -142,7 +142,7 @@ In another article, I suggest [not using inheritance](do-not-use-inheritance.md)
 * Some other rules, like the _dependency inversion_ principle, can remain valid. (Allowing the usage of interfaces.)
 * There can be ones, like the _law of Demeter_, which will be valid either for the procedural or the data classes.
 
-#### Law of Demeter
+### Law of Demeter
 
 As an interesting example, let's take a look at the [LoD](https://en.wikipedia.org/wiki/Law\_of\_Demeter). It is also simplified as a "dot counting rule". So we should not write the following code:
 
@@ -156,7 +156,7 @@ If we process a data structure then we need to know the entire structure. That's
 
 There are long articles on the internet struggling with this issue and sometimes coming close to the solution, that LoD is not useful when we access data members.
 
-### Further Reading
+## Further Reading
 
 * [Criticism of OOP](https://en.wikipedia.org/wiki/Object-oriented\_programming#Criticism) in the Wikipedia article.
 * [Do Not Use Inheritance](do-not-use-inheritance.md)

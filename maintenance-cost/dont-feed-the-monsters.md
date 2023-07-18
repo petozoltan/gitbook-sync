@@ -4,6 +4,8 @@ description: 2023.07.14
 
 # Don't Feed the Monsters
 
+## The problem
+
 Every solution we introduce to the code comes at a price. Frameworks, layers, queues, architectural decisions, third-party tools, class hierarchies, models, techniques, and our own design ideas. This price is the [maintenance cost](consider-the-maintenance-cost.md).
 
 All we should do is focus on the business logic. The user requirements. We should understand it, we should implement it, and the code should reflect it. This is called _clean code_.
@@ -18,7 +20,9 @@ But remember, professional software development is not a Tamagotchi game. We don
 
 <figure><img src="../.gitbook/assets/Tamagotchi s-l500 PSX.jpg" alt="" width="155"><figcaption></figcaption></figure>
 
-### Requirements
+## Solution
+
+### Is it in the requirements?
 
 We should investigate every solution and design decision before introducing them.&#x20;
 
@@ -28,7 +32,7 @@ The first and most important question: Are they required by the user requirement
 Focus always on the business requirements and not on the solutions.
 {% endhint %}
 
-### Price–Benefit Balance
+### Cost/benefit ratio
 
 The second question is: Is it worth introducing a certain solution? Do we want to pay the cost for the benefit it brings? By cost, I mean the _cost of maintenance_.
 

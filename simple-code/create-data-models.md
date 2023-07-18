@@ -4,30 +4,30 @@ description: 2021.08.08
 
 # Create Data Models
 
-### Design Input And Output Data
+## Design Input And Output Data
 
 We used to design the overall data model of the application, i.e. the entities in the database, which we refer to as a _domain model_. But since we have to implement independent features and components, we should do more:
 
 * Carefully design the data flow within every feature.
 * Clearly define the input and output data for each component.
 
-### Data Transfer Objects (DTOs)
+## Data Transfer Objects (DTOs)
 
 For this, we should create _data transfer objects_. These are data classes that only carry data and do not contain procedures implementing business logic.
 
 Here we benefit from the method that we [separate procedural and data classes](../oop/separate-data-and-procedures.md). See more in that chapter.
 
-### Data Model
+## Data Model
 
 Every data structure we create is a _data model_. Its strength is that it _models_ the data. The better we can describe the data, the clearer it tells what should be processed.
 
 > Imagine that you have to create complex Excel files programmatically. The files may contain not only rows and columns but also multiple sheets, sub-tables, row groups, column groups, and other complex structures. You should model the Excel content with data structures as precisely as possible.
 
-### Use Composition
+## Use Composition
 
 Of course, data structures are made up of other data structures and data classes, down to single attributes. How should we build them efficiently?
 
-#### Do Not Copy
+### Do Not Copy
 
 If some data structures are already collected, whose attributes we need, we should not create new classes with the demanded attributes, and copy their values. Instead, we should simply add the already collected data as a whole to our new data objects. (Of course, only if there is no objection against it, like memory consumption or others.)&#x20;
 
@@ -52,7 +52,7 @@ We should avoid copying attributes because it requires more procedural code and 
 * It is simpler to put together the new data structures.
 * There is no need to change the existing data. (It should be treated as immutable, see below.)
 
-#### Do Not Inherit
+### Do Not Inherit
 
 For the same reason as in the case of copying, _inheritance_ is not useful either. With this, the attributes are inherited only on type level, but on object level (in runtime) we still need to copy them.
 
@@ -66,13 +66,13 @@ Alternatively, if we declare the first data structure already for the new, exten
 
 We should not use inheritance in data objects anyway, as described in this chapter: [Do Not Use Inheritance, _Rules For Data Classes_](../oop/do-not-use-inheritance.md#rules-for-data-classes).
 
-#### Embed Entities
+### Embed Entities
 
 You can even embed database entities if the memory consumption does not speak against it.&#x20;
 
 It is recommended that they are detached from the database, in the terms of Hibernate. This simply means that we use the entities outside of the original reading transaction. In this way, they simply become 'data transfer objects' and we can add them to other DTOs.
 
-### Treat Data As Immutable
+## Treat Data As Immutable
 
 This has key importance to solve the problem that is described in [Separate Data Collection And Processing](separate-data-collection-and-processing.md). We want to clearly separate the writing and the reading of all data to make our code clean.
 
@@ -96,7 +96,7 @@ inputs.stream()
     .collect(toList());
 ```
 
-### Use Records
+## Use Records
 
 In Java 16 the `record` keyword has been introduced. (From Java 14 as a preview feature.) Records implement everything, which is written above, and we don't even have to declare a class for them in the old way! &#x20;
 
@@ -112,7 +112,7 @@ Read more here, or find tutorials on the internet:
 * [Java 15 – JEP 384: Records (Second Preview)](https://openjdk.java.net/jeps/384)
 * [Java 16 – JEP 395: Records](https://openjdk.java.net/jeps/395)
 
-### Put Together What Belongs Together
+## Put Together What Belongs Together
 
 When collecting the data that should be processed do not simply create collections. If those collections contain data related to each other then create a DTO that holds them together.
 
@@ -142,7 +142,7 @@ Collection<ADto> as;
 
 In other words, you should _finish_ the preparation of the input data before the processing of the data.
 
-#### Avoid Maps
+### Avoid Maps
 
 The same goes for Maps.
 
@@ -197,7 +197,7 @@ void process2(A a) {
 {% endtab %}
 {% endtabs %}
 
-### Use Factories
+## Use Factories
 
 If certain data can be created in different ways, then use factory classes and methods to create them, instead of using multiple constructors. This is important for more reasons:
 
@@ -243,7 +243,7 @@ When using factory methods, use _only one constructor_ for the DTO that requires
 
 When using _records_ as DTOs (see above), we don't need to explicitly declare data classes. But in this case, we can still keep the factory classes.
 
-### Advantage In Testing
+## Advantage In Testing
 
 Creating clear input and output data for the components completely changes the unit testing, making it easier and more clear.&#x20;
 
@@ -267,7 +267,7 @@ public void testSomething() {
 }
 ```
 
-### Too many data classes?
+## Too many data classes?
 
 Will we not have too many DTOs in the way as written above? In other words, won't we have a "DTO hell"?
 

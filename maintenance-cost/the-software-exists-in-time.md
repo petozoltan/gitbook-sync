@@ -6,7 +6,7 @@ description: 2023.07.14
 
 Another issue that may lead to a confusing code is that we tend to ignore that our source code exists in time. I don't say we forget it but we don't take it seriously enough, with all of its consequences.
 
-### The code is continuously changing
+## The code is continuously changing
 
 One of the obvious goals of software development is that the program works correctly as specified. So the definition of _goodness_ is based on the correct and tested functionality.&#x20;
 
@@ -32,7 +32,7 @@ We need to implement different features with the least possible dependencies.
 
 Unfortunately, solutions like [OOP](../oop/do-not-use-inheritance.md), [frameworks](../oop/what-is-the-problem-with-inheritance.md), and [common code that is not common](../simple-code/separate-use-cases.md), create many unwanted dependencies in the code.
 
-### Design for a long-term maintenance
+## Design for a long-term maintenance
 
 Besides goodness, the other goal is the next deadline. All plans and estimations aim at the next deadline. The result is the following:
 
@@ -56,7 +56,7 @@ We need to choose solutions that are easy to maintain.
 
 And the "next deadline" sounds like a secondary goal, considering _all_ deadlines during the software's lifecycle.
 
-### Other benefits
+## Other benefits
 
 These rules for maintainability primarily affect the development team. It is about the _ability_ of the team to deliver error-free software on time for the long term. Needless to say, this affects the customer too.
 

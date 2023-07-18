@@ -40,7 +40,7 @@ The reason for polymorphism is that data and procedures were grouped together in
 
 ## How we write code today
 
-#### Injection frameworks
+### Injection frameworks
 
 With the wide spreading of injection frameworks and the dependency inversion paradigm, we usually separate data and procedures:
 
@@ -61,7 +61,7 @@ So we are back at the pre-OOP times with data structures. Back to the future.:sl
 We don't have to use polymorphism because its original cause does not exist anymore.
 {% endhint %}
 
-#### Other benefits
+### Other benefits
 
 Injection is not the only reason to separate data and procedures.
 
