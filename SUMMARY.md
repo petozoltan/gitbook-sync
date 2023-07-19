@@ -14,6 +14,7 @@
 * [Separate Data Collection And Processing](simple-code/separate-data-collection-and-processing.md)
 * [Create Data Models](simple-code/create-data-models.md)
 * [Separate Use Cases](simple-code/separate-use-cases.md)
+* [Data Should Be Immutable](simple-code/data-should-be-immutable.md)
 
 ## Examples
 

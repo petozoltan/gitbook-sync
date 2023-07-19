@@ -2,6 +2,7 @@
 
 ### 2023
 
+* [Data Should Be Immutable](simple-code/data-should-be-immutable.md) (in progress)&#x20;
 * [Billion Dollar Mistakes](introduction/billion-dollar-mistakes.md) (in progress)
 * [Consider the Maintenance Cost](maintenance-cost/consider-the-maintenance-cost.md)
 * [The Software Exists In Time](maintenance-cost/the-software-exists-in-time.md)
