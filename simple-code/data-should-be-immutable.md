@@ -4,8 +4,6 @@ description: DRAFT
 
 # Data Should Be Immutable
 
-## Experiment
-
 The next time you go to a job interview, please do the following experiment:
 
 > Say "Hi, my name is John."
@@ -14,11 +12,13 @@ The next time you go to a job interview, please do the following experiment:
 
 See whether you get the job.
 
-## Example
+## Problems with mutable data
+
+### Unreliable data
 
 Imagine the same experiment in the code:
 
-#### Non-final variable
+#### Non-final variable:
 
 ```java
 String firstName = "John";
@@ -33,9 +33,9 @@ firstName = "Dave";
 
 Now, what is the name really? The code lines before the modification read the variable as "John", the lines after that read "Dave".
 
-#### Mutable object
+#### Mutable variable
 
-The same happens when we don't overwrite the variable but modify it:
+The same happens with a final but _mutable_ variable:
 
 ```java
 Name name = new Name("John", "Smith");
@@ -50,39 +50,66 @@ name.setFirstName("Dave");
 
 Is he then "John Smith" or "Dave Smith"?
 
-## Arbitrary changes
+So it means the following problem:
 
-The problem is not that the data is technically mutable. The question is, where and how we modify the data?
+{% hint style="warning" %}
+Mutable data is unreliable. We never know whether they have a final value.
+{% endhint %}
 
-Drawing: Data collector -> Data processor
+### More ifs — more branching
 
-Data collector can write the data by constructors or mutators (setters). That is not the problem.
+### Cannot follow the business process
 
-The problem is when the Data processor modifies the data.
+#### Global variables
 
-Why? The answer is, as usual:
+Every programmer knows that they should not use global variables. But they still use them, for example as permanent configuration data. The problem is the usage of _mutable_ global variables.
 
-Always focus on the business logic. Break down the business logic into steps and implement them. If one step is to collect the data but after that we modify the data, then the collect step is simply not finished. It is not implemented correctly. We have a spaghetti code then.
+If any part of the code can modify the global variable at any time then we lose the _sequential nature_ of the program.
 
-Create data as true immutable or treat it as immutable
+{% hint style="warning" %}
+Mutable data make it hard to see the correct order of business events.
+{% endhint %}
 
-Use records, which are immutable.
+#### Instance variables
 
-## Technically of effectively immutable
+Instance variables of stateful classes cause the same problem. Even if the class is immutable for the clients, it is mutable for its own member methods. If any method can read and write the instance variables then we cannot see the steps of the business logic.
 
-## Use records
+Unfortunately, this is a fundamental problem with object-oriented programming. It goes against the clean code principles. That is another reason why I suggest to [quit OOP](../oop/do-not-use-inheritance.md).
 
-## Global Variables
+### Separate business steps
 
-Ever programmer knows that we should not use global variables.
+The solution is, as I suggested in another article:
 
-But we still use them, for example as configuration data or current user.
+{% hint style="success" %}
+Separate steps of the business process. [Separate data collection and processing](separate-data-collection-and-processing.md).
+{% endhint %}
 
-The problem is the usage of mutable global variables.
+The _immutability_ of the data plays an essential role in this. One piece of data is created only in a well-defined step of the business logic. It is not modified later. That's how we know that this distinct step of the business process is done. When looking at the next code we don't have to take care of the already finished steps.
 
-Then the value of the variable may change in many places and we lost the sequential nature of the program, i.e. steps of the business logic after each other.
+As always: focus on the business logic. Break down the business logic into steps and implement these steps.
 
-## Mutable data
+## Make data immutable
+
+### Technically immutable
+
+Making it really immutable is not easy. It may not be enough that the data type has no mutators (setters). If it is a composite of other structured data then:
+
+* all contained data must be immutable
+* or if not, then constructors should make a deep copy of the data
+* accessors (getters) should also make a deep copy of the returned data,
+* or wrap them in immutable types if possible (e.g. immutable collections)
+
+### Use records
+
+exactly for this purpose
+
+### Effectively immutable
+
+Collectors or factories. BL is more important
+
+## Other issues with mutability
+
+### Mutable data
 
 Sometimes data can or must be mutable if this is its purpose. For example error collectors or loggers.
 
@@ -103,15 +130,17 @@ errors.getErrors().set(...);
 errors.getErrors().get(...).setErrorMessage(...);
 ```
 
-## Initialization vs. default values
+### Initialization vs. default values
 
-I saw a question on StackOverflow, how we should correctly initialize a variable.
+I saw a question on StackOverflow, about how we should correctly initialize a variable.
 
-Also programming languages as Java initialize variables with null if they are declared but no value is given to them.
+Also, programming languages such as Java initialize variables with null if they are declared but no value is given to them.
 
 The real answer is: treat data as immutable.
 
-## Return value
+Why would you create a variable without a value?&#x20;
+
+### Return value
 
 That's why it is a bad habit to create return values like this:
 
