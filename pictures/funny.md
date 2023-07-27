@@ -4,6 +4,8 @@ description: 2021.07.16 - 2023.02.12
 
 # Funny
 
+<figure><img src="../.gitbook/assets/Plan long term.jpg" alt=""><figcaption></figcaption></figure>
+
 <figure><img src="../.gitbook/assets/Progress.jpg" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/reading-other-peoples-code.png" alt=""><figcaption></figcaption></figure>
