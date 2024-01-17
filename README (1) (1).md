@@ -1,5 +1,9 @@
 # Timeline
 
+### 2024
+
+* [Links](externals/links.md)
+
 ### 2023
 
 * [Data Should Be Immutable](simple-code/data-should-be-immutable.md) (in progress)&#x20;
@@ -18,7 +22,7 @@
 * [Software Killers](<README (1).md>)
 * [Separate Data And Procedures](oop/separate-data-and-procedures.md)
 * [Example: Separate Use Cases](examples/separate-use-cases-with-data-model.md)
-* [Quotes](pictures/quotes.md)
+* [Quotes](externals/quotes.md)
 * [Git Tutorials](technology/git-tutorials.md)
 * [Separate Use Cases](simple-code/separate-use-cases.md)
 

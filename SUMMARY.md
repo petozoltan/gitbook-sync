@@ -40,10 +40,11 @@
 * [How To Handle Warnings](various/how-to-handle-warnings.md)
 * [Do Not Create Constant Collection Classes](various/do-not-create-constant-collection-classes.md)
 
-## Pictures
+## Externals
 
-* [Quotes](pictures/quotes.md)
-* [Funny](pictures/funny.md)
+* [Links](externals/links.md)
+* [Quotes](externals/quotes.md)
+* [Funny](externals/funny.md)
 
 ## Technology
 
