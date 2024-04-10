@@ -6,7 +6,7 @@
 
 ### 2023
 
-* [Data Should Be Immutable](simple-code/data-should-be-immutable.md) (in progress)&#x20;
+* [Data Should Be Immutable](data-processing/data-should-be-immutable.md) (in progress)&#x20;
 * [Billion Dollar Mistakes](introduction/billion-dollar-mistakes.md) (in progress)
 * [Consider the Maintenance Cost](maintenance-cost/consider-the-maintenance-cost.md)
 * [The Software Exists In Time](maintenance-cost/the-software-exists-in-time.md)
@@ -17,14 +17,14 @@
 
 ### 2021
 
-* [Create Data Models](simple-code/create-data-models.md)
-* [Separate Data Collection And Processing](simple-code/separate-data-collection-and-processing.md)
+* [Create Data Models](data-processing/create-data-models.md)
+* [Separate Data Collection And Processing](data-processing/separate-data-collection-and-processing.md)
 * [Software Killers](<README (1).md>)
 * [Separate Data And Procedures](oop/separate-data-and-procedures.md)
 * [Example: Separate Use Cases](examples/separate-use-cases-with-data-model.md)
 * [Quotes](externals/quotes.md)
 * [Git Tutorials](technology/git-tutorials.md)
-* [Separate Use Cases](simple-code/separate-use-cases.md)
+* [Separate Use Cases](data-processing/separate-use-cases.md)
 
 ### 2020
 

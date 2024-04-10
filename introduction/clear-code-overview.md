@@ -2,7 +2,7 @@
 description: 2023.02.26
 ---
 
-# Simple Code Overview
+# Clear Code Overview
 
 <figure><img src="../.gitbook/assets/Simple Code Diagram 5.png" alt=""><figcaption></figcaption></figure>
 
@@ -35,9 +35,9 @@ We should create these small, independent parts by the following rules:
 * Single responsibility principle.
 * High cohesion.
 
-_Separation in time_ means that we should identify and design the steps of the algorithm that can be executed after each other. For this, we should break down the implemented functionality into use cases and the use cases into steps. In the code, we should [separate the implementation of the use cases](../simple-code/separate-use-cases.md).&#x20;
+_Separation in time_ means that we should identify and design the steps of the algorithm that can be executed after each other. For this, we should break down the implemented functionality into use cases and the use cases into steps. In the code, we should [separate the implementation of the use cases](../data-processing/separate-use-cases.md).&#x20;
 
-The output of one step will be an intermediate result that will be the input of the next step. It is especially important in _data-processing_ code. We should [separate data collection and preparation from the processing of the data](../simple-code/separate-data-collection-and-processing.md) so that both steps will be simpler and more independent.
+The output of one step will be an intermediate result that will be the input of the next step. It is especially important in _data-processing_ code. We should [separate data collection and preparation from the processing of the data](../data-processing/separate-data-collection-and-processing.md) so that both steps will be simpler and more independent.
 
 We should strictly separate the implementation of different _business functions_ so that modifying one will not affect the others.
 
@@ -57,8 +57,8 @@ Besides the obvious branching commands there are other hidden branchings we must
 The possible ways to decrease the number of branchings are based on the above situations:
 
 * Put related static constants in enums to reach them without branching.
-* [Separate use cases and never join them again into a common code.](../simple-code/separate-use-cases.md)
-* [Create data models without nullable or Optional members.](../simple-code/create-data-models.md)
+* [Separate use cases and never join them again into a common code.](../data-processing/separate-use-cases.md)
+* [Create data models without nullable or Optional members.](../data-processing/create-data-models.md)
 * Avoid explicitly passing or returning `null`.
 * Quit OOP
 

@@ -42,11 +42,11 @@ Branchings increase the cyclomatic complexity of the program. It is measured onl
 
 We write ifs and other forms of branching everywhere in the code. We create class hierarchies and other patterns that are based on branching. We do it in an irresponsible way; we don't care how many branching we create.
 
-The high number of branching is also a consequence of antipatterns, like passing and returning nulls or controlling the program flow with nulls. _(Spaghetti code,_ [_Insider trading_](../simple-code/separate-use-cases.md#insider-trading)_,_ [_Common code that is not common_](../simple-code/separate-use-cases.md#the-common-code-problem)_.)_
+The high number of branching is also a consequence of antipatterns, like passing and returning nulls or controlling the program flow with nulls. _(Spaghetti code,_ [_Insider trading_](../data-processing/separate-use-cases.md#insider-trading)_,_ [_Common code that is not common_](../data-processing/separate-use-cases.md#the-common-code-problem)_.)_
 {% endtab %}
 
 {% tab title="Solutions" %}
-[Separate use cases](../simple-code/separate-use-cases.md).&#x20;
+[Separate use cases](../data-processing/separate-use-cases.md).&#x20;
 
 Separate use cases only once and as early as possible.
 {% endtab %}

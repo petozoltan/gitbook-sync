@@ -116,13 +116,13 @@ The primary problems with this code are:
 * It passes `null` values to methods.
 * It uses `null` values to control the program flow.
 
-Controlling the program flow with artificial `null` values is the [Insider Information](../simple-code/separate-use-cases.md#insider-information) antipattern. It means that _"if Value is null then the Data was empty"_. So it "finds out" the original situation, instead of receiving it as clear information.
+Controlling the program flow with artificial `null` values is the [Insider Information](../data-processing/separate-use-cases.md#insider-information) antipattern. It means that _"if Value is null then the Data was empty"_. So it "finds out" the original situation, instead of receiving it as clear information.
 
 The last two issues together also make it a _spaghetti code_: we pass the nulls _with the purpose_, to make branching in the other method. So the first method "continues" in the second one, instead of completing the branches.
 
 ## Separate Use Cases
 
-To fix the above code we should follow the article [Separate Use Cases](../simple-code/separate-use-cases.md):
+To fix the above code we should follow the article [Separate Use Cases](../data-processing/separate-use-cases.md):
 
 * Create branching for the use cases only once.
 * Separate the implementations of the use cases.

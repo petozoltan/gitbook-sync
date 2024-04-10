@@ -9,12 +9,12 @@
 * [Clear Code Overview](introduction/clear-code-overview.md)
 * [Clear Code Rules](introduction/clear-code-rules.md)
 
-## Data Processing <a href="#simple-code" id="simple-code"></a>
+## Data Processing
 
-* [Separate Data Collection And Processing](simple-code/separate-data-collection-and-processing.md)
-* [Create Data Models](simple-code/create-data-models.md)
-* [Separate Use Cases](simple-code/separate-use-cases.md)
-* [Data Should Be Immutable](simple-code/data-should-be-immutable.md)
+* [Separate Data Collection And Processing](data-processing/separate-data-collection-and-processing.md)
+* [Create Data Models](data-processing/create-data-models.md)
+* [Separate Use Cases](data-processing/separate-use-cases.md)
+* [Data Should Be Immutable](data-processing/data-should-be-immutable.md)
 
 ## Examples
 

@@ -13,7 +13,7 @@ description: 2023.01.30 DRAFT
 * Split the algorithms into separate steps that can be done one by one.
 * Design the intermediate data to be created by the steps and used by the next ones.
 * Create sequences of steps. That is the easiest to be understood by the human mind.
-* [Separate data collection and data processing](../simple-code/separate-data-collection-and-processing.md).
+* [Separate data collection and data processing](../data-processing/separate-data-collection-and-processing.md).
 
 </details>
 
@@ -27,7 +27,7 @@ Separate features
 * Avoid common code above different features.
 * Avoid implementing use cases with a common code and then branching them from there.
 
-[Separate use cases](../simple-code/separate-use-cases.md)
+[Separate use cases](../data-processing/separate-use-cases.md)
 
 * As early as possible.
 * [Already in data models.](../examples/separate-use-cases-with-data-model.md)
@@ -41,7 +41,7 @@ Separate features
 
 [Separate data and procedures](../oop/separate-data-and-procedures.md)
 
-[Create data models](../simple-code/create-data-models.md)
+[Create data models](../data-processing/create-data-models.md)
 
 * For data processing always design the data first.
 * _Model_ the business results with the data. That's why it is called a 'data model'.
