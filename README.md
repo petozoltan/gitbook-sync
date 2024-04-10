@@ -1,5 +1,5 @@
 ---
-description: 2023.01.30
+description: 2023.01.30 (2024.04.10)
 ---
 
 # About This Book
@@ -12,8 +12,4 @@ But I realized that although most programmers knew the main clean code rules, an
 
 I would like to share my unusual message that we should _not_ do many things during programming that we used to do. Of course, I try to tell what to do instead.
 
-This is what you can read under 'simple code'. It is all based on the clean code principles. I also realized what the most important goal is: to implement and express the business logic of the program. So actually:
-
-{% hint style="success" %}
-Simple code = Business code = Clean code
-{% endhint %}
+This is what you can read under 'clear code'. It is all based on the clean code principles. The name is explained here: [The problem with Clean Code's name](various/the-problem-with-clean-codes-name.md).
