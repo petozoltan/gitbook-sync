@@ -2,9 +2,9 @@
 description: 2023.01.30 DRAFT
 ---
 
-# Simple Code Rules
+# Clear Code Rules
 
-## [Separate everything](simple-code-overview.md#separate-everything)
+## [Separate everything](clear-code-overview.md#separate-everything)
 
 <details>
 
@@ -147,7 +147,7 @@ Treat classes as code units
 
 </details>
 
-## [Simplest solution by default](simple-code-overview.md#simple-by-default)
+## [Simplest solution by default](clear-code-overview.md#simple-by-default)
 
 Consider maintenance costs when choosing a solutions.
 
@@ -160,8 +160,6 @@ No pets - they will become monsters
 No fancy solutions
 
 No tricky solutions
-
-
 
 <details>
 
@@ -231,7 +229,7 @@ Callbacks are "frameworks"
 
 Image with callback: parallels
 
-## [Decrease branching](simple-code-overview.md#decrease-branching)
+## [Decrease branching](clear-code-overview.md#decrease-branching)
 
 Separate use cases
 
@@ -324,7 +322,7 @@ Minimize interfaces
 * Access the one functionality through one way (one method)
 * low coupling
 
-## [Focus on business logic](simple-code-overview.md#focus-on-business-logic)
+## [Focus on business logic](clear-code-overview.md#focus-on-business-logic)
 
 <details>
 
@@ -399,6 +397,6 @@ Avoid code repetition.
 
 <summary>Separate business code and technical code</summary>
 
-See above, under [#separate-everything](simple-code-rules.md#separate-everything "mention").
+See above, under [#separate-everything](clear-code-rules.md#separate-everything "mention").
 
 </details>

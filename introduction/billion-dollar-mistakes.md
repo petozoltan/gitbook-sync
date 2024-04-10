@@ -78,7 +78,7 @@ This problem goes hand-in-hand with the branching problem and the automation.
 {% endtab %}
 
 {% tab title="Solutions" %}
-[Separate everything](simple-code-rules.md#separate-everything).
+[Separate everything](clear-code-rules.md#separate-everything).
 {% endtab %}
 {% endtabs %}
 

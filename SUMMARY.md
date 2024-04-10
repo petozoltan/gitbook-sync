@@ -6,8 +6,8 @@
 * [Timeline](<README (1) (1).md>)
 * [Software Killers](<README (1).md>)
 * [Billion Dollar Mistakes](introduction/billion-dollar-mistakes.md)
-* [Simple Code Overview](introduction/simple-code-overview.md)
-* [Simple Code Rules](introduction/simple-code-rules.md)
+* [Clear Code Overview](introduction/clear-code-overview.md)
+* [Clear Code Rules](introduction/clear-code-rules.md)
 
 ## Data Processing <a href="#simple-code" id="simple-code"></a>
 
