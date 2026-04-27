@@ -16,7 +16,7 @@ Does it sound familiar? Let's see what are here the mistakes and the lessons lea
 
 ## Take care of warnings from the project start
 
-The most obvious mistake that the Sonar—or, more generally, the _controlling of warnings—_is started when it is too late: when there are too many of them.
+The most obvious mistake that the Sonar—or, more generally, the _controlling of warnings—_&#x69;s started when it is too late: when there are too many of them.
 
 Many other measures and tools are in use right from the project start: version control system, continuous integration, unit tests, behavioral tests, bug tracking system, documenting tool, etc. Except for the checking of warnings.
 

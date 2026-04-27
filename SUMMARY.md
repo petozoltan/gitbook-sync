@@ -45,6 +45,7 @@
 * [Links](externals/links.md)
 * [Quotes](externals/quotes.md)
 * [Funny](externals/funny.md)
+* [Switzerland](externals/switzerland.md)
 
 ## Technology
 
