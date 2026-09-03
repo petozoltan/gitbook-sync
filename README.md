@@ -1,4 +1,4 @@
-This is the source of my book [Clear Code](https://petozoltan.gitbook.io/clearcode). 
+This is the source of my book [Simple Code](https://petozoltan.gitbook.io/simplecode). 
 
 But you can read it here too:
 * Switch to the [master](https://github.com/petozoltan/gitbook-sync/tree/master) branch.
