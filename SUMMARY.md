@@ -6,8 +6,8 @@
 * [Timeline](<README (1) (1).md>)
 * [Software Killers](<README (1).md>)
 * [Billion Dollar Mistakes](introduction/billion-dollar-mistakes.md)
-* [Clear Code Overview](introduction/clear-code-overview.md)
-* [Clear Code Rules](introduction/clear-code-rules.md)
+* [Simple Code Overview](introduction/clear-code-overview.md)
+* [Simple Code Rules](introduction/clear-code-rules.md)
 
 ## Data Processing
 
